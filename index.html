@@ -26,13 +26,46 @@
     <!-- Main page content should be wrapped with semantically meaningful html elements (e.g.: article, main) whenever possible. A div element can be used as long as it also contains a role="main" for Accessibility. -->
     <main id="mainContent" data-grid="container">
         <!-- Modules should be stacked with a sibling relationship in order to programmatically adjust their position, margins, and padding. -->
+        <!--<header class="m-heading-1">
+            <h1 class="c-heading">Microsoft Campus Community</h1>
+        </header>-->
 
-        <header class="m-heading-1">
-            <h1 class="c-heading">Welcome to MCC</h1>
-        </header>
 
 
-        <div data-grid="col-12 pad-6x stack-3" class="m-rich-content-block">
+
+        <div data-grid="col-12" class="m-area-heading" id="headingLinksExample">
+            <h2 class="c-heading">
+                <a href="#" class="c-logo" aria-label="Logo">
+                    <img class="c-image" src="src/logo.png" alt="Microsoft Campus Community Logo" itemscope="" itemtype="https://schema.org/ImageObject">
+                    <span>Company</span>
+                </a> Microsoft Campus Community
+            </h2>
+            <!--<div class="c-group">
+                <a href="#" class="c-hyperlink">About Us </a>
+                <a href="#" class="c-hyperlink">Registration </a>
+            </div>-->
+        </div>
+
+        <!--<a href="#" class="c-logo" aria-label="Logo">
+            <img class="c-image" src="src/logo.png" alt="Microsoft Campus Community Logo" itemscope="" itemtype="https://schema.org/ImageObject">
+            <span>Company</span>
+        </a>-->
+
+        <center>
+            <div class="m-image">
+                <picture class="c-image">
+                    <!--<source srcset="https://placehold.it/2048x600/2F2F2F/171717" media="(min-width: 1779px)">
+                    <source srcset="https://placehold.it/1778x600/2F2F2F/171717" media="(min-width:1400px)">
+                    <source srcset="https://placehold.it/1399x600/2F2F2F/171717" media="(min-width:1084px)">
+                    <source srcset="https://placehold.it/1083x500/2F2F2F/171717" media="(min-width:768px)">
+                    <source srcset="https://placehold.it/767x400/2F2F2F/171717" media="(min-width:540px)">-->
+                    <source srcset="src/image.png" media="(min-width:0)">
+                    <img srcset="src/image.png" src="src/image.png" alt="Placeholder with grey background and dimension watermark without any imagery">
+                </picture>
+            </div>
+        </center>
+
+        <!--<div data-grid="col-12 pad-6x stack-3" class="m-rich-content-block">
             <div data-grid="col-3">
                 <h2 class="c-heading-2">Learn</h2>
                 <p class="c-paragraph-1">Paragraph lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae convallis eros, nec iaculis nisi. Duis imperdiet elementum diam, eu tempor quam tempus sit amet. Suspendisse eu tortor quis odio faucibus tempus sed vitae ipsum.</p>
@@ -49,18 +82,18 @@
                 <h2 class="c-heading-2">Start Over</h2>
                 <p class="c-paragraph-1">Paragraph lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae convallis eros, nec iaculis nisi. Duis imperdiet elementum diam, eu tempor quam tempus sit amet. Suspendisse eu tortor quis odio faucibus tempus sed vitae ipsum.</p>
             </div>
-        </div>
+        </div>-->
 
         <div class="m-content-placement" data-grid="col-12">
-            <div data-grid="col-12 stack-3">
-                <div data-grid="col-6 pad-6x">
-                    <div data-grid="col-6">
+            <div data-grid="col-12 stack-2">
+                <div data-grid="col-4 pad-6x">
+                    <div data-grid="col-12">
                         <section class="m-content-placement-item f-size-medium">
                             <picture>
-                                <source srcset="https://placehold.it/358x201" media="(min-width: 1400px)">
-                                <source srcset="https://placehold.it/279x157" media="(min-width: 1084px)">
-                                <source srcset="https://placehold.it/494x278" media="(min-width: 768px)">
-                                <source srcset="https://placehold.it/348x195" media="(min-width: 540px)">
+                                <source srcset="https://placehold.it/485x273" media="(min-width: 1400px)">
+                                <source srcset="https://placehold.it/380x214" media="(min-width: 1084px)">
+                                <source srcset="https://placehold.it/321x180" media="(min-width: 768px)">
+                                <source srcset="https://placehold.it/720x405" media="(min-width: 540px)">
                                 <source srcset="https://placehold.it/491x276" media="(min-width:0)">
                                 <img srcset="https://placehold.it/491x276" src="https://placehold.it/491x276" alt="Placeholder with grey background and dimension watermark without any imagery">
                             </picture>
@@ -77,13 +110,15 @@
                             </div>
                         </section>
                     </div>
-                    <div data-grid="col-6">
+                </div>
+                <div data-grid="col-4 pad-6x">
+                    <div data-grid="col-12">
                         <section class="m-content-placement-item f-size-medium">
                             <picture>
-                                <source srcset="https://placehold.it/358x201" media="(min-width: 1400px)">
-                                <source srcset="https://placehold.it/279x157" media="(min-width: 1084px)">
-                                <source srcset="https://placehold.it/494x278" media="(min-width: 768px)">
-                                <source srcset="https://placehold.it/348x195" media="(min-width: 540px)">
+                                <source srcset="https://placehold.it/485x273" media="(min-width: 1400px)">
+                                <source srcset="https://placehold.it/380x214" media="(min-width: 1084px)">
+                                <source srcset="https://placehold.it/321x180" media="(min-width: 768px)">
+                                <source srcset="https://placehold.it/720x405" media="(min-width: 540px)">
                                 <source srcset="https://placehold.it/491x276" media="(min-width:0)">
                                 <img srcset="https://placehold.it/491x276" src="https://placehold.it/491x276" alt="Placeholder with grey background and dimension watermark without any imagery">
                             </picture>
@@ -100,36 +135,14 @@
                         </section>
                     </div>
                 </div>
-                <div data-grid="col-6 pad-6x">
-                    <div data-grid="col-6">
+                <div data-grid="col-4 pad-6x">
+                    <div data-grid="col-12">
                         <section class="m-content-placement-item f-size-medium">
                             <picture>
-                                <source srcset="https://placehold.it/358x201" media="(min-width: 1400px)">
-                                <source srcset="https://placehold.it/279x157" media="(min-width: 1084px)">
-                                <source srcset="https://placehold.it/494x278" media="(min-width: 768px)">
-                                <source srcset="https://placehold.it/348x195" media="(min-width: 540px)">
-                                <source srcset="https://placehold.it/491x276" media="(min-width:0)">
-                                <img srcset="https://placehold.it/491x276" src="https://placehold.it/491x276" alt="Placeholder with grey background and dimension watermark without any imagery">
-                            </picture>
-                            <div>
-                                <h3 class="c-heading">Heading</h3>
-                                <p class="c-paragraph">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id faucibus ex, eget aliquet ligula. Sed vel ligula consequat, euismod ligula quis, pharetra magna. Fusce commodo pretium tellus non ultricies. Vestibulum fringilla tempor
-                                    lectus, at pharetra lacus lobortis vel.
-                                </p>
-                                <a href="#" class="c-call-to-action c-glyph">
-                                    <span>Call To Action</span>
-                                </a>
-                            </div>
-                        </section>
-                    </div>
-                    <div data-grid="col-6">
-                        <section class="m-content-placement-item f-size-medium">
-                            <picture>
-                                <source srcset="https://placehold.it/358x201" media="(min-width: 1400px)">
-                                <source srcset="https://placehold.it/279x157" media="(min-width: 1084px)">
-                                <source srcset="https://placehold.it/494x278" media="(min-width: 768px)">
-                                <source srcset="https://placehold.it/348x195" media="(min-width: 540px)">
+                                <source srcset="https://placehold.it/485x273" media="(min-width: 1400px)">
+                                <source srcset="https://placehold.it/380x214" media="(min-width: 1084px)">
+                                <source srcset="https://placehold.it/321x180" media="(min-width: 768px)">
+                                <source srcset="https://placehold.it/720x405" media="(min-width: 540px)">
                                 <source srcset="https://placehold.it/491x276" media="(min-width:0)">
                                 <img srcset="https://placehold.it/491x276" src="https://placehold.it/491x276" alt="Placeholder with grey background and dimension watermark without any imagery">
                             </picture>
