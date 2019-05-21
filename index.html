@@ -17,6 +17,18 @@
     <!-- Stylesheet additions -->
     <!-- Include as a single optimized css file on CDN. -->
     <!-- ... -->
+
+    <style>
+        .m-rich-heading {
+            margin-top: 0;
+            background: none !important;
+            height: auto;
+            padding: 0 10px;
+        }
+        .m-rich-heading .c-image {
+            height: 5em;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,43 +37,39 @@
 
     <!-- Universal header -->
     <!-- Main page content should be wrapped with semantically meaningful html elements (e.g.: article, main) whenever possible. A div element can be used as long as it also contains a role="main" for Accessibility. -->
+    <div data-grid="col-12" class="m-rich-heading theme-light f-brand-neutral-10">
+        <div>
+            <img class="c-image" src="src/logo.png" alt="Microsoft Campus Community Logo" itemscope="" itemtype="https://schema.org/ImageObject">
+            <!--<p class="c-paragraph-3">Paragraph</p>-->
+        </div>
+    </div>
+    <!--<div data-grid="col-12" class="m-area-heading" id="headingLinksExample">
+        <h2 class="c-heading">
+            <a href="#" class="c-logo" aria-label="Logo">
+                <img class="c-image" src="src/logo.png" alt="Microsoft Campus Community Logo" itemscope="" itemtype="https://schema.org/ImageObject">
+                <span>Company</span>
+            </a>
+            Microsoft Campus Community
+        </h2>
+    </div>-->
+
+    <div class="m-image">
+        <picture class="c-image">
+            <source srcset="src/group_large.png" media="(min-width: 1779px)">
+            <source srcset="https://placehold.it/1778x600/2F2F2F/171717" media="(min-width:1400px)">
+            <source srcset="https://placehold.it/1399x600/2F2F2F/171717" media="(min-width:1084px)">
+            <source srcset="https://placehold.it/1083x500/2F2F2F/171717" media="(min-width:768px)">
+            <source srcset="https://placehold.it/767x400/2F2F2F/171717" media="(min-width:540px)">
+            <source srcset="https://placehold.it/539x300/2F2F2F/171717" media="(min-width:0)">
+            <img srcset="https://placehold.it/1399x600/2F2F2F/171717" src="https://placehold.it/1399x600/2F2F2F/171717" alt="Placeholder with grey background and dimension watermark without any imagery">
+        </picture>
+    </div>
+    
     <main id="mainContent" data-grid="container">
         <!-- Modules should be stacked with a sibling relationship in order to programmatically adjust their position, margins, and padding. -->
         <!--<header class="m-heading-1">
         <h1 class="c-heading">Microsoft Campus Community</h1>
     </header>-->
-
-        <div data-grid="col-12" class="m-rich-heading theme-light f-brand-neutral-10">
-            <div class="c-logo">
-               
-                
-            </div>
-            <div>
-                <img class="c-image" src="src/logo.png" alt="Microsoft Campus Community Logo" itemscope="" itemtype="https://schema.org/ImageObject">
-                <!--<p class="c-paragraph-3">Paragraph</p>-->
-            </div>
-        </div>
-        <!--<div data-grid="col-12" class="m-area-heading" id="headingLinksExample">
-            <h2 class="c-heading">
-                <a href="#" class="c-logo" aria-label="Logo">
-                    <img class="c-image" src="src/logo.png" alt="Microsoft Campus Community Logo" itemscope="" itemtype="https://schema.org/ImageObject">
-                    <span>Company</span>
-                </a>
-                Microsoft Campus Community
-            </h2>
-        </div>-->
-
-        <div class="m-image">
-            <picture class="c-image">
-                <source srcset="src/group_large.png" media="(min-width: 1779px)">
-                <source srcset="https://placehold.it/1778x600/2F2F2F/171717" media="(min-width:1400px)">
-                <source srcset="https://placehold.it/1399x600/2F2F2F/171717" media="(min-width:1084px)">
-                <source srcset="https://placehold.it/1083x500/2F2F2F/171717" media="(min-width:768px)">
-                <source srcset="https://placehold.it/767x400/2F2F2F/171717" media="(min-width:540px)">
-                <source srcset="https://placehold.it/539x300/2F2F2F/171717" media="(min-width:0)">
-                <img srcset="https://placehold.it/1399x600/2F2F2F/171717" src="https://placehold.it/1399x600/2F2F2F/171717" alt="Placeholder with grey background and dimension watermark without any imagery">
-            </picture>
-        </div>
 
         <div data-grid="col-12" class="m-feature-group">
             <div data-grid="col-12" class="m-area-heading">
