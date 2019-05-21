@@ -18,6 +18,7 @@
     <!-- Include as a single optimized css file on CDN. -->
     <!-- ... -->
 </head>
+
 <body>
     <!-- Accessibility requirement -->
     <a class="m-skip-to-main" href="#mainContent" tabindex="0">Skip to main content</a>
@@ -27,11 +28,20 @@
     <main id="mainContent" data-grid="container">
         <!-- Modules should be stacked with a sibling relationship in order to programmatically adjust their position, margins, and padding. -->
         <!--<header class="m-heading-1">
-            <h1 class="c-heading">Microsoft Campus Community</h1>
-        </header>-->
+        <h1 class="c-heading">Microsoft Campus Community</h1>
+    </header>-->
 
-
-        <div data-grid="col-12" class="m-area-heading" id="headingLinksExample">
+        <div data-grid="col-12" class="m-rich-heading theme-light f-brand-neutral-10">
+            <div class="c-logo">
+               
+                
+            </div>
+            <div>
+                <img class="c-image" src="src/logo.png" alt="Microsoft Campus Community Logo" itemscope="" itemtype="https://schema.org/ImageObject">
+                <!--<p class="c-paragraph-3">Paragraph</p>-->
+            </div>
+        </div>
+        <!--<div data-grid="col-12" class="m-area-heading" id="headingLinksExample">
             <h2 class="c-heading">
                 <a href="#" class="c-logo" aria-label="Logo">
                     <img class="c-image" src="src/logo.png" alt="Microsoft Campus Community Logo" itemscope="" itemtype="https://schema.org/ImageObject">
@@ -39,122 +49,189 @@
                 </a>
                 Microsoft Campus Community
             </h2>
+        </div>-->
+
+        <div class="m-image">
+            <picture class="c-image">
+                <source srcset="src/group_large.png" media="(min-width: 1779px)">
+                <source srcset="https://placehold.it/1778x600/2F2F2F/171717" media="(min-width:1400px)">
+                <source srcset="https://placehold.it/1399x600/2F2F2F/171717" media="(min-width:1084px)">
+                <source srcset="https://placehold.it/1083x500/2F2F2F/171717" media="(min-width:768px)">
+                <source srcset="https://placehold.it/767x400/2F2F2F/171717" media="(min-width:540px)">
+                <source srcset="https://placehold.it/539x300/2F2F2F/171717" media="(min-width:0)">
+                <img srcset="https://placehold.it/1399x600/2F2F2F/171717" src="https://placehold.it/1399x600/2F2F2F/171717" alt="Placeholder with grey background and dimension watermark without any imagery">
+            </picture>
         </div>
 
-
-        <!--<center>
-            <div class="m-image">
-                <picture class="c-image">
-                    <source srcset="https://placehold.it/2048x600/2F2F2F/171717" media="(min-width: 1779px)">
-                    <source srcset="https://placehold.it/1778x600/2F2F2F/171717" media="(min-width:1400px)">
-                    <source srcset="https://placehold.it/1399x600/2F2F2F/171717" media="(min-width:1084px)">
-                    <source srcset="https://placehold.it/1083x500/2F2F2F/171717" media="(min-width:768px)">
-                    <source srcset="https://placehold.it/767x400/2F2F2F/171717" media="(min-width:540px)">
-                    <source srcset="src/image.png" media="(min-width:0)">
-                    <img srcset="src/image.png" src="src/image.png" alt="Placeholder with grey background and dimension watermark without any imagery">
+        <div data-grid="col-12" class="m-feature-group">
+            <div data-grid="col-12" class="m-area-heading">
+                <h2 class="c-heading">Inspire, Learn and Develop</h2>
+                <p class="c-paragraph">Our comunity  </p>
+            </div>
+            <section class="m-feature f-align-left f-background-neutral-00 f-image-priority">
+                <picture>
+                    <source srcset="src/inspire.png" media="(min-width: 1400px)">
+                    <source srcset="https://placehold.it/818x460" media="(min-width: 1084px)">
+                    <source srcset="https://placehold.it/542x305" media="(min-width: 768px)">
+                    <source srcset="https://placehold.it/767x431" media="(min-width: 540px)">
+                    <source srcset="https://placehold.it/539x303" media="(min-width:0)">
+                    <img srcset="https://placehold.it/818x460" src="https://placehold.it/818x460" alt="Placeholder with grey background and dimension watermark without any imagery">
                 </picture>
+                <div>
+                    <h2 class="c-heading">Inspire</h2>
+                    <p class="c-paragraph">Get inspired by the world of IT: Develop new skills with the help of the Microsoft Campus Community. Start your own projects or support others by using your new skills.</p>
+                    <!--<a href="#" class="c-call-to-action c-glyph">-->
+                    <span>Call To Action</span>
+                    </a>
+                </div>
+            </section>
+            <section class="m-feature f-align-right f-background-neutral-00 f-image-priority">
+                <picture>
+                    <source srcset="src/learn.png" media="(min-width: 1400px)">
+                    <source srcset="https://placehold.it/818x460" media="(min-width: 1084px)">
+                    <source srcset="https://placehold.it/542x305" media="(min-width: 768px)">
+                    <source srcset="https://placehold.it/767x431" media="(min-width: 540px)">
+                    <source srcset="https://placehold.it/539x303" media="(min-width:0)">
+                    <img srcset="https://placehold.it/818x460" src="https://placehold.it/818x460" alt="Placeholder with grey background and dimension watermark without any imagery">
+                </picture>
+                <div>
+                    <h2 class="c-heading">Learn</h2>
+                    <p class="c-paragraph">Learn with the Microsoft Campus Community and use the opportunity to expand your knowledge in unfamiliar territories. Acquire new knowledge on your own or in a team through workshops and provided resources.</p>
+                    <a href="#" class="c-call-to-action c-glyph">
+                        <span>Call To Action</span>
+                    </a>
+                </div>
+            </section>
+            <section class="m-feature f-align-left f-background-neutral-00 f-image-priority">
+                <picture>
+                    <source srcset="src/develop.png" media="(min-width: 1400px)">
+                    <source srcset="https://placehold.it/818x460" media="(min-width: 1084px)">
+                    <source srcset="https://placehold.it/542x305" media="(min-width: 768px)">
+                    <source srcset="https://placehold.it/767x431" media="(min-width: 540px)">
+                    <source srcset="https://placehold.it/539x303" media="(min-width:0)">
+                    <img srcset="https://placehold.it/818x460" src="https://placehold.it/818x460" alt="Placeholder with grey background and dimension watermark without any imagery">
+                </picture>
+                <div>
+                    <h2 class="c-heading">Develop</h2>
+                    <p class="c-paragraph">Develop yourself and grow with the Microsoft Campus Community. Build your network and get ready to start your career in the world of IT. Grow steadily to reach  your fullest potential by staying curious and getting a better version of yours every day.</p>
+                    <a href="#" class="c-call-to-action c-glyph">
+                        <span>Call To Action</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+        <!--<center>
+        <div class="m-image">
+            <picture class="c-image">
+                <source srcset="src/group_large.png" media="(min-width: 1779px)">
+                <source srcset="https://placehold.it/1778x600/2F2F2F/171717" media="(min-width:1400px)">
+                <source srcset="https://placehold.it/1399x600/2F2F2F/171717" media="(min-width:1084px)">
+                <source srcset="https://placehold.it/1083x500/2F2F2F/171717" media="(min-width:768px)">
+                <source srcset="https://placehold.it/767x400/2F2F2F/171717" media="(min-width:540px)">
+                <source srcset="src/image.png" media="(min-width:0)">
+                <img srcset="src/image.png" src="src/image.png" alt="Placeholder with grey background and dimension watermark without any imagery">
+            </picture>
+        </div>
+    </center>-->
+        <!-- <div class="m-content-placement" data-grid="col-12">
+    <div data-grid="col-12 stack-2">
+        <div data-grid="col-4 pad-6x">
+            <div data-grid="col-12">
+                <section class="m-content-placement-item f-size-medium">
+                    <picture>
+                        <source srcset="src/develop-485.png" media="(min-width: 1400px)">
+                        <source srcset="src/develop-380.png" media="(min-width: 1084px)">
+                        <source srcset="src/develop-321.png" media="(min-width: 768px)">
+                        <source srcset="src/develop-720.png" media="(min-width: 540px)">
+                        <source srcset="src/develop-491.png" media="(min-width:0)">
+                        <img srcset="https://placehold.it/491x276" src="https://placehold.it/491x276" alt="Inspire placeholder">
+                    </picture>
+                    <div>
+                        <!--<strong class="c-badge f-small f-highlight">BADGE</strong>-->
+        <!--<h3 class="c-heading">Inspire</h3>
+        <p class="c-paragraph">
+            Get inspired by the world of IT: Develop new skills with the help of the Microsoft Campus Community. Start your own projects or support others by using your new skills.
+        </p>-->
+        <!--<a href="#" class="c-call-to-action c-glyph">
+        <span>Call To Action</span>
+    </a>-->
+        <!--     </div>
+                    </section>
+                </div>
             </div>
-        </center>-->
-
-        <div class="m-content-placement" data-grid="col-12">
-            <div data-grid="col-12 stack-2">
-                <div data-grid="col-4 pad-6x">
-                    <div data-grid="col-12">
-                        <section class="m-content-placement-item f-size-medium">
-                            <picture>
-                                <source srcset="https://placehold.it/485x273" media="(min-width: 1400px)">
-                                <source srcset="https://placehold.it/380x214" media="(min-width: 1084px)">
-                                <source srcset="https://placehold.it/321x180" media="(min-width: 768px)">
-                                <source srcset="https://placehold.it/720x405" media="(min-width: 540px)">
-                                <source srcset="https://placehold.it/491x276" media="(min-width:0)">
-                                <img srcset="https://placehold.it/491x276" src="https://placehold.it/491x276" alt="Placeholder with grey background and dimension watermark without any imagery">
-                            </picture>
-                            <div>
-                                <!--<strong class="c-badge f-small f-highlight">BADGE</strong>-->
-                                <h3 class="c-heading">Inspire</h3>
-                                <p class="c-paragraph">
-                                    Get inspired by the world of IT: Develop new skills with the help of the Microsoft Campus Community. Start your own projects or support others by using your new skills.
-                                </p>
-                                <!--<a href="#" class="c-call-to-action c-glyph">
-                                    <span>Call To Action</span>
-                                </a>-->
-                            </div>
-                        </section>
-                    </div>
-                </div>
-                <div data-grid="col-4 pad-6x">
-                    <div data-grid="col-12">
-                        <section class="m-content-placement-item f-size-medium">
-                            <picture>
-                                <source srcset="https://placehold.it/485x273" media="(min-width: 1400px)">
-                                <source srcset="https://placehold.it/380x214" media="(min-width: 1084px)">
-                                <source srcset="https://placehold.it/321x180" media="(min-width: 768px)">
-                                <source srcset="https://placehold.it/720x405" media="(min-width: 540px)">
-                                <source srcset="https://placehold.it/491x276" media="(min-width:0)">
-                                <img srcset="https://placehold.it/491x276" src="https://placehold.it/491x276" alt="Placeholder with grey background and dimension watermark without any imagery">
-                            </picture>
-                            <div>
-                                <h3 class="c-heading">Learn</h3>
-                                <p class="c-paragraph">
-                                    Learn with the Microsoft Campus Community and use the opportunity to expand your knowledge in unfamiliar territories. Acquire new knowledge on your own or in a team through workshops and provided resources.
-                                </p>
-                                <!--<a href="#" class="c-call-to-action c-glyph">
-                                    <span>Call To Action</span>
-                                </a>-->
-                            </div>
-                        </section>
-                    </div>
-                </div>
-                <div data-grid="col-4 pad-6x">
-                    <div data-grid="col-12">
-                        <section class="m-content-placement-item f-size-medium">
-                            <picture>
-                                <source srcset="https://placehold.it/485x273" media="(min-width: 1400px)">
-                                <source srcset="https://placehold.it/380x214" media="(min-width: 1084px)">
-                                <source srcset="https://placehold.it/321x180" media="(min-width: 768px)">
-                                <source srcset="https://placehold.it/720x405" media="(min-width: 540px)">
-                                <source srcset="https://placehold.it/491x276" media="(min-width:0)">
-                                <img srcset="https://placehold.it/491x276" src="https://placehold.it/491x276" alt="Placeholder with grey background and dimension watermark without any imagery">
-                            </picture>
-                            <div>
-                                <h3 class="c-heading">Develop</h3>
-                                <p class="c-paragraph">
-                                    Develop yourself and grow with the Microsoft Campus Community. Build your network and get ready to start your career in the world of IT. Grow steadily to reach  your fullest potential by staying curious and getting a better version of yours every day.
-                                </p>
-                                <!--<a href="#" class="c-call-to-action c-glyph">
-                                    <span>Call To Action</span>
-                                </a>-->
-                            </div>
-                        </section>
-                    </div>
+            <div data-grid="col-4 pad-6x">
+                <div data-grid="col-12">
+                    <section class="m-content-placement-item f-size-medium">
+                        <picture>
+                            <source srcset="src/develop-485.png" media="(min-width: 1400px)">
+                            <source srcset="src/develop-380.png" media="(min-width: 1084px)">
+                            <source srcset="src/develop-321.png" media="(min-width: 768px)">
+                            <source srcset="src/develop-720.png" media="(min-width: 540px)">
+                            <source srcset="src/develop-491.png" media="(min-width:0)">
+                            <img srcset="https://placehold.it/491x276" src="https://placehold.it/491x276" alt="Learning placeholder">
+                        </picture>
+                        <div>
+                            <h3 class="c-heading">Learn</h3>
+                            <p class="c-paragraph">
+                                Learn with the Microsoft Campus Community and use the opportunity to expand your knowledge in unfamiliar territories. Acquire new knowledge on your own or in a team through workshops and provided resources.
+                            </p>
+                            <!--<a href="#" class="c-call-to-action c-glyph">
+        <span>Call To Action</span>
+    </a>-->
+        <!--                </div>
+                    </section>
                 </div>
             </div>
+            <div data-grid="col-4 pad-6x">
+                <div data-grid="col-12">
+                    <section class="m-content-placement-item f-size-medium">
+                        <picture>
+                            <source srcset="src/develop-485.png" media="(min-width: 1400px)">
+                            <source srcset="src/develop-380.png" media="(min-width: 1084px)">
+                            <source srcset="src/develop-321.png" media="(min-width: 768px)">
+                            <source srcset="src/develop-720.png" media="(min-width: 540px)">
+                            <source srcset="src/develop-491.png" media="(min-width:0)">
+                            <img srcset="https://placehold.it/491x276" src="https://placehold.it/491x276" alt="Develop placeholder">
+                        </picture>
+                        <div>
+                            <h3 class="c-heading">Develop</h3>
+                            <p class="c-paragraph">
+                                Develop yourself and grow with the Microsoft Campus Community. Build your network and get ready to start your career in the world of IT. Grow steadily to reach  your fullest potential by staying curious and getting a better version of yours every day.
+                            </p>
+                            <!--<a href="#" class="c-call-to-action c-glyph">
+        <span>Call To Action</span>
+    </a>-->
+        </div>
+        </section>
+        </div>
+        </div>
+        </div>
         </div>
 
 
         <!--<div class="c-navigation-menu">
-            <button aria-controls="navigationMenuA" aria-haspopup="true" aria-expanded="false">Navigation menu</button>
-            <ul id="navigationMenuA" aria-hidden="true">
-                <li class="f-sub-menu">
-                    <button aria-controls="navigationMenuAMenu1" aria-haspopup="true" aria-expanded="false">Sub menu 1</button>
-                    <ul id="navigationMenuAMenu1" aria-hidden="true">
-                        <li>
-                            <a href="#">asdf 1</a>
-                        </li>
-                        <li>
-                            <a href="#">adsf 2</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">sub 1</a>
-                </li>
-                <li>
-                    <a href="#">sub 2</a>
-                </li>
+        <button aria-controls="navigationMenuA" aria-haspopup="true" aria-expanded="false">Navigation menu</button>
+        <ul id="navigationMenuA" aria-hidden="true">
+            <li class="f-sub-menu">
+                <button aria-controls="navigationMenuAMenu1" aria-haspopup="true" aria-expanded="false">Sub menu 1</button>
+                <ul id="navigationMenuAMenu1" aria-hidden="true">
+                    <li>
+                        <a href="#">asdf 1</a>
+                    </li>
+                    <li>
+                        <a href="#">adsf 2</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">sub 1</a>
+            </li>
+            <li>
+                <a href="#">sub 2</a>
+            </li>
 
-            </ul>
-        </div>-->
+        </ul>
+    </div>-->
 
         <center>
             <iframe width="640px" height="700px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR_nuCpXHN8lJj1Ws0_BPX8NUNDZQOUpKN1dYVTFJTEtON0FSRFNVM0g0RC4u&embed=true"  frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
