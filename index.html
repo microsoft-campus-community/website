@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Microsoft Campus Community</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/pageable.min.css">
     <script src="js/pageable.min.js"></script>
@@ -26,7 +28,7 @@
             </div>
         </section>
         <section class="desktopValues">
-                <div class="topOffset5"></div>
+            <div class="topOffset5"></div>
             <div class="textbox entry">
                 We believe in 3 principles that will lead to innovative and successful results together with a
                 cooperative work ethic:
@@ -123,31 +125,31 @@
         </section>
     </div>
     <script>
-            var sections = document.getElementsByTagName("section");
-            var counter = 0; //Counter to set the navigation anchors in the script
-            for(var i = 0; i < sections.length; i++) {
-                    if(sections[i].classList.contains("screen")) {
-                        if (window.innerWidth <= 900) {
-                            sections[i].setAttribute("data-anchor","Page "+counter);
-                            counter++;
-                        }
-                        continue;
-                    }
-                    else if(sections[i].classList.contains("desktopValues")) {
-                        if(window.innerWidth > 900) {
-                            sections[i].setAttribute("data-anchor","Page "+counter);
-                            counter++;
-                        }
-                        continue;
-                    }
-                    else {
-                        sections[i].setAttribute("data-anchor","Page "+counter);
-                        counter++;
-                    }
+        var sections = document.getElementsByTagName("section");
+        var counter = 0; //Counter to set the navigation anchors in the script
+        for (var i = 0; i < sections.length; i++) {
+            if (sections[i].classList.contains("screen")) {
+                if (window.innerWidth <= 900) {
+                    sections[i].setAttribute("data-anchor", "Page " + counter);
+                    counter++;
                 }
-            
+                continue;
+            }
+            else if (sections[i].classList.contains("desktopValues")) {
+                if (window.innerWidth > 900) {
+                    sections[i].setAttribute("data-anchor", "Page " + counter);
+                    counter++;
+                }
+                continue;
+            }
+            else {
+                sections[i].setAttribute("data-anchor", "Page " + counter);
+                counter++;
+            }
+        }
 
-            new Pageable(".main", {
+
+        new Pageable(".main", {
             pips: false,
             animation: 500,
             delay: 0,
@@ -180,7 +182,7 @@
             childSelector: '[data-anchor]',
 
         });
-        
+
     </script>
 </body>
 
