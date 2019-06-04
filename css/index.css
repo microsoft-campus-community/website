@@ -7,8 +7,8 @@ body {
     font-family: 'Segoe UI', "Segoe", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    --primary: #0078D4;
-    --font: #333333;
+    --primary: #0A2C5C;
+    --font: #6E7A81;
 }
 .picturebox {
     height: 60vh;
