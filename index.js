@@ -1,5 +1,8 @@
 const express = require("express");
 const app = express();
+const compression = require("compression");
+
+app-use(compression());
 
 app.use("/js",express.static("js"));
 app.use("/css",express.static("css"));

@@ -60,10 +60,10 @@ body {
 }
 .picturebox.inspire {
     height: 40vh;
-    background-image: url("/assets/inspire.png");
+    background-image: url("/assets/inspire.jpg");
 }
 .picturebox.learn {
-    background-image: url("/assets/learn.png");
+    background-image: url("/assets/learn.jpg");
 }
 .picturebox.develop {
     background-image: url("/assets/develop.png");
