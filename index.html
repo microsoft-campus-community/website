@@ -8,12 +8,12 @@
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/pageable.min.css">
-    <script src="js/pageable.min.js"></script>
+    <!-- <link rel="stylesheet" href="css/pageable.min.css">
+    <script src="js/pageable.min.js"></script> -->
 </head>
 
 <body>
-    <div class="main">
+    <div class="main" id="fullpage">
         <section class="hero">
             <img class="centeredContent" src="assets/MCCLogoFullCrop.png">
         </section>
@@ -70,48 +70,51 @@
 
 
         </section>
-        <section class="screen">
-            <div class="value">
-                <div class="textbox entry">
-                    We believe in 3 principles that will lead to innovative and successful results together with a
-                    cooperative work ethic:
+        <section class="mobileValues">
+            <div class="screen slide">
+                <div class="value">
+                    <div class="textbox entry">
+                        We believe in 3 principles that will lead to innovative and successful results together with a
+                        cooperative work ethic:
+                    </div>
+                    <div class="picturebox inspire"></div>
+                    <div class="textbox">
+                        <h3>Inspire</h3>
+                        <p>
+                            Get inspired by the world of IT: Develop new skills with the help of the Microsoft Campus
+                            Community. Start your own projects or support others by using your new skills.
+                        </p>
+                    </div>
                 </div>
-                <div class="picturebox inspire"></div>
-                <div class="textbox">
-                    <h3>Inspire</h3>
-                    <p>
-                        Get inspired by the world of IT: Develop new skills with the help of the Microsoft Campus
-                        Community. Start your own projects or support others by using your new skills.
-                    </p>
+            </div>
+            <div class="screen slide">
+                <div class="value">
+                    <div class="picturebox learn"></div>
+                    <div class="textbox">
+                        <h3>Learn</h3>
+                        <p>
+                            Use the opportunity to expand your knowledge in unfamiliar terretories. Acquire new
+                            knowledge on
+                            your own or in a team through workshops and provided resources.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="screen slide">
+                <div class="value">
+                    <div class="picturebox develop"></div>
+                    <div class="textbox">
+                        <h3>Develop</h3>
+                        <p>
+                            Build your network and get ready to start your career in the world of IT. Grow steadily to
+                            reach
+                            your fullest potential by staying curious and getting a better version of yours every day.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="screen">
-            <div class="value">
-                <div class="picturebox learn"></div>
-                <div class="textbox">
-                    <h3>Learn</h3>
-                    <p>
-                        Use the opportunity to expand your knowledge in unfamiliar terretories. Acquire new
-                        knowledge on
-                        your own or in a team through workshops and provided resources.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="screen">
-            <div class="value">
-                <div class="picturebox develop"></div>
-                <div class="textbox">
-                    <h3>Develop</h3>
-                    <p>
-                        Build your network and get ready to start your career in the world of IT. Grow steadily to
-                        reach
-                        your fullest potential by staying curious and getting a better version of yours every day.
-                    </p>
-                </div>
-            </div>
-        </section>
+
 
         <section class="apply">
             <div class="topOffset20"></div>
@@ -120,7 +123,9 @@
                 <h2>
                     Apply now and become part of a country-wide network of Tech Enthusiasts!
                 </h2>
-                <div class="apply-btn" onclick='window.location.href = "https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR_nuCpXHN8lJj1Ws0_BPX8NURFIxVFhWMUVCSEtCSVVSWEE3N1BMTjY4Si4u";'>Apply now</div>
+                <div class="apply-btn"
+                    onclick='window.location.href = "https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR_nuCpXHN8lJj1Ws0_BPX8NURFIxVFhWMUVCSEtCSVVSWEE3N1BMTjY4Si4u";'>
+                    Apply now</div>
             </div>
         </section>
     </div>
@@ -151,39 +156,39 @@
         }
 
 
-        new Pageable(".main", {
-            pips: false,
-            animation: 500,
-            delay: 0,
+        // new Pageable(".main", {
+        //     pips: false,
+        //     animation: 500,
+        //     delay: 0,
 
-            // the interval in ms that the resize callback is fired
-            throttle: 50,
+        //     // the interval in ms that the resize callback is fired
+        //     throttle: 50,
 
-            // swipe / mouse drag distance in px
-            swipeThreshold: 50,
+        //     // swipe / mouse drag distance in px
+        //     swipeThreshold: 50,
 
-            // or 'horizontal'
-            orientation: "vertical",
+        //     // or 'horizontal'
+        //     orientation: "vertical",
 
-            // drag / scroll freely instead of snapping to the next page
-            freeScroll: false,
+        //     // drag / scroll freely instead of snapping to the next page
+        //     freeScroll: false,
 
-            // nav elements
-            navPrevEl: false,
-            navNextEl: false,
+        //     // nav elements
+        //     navPrevEl: false,
+        //     navNextEl: false,
 
-            // infinite scroll
-            infinite: false,
+        //     // infinite scroll
+        //     infinite: false,
 
-            // easing function
-            easing: function easing(t, b, c, d, s) {
-                return -c * (t /= d) * (t - 2) + b;
-            },
+        //     // easing function
+        //     easing: function easing(t, b, c, d, s) {
+        //         return -c * (t /= d) * (t - 2) + b;
+        //     },
 
-            // child selector
-            childSelector: '[data-anchor]',
+        //     // child selector
+        //     childSelector: '[data-anchor]',
 
-        });
+        // });
 
     </script>
 </body>

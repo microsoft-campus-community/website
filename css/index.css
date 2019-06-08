@@ -13,14 +13,14 @@ body {
 .picturebox {
     height: 60vh;
     width: 100vw;
-    margin-bottom: 10vh;
+    margin-bottom: 2vh;
     background-size: cover;
 }
 .textbox {
     width: 80%;
     margin-top: 20px;
-    margin-left: calc(10% - 20px);
-    padding: 20px;
+    margin-left: calc(10% - 10px);
+    padding: 10px;
     background-color: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, .2);
     color: var(--primary);
@@ -121,7 +121,25 @@ body {
     display: none;
 }
 
+@media only screen and (max-width: 900px) and (orientation: portrait) {
+    .apply h2 {
+        margin: 0 10%;
+    }
+}
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+    .apply img {
+        width: auto;
+        height: 40vh;
+    }
+    .picturebox {
+        height: 50vh;
+    }
+}
+
 @media only screen and (min-width: 900px) {
+    .picturebox {
+        margin-bottom: 10vh;
+    }
     .picturebox.missionPic {
         width: 70%;
         margin-left: 15%;
