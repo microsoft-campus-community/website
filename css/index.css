@@ -1,14 +1,15 @@
 @font-face {
-    font-family: "Segoe";
-    src: url("https://pigeon2.blob.core.windows.net/pigeonwebfiles/SegoePro-Regular.ttf");
+    font-family: "MWF";
+    src: url("https://mcc-cdn.azureedge.net/website/MWFMDL2.ttf");
 }
 
 body {
-    font-family: 'Segoe UI', "Segoe", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', "MWF", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     --primary: #0A2C5C;
     --font: #6E7A81;
+    overflow-x: hidden;
 }
 .picturebox {
     height: 60vh;
@@ -28,7 +29,7 @@ body {
 }
 
 .hero {
-    background-image: url("/assets/heroBg.jpg");
+    background-image: url("https://mcc-cdn.azureedge.net/website/heroBg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
@@ -45,7 +46,7 @@ body {
     width: 100vw;
 }
 .picturebox.missionPic {
-    background-image: url("/assets/mission.jpg");
+    background-image: url("https://mcc-cdn.azureedge.net/website/mission.jpg");
 }
 .values {
     width: 100%;
@@ -60,10 +61,10 @@ body {
 }
 .picturebox.inspire {
     height: 40vh;
-    background-image: url("/assets/inspire.jpg");
+    background-image: url("https://mcc-cdn.azureedge.net/website/inspire.jpg");
 }
 .picturebox.learn {
-    background-image: url("/assets/learn.jpg");
+    background-image: url("https://mcc-cdn.azureedge.net/website/learn.jpg");
 }
 .picturebox.develop {
     background-image: url("/assets/develop.png");
