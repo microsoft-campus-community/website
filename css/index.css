@@ -1,0 +1,223 @@
+@font-face {
+    font-family: "MWF";
+    src: url("https://mcc-cdn.azureedge.net/website/MWFMDL2.ttf");
+}
+
+body {
+    font-family: 'Segoe UI', "MWF", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    --primary: #0A2C5C;
+    --font: #6E7A81;
+    overflow-x: hidden;
+}
+.picturebox {
+    height: 60vh;
+    width: 100vw;
+    margin-bottom: 2vh;
+    background-size: cover;
+}
+.textbox {
+    width: 80%;
+    margin-top: 20px;
+    margin-left: calc(10% - 10px);
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.hero {
+    background-image: url("https://mcc-cdn.azureedge.net/website/heroBg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.hero img {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.mission {
+    height: 100vh;
+    width: 100vw;
+}
+.picturebox.missionPic {
+    background-image: url("https://mcc-cdn.azureedge.net/website/mission.jpg");
+}
+.values {
+    width: 100%;
+}
+.values .textbox {
+    margin: 0 20px;
+    margin-bottom: 3vh;
+}
+.screen {
+    width: 100vw;
+    height: 100vh;
+}
+.picturebox.inspire {
+    height: 40vh;
+    background-image: url("https://mcc-cdn.azureedge.net/website/inspire.jpg");
+}
+.picturebox.learn {
+    background-image: url("https://mcc-cdn.azureedge.net/website/learn.jpg");
+}
+.picturebox.develop {
+    background-image: url("/assets/develop.png");
+}
+
+.value {
+    text-align: center;
+}
+.value .textbox {
+    text-align: left;
+    color: var(--font);
+    font-weight: normal;
+    margin-bottom: 0;
+}
+.value .textbox.entry {
+    color: var(--primary);
+    font-weight: bold;
+    margin-bottom: 5vh;
+}
+.value .textbox h3 {
+    margin: 0;
+    color: var(--primary);
+}
+.apply {
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+.centeredContent {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.apply img {
+    width: 40%;
+}
+.apply h2 {
+    color: var(--primary);
+}
+.apply-btn {
+    margin-top: 5vh;
+    width: 40%;
+    margin-left: calc(30% - 30px);
+    font-weight: bold;
+    color: var(--primary);
+    padding: 20px 30px;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0,0,0,.4);
+}
+.apply-btn:hover {
+    cursor: pointer;
+}
+
+.desktopValues {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) and (orientation: portrait) {
+    .apply h2 {
+        margin: 0 10%;
+    }
+}
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+    .apply img {
+        width: auto;
+        height: 40vh;
+    }
+    .picturebox {
+        height: 50vh;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .picturebox {
+        margin-bottom: 10vh;
+    }
+    .picturebox.missionPic {
+        width: 70%;
+        margin-left: 15%;
+        margin-bottom: 0;
+    }
+    .mission .textbox {
+        width: 50%;
+        margin-right: 15%;
+        float: right;
+        font-size: 150%
+    }
+    .screen {
+        display: none;
+    }
+    .desktopValues {
+        display: block;
+        padding: 0 10%;
+        width: 80% !important;
+    }
+    .desktopValues .textbox.entry {
+        margin-bottom: 20px;
+        font-size: 150%;
+    }
+    .desktopValues .textbox {
+        margin-left: 0;
+        width: auto;
+    }
+    .desktopValues .value {
+        display: inline-block;
+        width: 25vw;
+        padding-right: 3%;
+    }
+    .desktopValues .picturebox {
+        height: 50vh;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .desktopValues .valueBox {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+    .apply img {
+        width: 20%;
+    }
+    .apply .centeredContent {
+        transform: none;
+        top: 0;
+    }
+    .apply h2 {
+        width: 40%;
+        font-size: 200%;
+        margin-left: 30%;
+    }
+    .apply-btn {
+        width: 15%;
+        margin-left: calc(42.5% - 30px);
+    }
+    .topOffset20 {
+        width: 100%;
+        height: 20vh;
+    }
+    .topOffset15 {
+        width: 100%;
+        height: 15vh;
+    }
+    .topOffset5 {
+        width: 100%;
+        height: 5vh;
+    }
+  }
+
+  @media only screen and (min-width: 900px) and (orientation: landscape) {
+      .desktopValues {
+          padding: 0 5%;
+          width: 90% !important;
+      }
+      .desktopValues .picturebox {
+          height: 40vh;
+      }
+  }
