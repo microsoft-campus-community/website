@@ -1,6 +1,6 @@
 @font-face {
     font-family: "MWF";
-    src: url("https://mcc-cdn.azureedge.net/website/MWFMDL2.ttf");
+    src: url("https://www.campus-community.org/MWFMDL2.ttf");
 }
 
 body {
@@ -29,7 +29,7 @@ body {
 }
 
 .hero {
-    background-image: url("https://mcc-cdn.azureedge.net/website/heroBg.jpg");
+    background-image: url("https://www.campus-community.org/heroBg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
@@ -46,7 +46,7 @@ body {
     width: 100vw;
 }
 .picturebox.missionPic {
-    background-image: url("https://mcc-cdn.azureedge.net/website/mission.jpg");
+    background-image: url("https://www.campus-community.org/mission.jpg");
 }
 .values {
     width: 100%;
@@ -61,13 +61,13 @@ body {
 }
 .picturebox.inspire {
     height: 40vh;
-    background-image: url("https://mcc-cdn.azureedge.net/website/inspire.jpg");
+    background-image: url("https://www.campus-community.org/inspire.jpg");
 }
 .picturebox.learn {
-    background-image: url("https://mcc-cdn.azureedge.net/website/learn.jpg");
+    background-image: url("https://www.campus-community.org/learn.jpg");
 }
 .picturebox.develop {
-    background-image: url("/assets/develop.png");
+    background-image: url("https://www.campus-community.org/develop.png");
 }
 
 .value {

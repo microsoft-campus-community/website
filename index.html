@@ -5,15 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Microsoft Campus Community</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="https://www.campus-community.org/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://www.campus-community.org/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://www.campus-community.org/index.css">
 </head>
 
 <body>
     <div class="main" id="fullpage">
         <section class="hero">
-            <img class="centeredContent" src="MCCLogoFullCrop.png">
+            <img class="centeredContent" src="https://www.campus-community.org/MCCLogoFullCrop.png">
         </section>
 
         <section class="mission">
@@ -117,7 +117,7 @@
         <section class="apply">
             <div class="topOffset20"></div>
             <div class="centeredContent">
-                <img src="logoIcon.png">
+                <img src="https://www.campus-community.org/logoIcon.png">
                 <h2>
                     Apply now and become part of a country-wide network of Tech Enthusiasts!
                 </h2>
@@ -127,33 +127,6 @@
             </div>
         </section>
     </div>
-    <script>
-
-        var sections = document.getElementsByTagName("section");
-        var counter = 0; //Counter to set the navigation anchors in the script
-        for (var i = 0; i < sections.length; i++) {
-            if (sections[i].classList.contains("screen")) {
-                if (window.innerWidth <= 900) {
-                    sections[i].setAttribute("data-anchor", "Page " + counter);
-                    counter++;
-                }
-                continue;
-            }
-            else if (sections[i].classList.contains("desktopValues")) {
-                if (window.innerWidth > 900) {
-                    sections[i].setAttribute("data-anchor", "Page " + counter);
-                    counter++;
-                }
-                continue;
-            }
-            else {
-                sections[i].setAttribute("data-anchor", "Page " + counter);
-                counter++;
-            }
-        }
-
-
-    </script>
 </body>
 
 </html>
