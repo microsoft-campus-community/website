@@ -3,13 +3,56 @@
     src: url("https://www.campus-community.org/MWFMDL2.ttf");
 }
 
+/*
+*Define css variables that should be used across the website for attributes that should only be changed in one place (here).
+*A css variable can be used in any css style sheet in the following way: var(--color-primary)
+*will be replaced by the browser with #ffffff in light and #1B1A19 in dark mode.
+*/
+
+:root {
+    /*color-highlight is the brand color. It can be used to emphasize certain elements.*/
+    --color-highlight: #0A2C5C;
+    /*color-primary is used on elements in the foreground the language learner can interact with. For example the background color of a card.*/
+    --color-primary: #ffffff;
+    /*color-secondary is used for elements in the background. For example the color behind the cards.*/
+    --color-secondary: #F3F2F1;
+    /*color-tertiary and color-quaternary can be used as a muted accent on top of color-primary and color-secondary.*/
+    --color-tertiary: #D2D0CE;
+    --color-quaternary: #A19F9D;
+    --color-border: #C8C6C4;
+    /*color-acrylic is for background blur and transparency.*/
+    --color-acrylic: rgba(255,255,255,0.3);
+    --color-primary-transparent: rgba(255, 255, 255, 0.9);
+    --color-secondary-transparent: rgba(243, 242, 241, 0.8);
+    /*color-text-primary is the color used for most of the textual information to display to the language learner.*/
+    --color-text-primary: #000000;
+    /*color-text-secondary is used on the text elements that are not as important as other text and thus should not be the focus.*/
+    --color-text-secondary: #3B3A39;
+}
+
+@media (prefers-color-scheme: dark) {
+    /*Define css variables in dark mode.*/
+    :root {
+        --color-highlight: #75BFFF;
+        --color-primary: #1B1A19;
+        --color-secondary: #252423;
+        --color-tertiary: #3B3A39;
+        --color-quaternary: #797775;
+        --color-border: #484644;
+        --color-acrylic: rgba(26,26,26,.3);
+        --color-primary-transparent: rgba(27, 26, 25, 0.7);
+        --color-secondary-transparent: rgba(37, 36, 35, 0.8);
+        --color-text-primary: #f3f2f1;
+        --color-text-secondary: #C8C6C4;
+    }
+}
+
 body {
     font-family: 'Segoe UI', "MWF", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    --primary: #0A2C5C;
-    --font: #6E7A81;
     overflow-x: hidden;
+    background-color: var(--color-primary);
 }
 .picturebox {
     height: 60vh;
@@ -22,9 +65,9 @@ body {
     margin-top: 20px;
     margin-left: calc(10% - 10px);
     padding: 10px;
-    background-color: white;
+    background-color: var(--color-secondary);
     box-shadow: 0 0 20px rgba(0, 0, 0, .2);
-    color: var(--primary);
+    color: var(--color-highlight);
     font-weight: bold;
 }
 
@@ -75,18 +118,18 @@ body {
 }
 .value .textbox {
     text-align: left;
-    color: var(--font);
+    color: var(--color-text-secondary);
     font-weight: normal;
     margin-bottom: 0;
 }
 .value .textbox.entry {
-    color: var(--primary);
+    color: var(--color-highlight);
     font-weight: bold;
     margin-bottom: 5vh;
 }
 .value .textbox h3 {
     margin: 0;
-    color: var(--primary);
+    color: var(--color-highlight);
 }
 .apply {
     height: 100vh;
@@ -102,17 +145,18 @@ body {
     width: 40%;
 }
 .apply h2 {
-    color: var(--primary);
+    color: var(--color-highlight);
 }
 .apply-btn {
     margin-top: 5vh;
     width: 40%;
     margin-left: calc(30% - 30px);
     font-weight: bold;
-    color: var(--primary);
+    color: var(--color-highlight);
     padding: 20px 30px;
     border-radius: 30px;
     box-shadow: 0 10px 20px rgba(0,0,0,.4);
+    background-color: var(--color-secondary);
 }
 .apply-btn:hover {
     cursor: pointer;
