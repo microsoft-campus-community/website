@@ -14,15 +14,13 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: 'Checkout repository'
-        uses: actions/checkout@v2
-    
-        
-      - name: 'Log into Azure'
-        uses: Azure/github-actions/login@master
+      - uses: actions/checkout@v1
+      - uses: actions/setup-dotnet@v1
         with:
-          AZURE_SUBSCRIPTION: 'Internal IT'
-          
-      - name: 'Push files to storage'
-        uses: Azure/github-actions/storage-blob-static-website@master
+          dotnet-version: '3.0.100'
+      - uses: lauchacarro/Azure-Storage-Action@master
+        with:
+          enabled-static-website: 'true'
+          folder: ''
+          connection-string: ${{ secrets.CONNECTION_STRING }}
         
