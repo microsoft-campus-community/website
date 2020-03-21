@@ -2,6 +2,7 @@
 Event-Seite für "Inside Microsoft"
 -----------------------------------
 
-Aktuelle Fassung aus Hamburg: 20.03.2020.
+Aktuelle Fassung aus Hamburg: 21.03.2020.
 
-Möglicherweise sogar schon einsatzbereit, Absprache mit Sofie folgt.
+Sofie ist zufrieden, Intro-Text wird noch mehr in Richtung "Community-Event" bearbeitet.
+Agenda nicht final.
