@@ -1,0 +1,318 @@
+﻿@viewport {
+    zoom: 1.0;
+    width: device-width;
+}
+
+@-ms-viewport {
+    width: device-width;
+}
+
+:root {
+	/* Fonts */
+	--font-main: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	--font-button: wf_segoe-ui_normal,"Segoe UI","Segoe WP",Tahoma,Arial,sans-serif;
+	/* Colors */
+	--color-primary: #ffffff;
+	--color-text-primary: #000000;
+	--color-text-secondary: #ffffff;
+	--color-blue-light: #0078d7;
+	--color-blue-dark: #084EA1;
+	--color-mcc-label: #0078d7
+}
+
+@media (prefers-color-scheme: dark) {
+    /* Dark Mode */
+    :root {
+        --color-primary: #1B1A19;
+		--color-text-primary: #ffffff;
+		--color-mcc-label: #75bfff;
+    }
+}
+
+body {
+	margin: 0;
+	width: 100%;
+	background-color: #000000;
+}
+
+h1 {
+	font-family: var(--font-main);
+	font-weight: 200;
+	color: var(--color-text-primary);
+}
+
+h2 {
+	font-family: var(--font-main);
+	font-size: 46px;
+	font-weight: 100;
+	color: var(--color-text-primary);
+}
+
+h3 {
+	font-family: var(--font-main);
+	font-weight: 200;
+	color: var(--color-text-primary);
+}
+
+p {
+	font-family: var(--font-main);
+	font-size: 20px;
+	font-weight: 200;
+	color: var(--color-text-primary);
+}
+
+button {
+	margin: 80px;
+	width: 180px;
+	height: 40px;
+	background-color: var(--color-blue-light);
+	border: 1px solid transparent;
+	border-radius: 0%;
+	box-sizing: border-box;
+	cursor: pointer;
+	color: var(--color-text-secondary);
+	text-align: center;
+	font-size: 15px;
+	font-family: var(--font-button);	
+}
+
+/* Classes */
+.sectionPreparation {
+	padding: 60px 0;
+}
+
+.simpleSection {
+	width: 100%;
+	background: var(--color-primary);
+	align-items: start;
+}
+
+.flexbox {
+	flex-direction: row;
+	display: flex;
+	overflow: hidden;
+}
+
+.descriptionText {
+	font-size: 24px;
+}
+
+.motivationSections {
+	background-color: var(--color-blue-light);/*#e95329;*/
+	padding: 40px 0;
+}
+
+	.motivationSections h2 {
+		text-align: center;
+		font-weight: 100;
+		font-size: 34px;
+		display: block;
+		color: var(--color-text-secondary);
+	}
+
+.titleGeneral {
+	font-size: 38px;
+	font-family: var(--font-main);
+	flex: 1 1 auto;
+	overflow: hidden;
+	font-weight: 100;
+}
+
+.nextToImg {
+	margin: 0 30px;
+}
+
+.textBold {
+	font-weight: 700;
+}
+
+.textItalic {
+	font-style: italic;
+}
+
+.bigText {
+	margin: 60px auto;
+	max-width: 1250px;
+}
+
+.longText {
+	margin: 0 auto;
+	max-width: 1600px;
+}
+
+.titleMCC {
+	color: var(--color-mcc-label);/*#75BFFF;*/
+	font-weight: 700;
+}
+
+
+/* Element specific */
+#titleBanner {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.6);;
+	padding: 11px 0;
+	position: fixed;
+	display: flex;
+}
+
+	#titleBanner h1 {
+		color: var(--color-text-secondary);
+		margin: 0 calc(50% - 146px) 0 auto;
+	}
+
+	#titleBanner img {
+		height: 40px;
+		margin-left: 20px;
+	}
+
+#img1 {
+	width: 40%;
+	margin-left: -22%;
+}
+
+#img2 {
+	width: 40%;
+	margin-right: -15%;
+}
+
+#agendaTable div {
+	margin: 0 30px;
+}
+
+#registerSection {
+	width: 100%;
+	min-height: 100px;
+	background: url(https://lists.office.com/Images/6fa69a93-be90-4d2c-a4eb-95e1cc558538/00b6abb3-cfed-48e1-9005-4ac9e67e7c7e/TD27RATSQ54JR9YB5Y4RGJWR2N/2ae457b2-ec54-414f-9812-819edacdb6d6);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	padding: 50px 0 20px;
+}
+
+#formContentContainer {
+	background-color: rgba(255,255,255,0.97);
+	width: 100%;
+	max-width: 850px;
+	margin: auto;
+}
+
+#pbfContainer {
+	background-color: rgba(244,244,244,0.8);
+	width: 100%;
+	max-width: 850px;
+	margin: auto;
+	font-size: 12px;
+	color: #333333;
+	font-family: var(--font-main);
+	padding: 15px 0;
+	text-align: left;
+	text-indent: 50px;
+}
+
+	#pbfContainer a {
+		color: var(--color-blue-dark);
+		text-decoration: none;
+		margin: 15px 0;
+	}
+
+#introHead {
+	background: var(--color-blue-light);
+	color: var(--color-text-secondary);
+	padding: 50px;
+	max-height: 120px;
+	text-align: left;
+	align-items: center;
+}
+
+	#introHead img {
+		max-width: 100%;
+		vertical-align: middle;
+		box-sizing: border-box;
+		margin-right: 30px;
+	}
+
+#regFrame {
+	display: block;
+}
+
+#mccLogo {
+	height: 300px;
+}
+	
+#footBanner {
+	background-color: #000000;
+	padding: 6px;
+	font-family: var(--font-main);
+	text-indent: 35px;
+}
+
+	#footBanner p {
+		font-size: 16px;
+		color: var(--color-text-secondary);
+	}
+
+
+
+/* Viewport sizes */
+
+@media (max-width: 785px){
+	#introHead {
+		padding: 35px;
+	}
+
+	.titleGeneral {
+		font-size: 28px;
+	}
+
+	.descriptionText {
+		font-size: 22px;
+	}
+
+	.motivationSections h2 {
+		font-size: 26px;
+	}
+
+	#pbfContainer {
+		text-indent: 35px;
+	}
+
+	#mccLogo {
+		height: 200px;
+	}
+}
+
+@media (max-width: 657px) {
+	#introHead {
+		padding: 20px 15px;
+	}
+
+		#introHead img {
+			height: 80px;
+			width: auto;
+		}
+
+	.titleGeneral {
+		font-size: 21px;
+	}
+
+	.descriptionText {
+		font-size: 18px;
+	}
+
+	.longText {
+		display: block;
+		text-align: center;
+	}
+
+	.motivationSections h2 {
+		font-size: 21px;
+	}
+
+	#formContentContainer button {
+		margin: 60px;
+	}
+	#pbfContainer {
+		text-indent: 15px;
+	}
+}

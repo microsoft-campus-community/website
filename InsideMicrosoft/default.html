@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="viewport" content="width=device-width">
+		<link rel="shortcut icon" href="https://www.campus-community.org/favicon.ico" type="image/x-icon">
+    	<link rel="icon" href="https://www.campus-community.org/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<title>Inside Microsoft - Online Webcast</title>
+		<script>
+			/**
+			 * Sets current date value in the copyright claim on the footer.
+			 */
+			function loadPage() {
+			  	var str = document.getElementById("copyInfo").innerText; 
+			  	var res = str.replace("{year}", new Date().getFullYear());
+			  	document.getElementById("copyInfo").innerHTML = res;
+			}
+
+			/**
+			 * Replaces HTML in "registerSection" with iframe linked to MS Forms.
+			 */
+			function loadRegistrationForm() {
+				var sec = document.getElementById("registerSection");
+				sec.style.padding = 0;
+				var frame = '<iframe id="regFrame" width="100%" height="800px" src= "https://forms.office.com/Pages/ResponsePage.aspx?id=k5qmb5C-LE2k65XhzFWFOLOrtgDtz-FIkAVKyeZ-fH5URDI3UkFUU1E1NEpSOVlCNVk0UkdKV1IyTi4u" frameborder= "0" scrolling="no" marginwidth= "0" marginheight= "0" style= "border: none; max-width:100%;" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>';
+				sec.innerHTML = frame;
+			}
+
+			/**
+			 * Adjusts frame once, but loads page twice to display correctly.
+			 *
+			 * @param {object} obj: The iframe that needs to be resized.
+			 */
+			/*var rl = true;
+			var rz = true;
+			function AdjustIFrame(obj) {
+				if (rz) {
+					rl = true;
+					var frame = obj;
+					var maxW = frame.scrollWidth;
+					var minW = maxW;
+					var FrameH = 800; //IFrame starting height
+					frame.style.height = FrameH + "px"
+
+					while (minW == maxW) {
+						FrameH = FrameH + 100; //Increment
+						frame.style.height = FrameH + "px";
+						minW = frame.scrollWidth;
+					}
+					rz = false;
+				}
+				
+				if (rl) {
+					rl = false;
+					document.getElementById("regFrame").src += "";
+				}
+			}*/
+		</script>
+	</head>
+
+	<body onload="loadPage()">
+		<section id="titleBanner">
+			<img src="https://www.campus-community.org/MCCLogoFullCrop.png">
+			<h1 id="titleLabel"><span class="textItalic">Inside Microsoft</span> - Webcast</h1>
+		</section>
+
+		<section id="introSection" class="sectionPreparation simpleSection flexbox">
+			<img id="img1" src="images/teams.png">
+			<div class="bigText">
+				<h2 class="titleGeneral">Inside Microsoft.<br />Your exclusive look behind the curtains of Microsoft Germany</h2>
+				<h3>The first digital-only student event with Microsoft!</h3>
+				<p class="descriptionText">We invite you to join an online conference of a different kind. In interactive sessions Microsoft experts will give you insights into their daily business, their roles and the workings of Microsoft. In addition to that you have the opportunity to learn from the experts themselves on technical topics ranging from AI and Azure to the Modern Workplace. You are invited to connect with fellow students as well as Microsofties and ask all the questions you always wanted to ask.</p>	
+				<br />
+				<h2 class="titleGeneral">03.04.2020 | 10:45 am - 04:00 pm</h2>
+			</div>
+		</section>
+
+		<section id="motivationSection1" class="motivationSections sectionPreparation">
+			<h2 class="longText">Become part of our Germany-wide community of tech-enthusiasts and engage in this interactive online event.<br />We are looking forward to (virtually) meeting you!</h2>
+		</section>
+
+		<section id="agendaSection" class="sectionPreparation simpleSection flexbox">
+			<div class="bigText">
+				<h2 class="titleGeneral">Preliminary Agenda</h2>
+				<p class="descriptionText">10:45 am - Sign in and registration</p>	
+				<p class="descriptionText">11:00 am - Kick-off</p>
+				<p class="descriptionText">11:20 am - Opportunities@Microsoft</p>
+				<p class="descriptionText">12:00 pm - Division into tracks: choose between learning and insight sessions</p>	
+				<div id="agendaTable" class="flexbox">
+					<div class="bigText">
+						<h2 class="titleGeneral">Insights</h2>
+						<p class="descriptionText">12:00 pm - Culture@Microsoft</p>	
+						<p class="descriptionText">12:45 pm - Learning@Microsoft</p>
+						<p class="descriptionText">01:30 pm - Sales Roles@Microsoft</p>
+						<p class="descriptionText">02:15 pm - Technical Roles@Microsoft</p>	
+						<p class="descriptionText">03:00 pm - Closing</p>	
+						<p class="descriptionText">03:30 pm - After-Hour and networking</p>	
+					</div>
+					<div class="bigText">
+						<h2 class="titleGeneral">Learning</h2>
+						<p class="descriptionText">12:00 pm - Azure &amp; Cloud Fundamentals</p>	
+						<p class="descriptionText">12:45 pm - PowerApps</p>
+						<p class="descriptionText">01:30 pm - AI</p>
+						<p class="descriptionText">02:15 pm - Modern Workplace (in times of Corona)</p>	
+						<p class="descriptionText">03:00 pm - Closing</p>	
+						<p class="descriptionText">03:30 pm - After-Hour and networking</p>	
+					</div>
+				</div>
+			</div>
+			<img id="img2" src="images/book.png">
+		</section>
+
+		<section id="motivationSection2" class="motivationSections sectionPreparation">
+			<h2 class="longText">Sign up now and be one of 250 students to be invited!</h2>
+		</section>
+
+		<section id="registerSection">
+			<div id="formContentContainer">
+				<div id="introHead" class="flexbox">
+					<img width="120" height="120" title="" class="visiable" alt="" src="https://lists.office.com/Images/6fa69a93-be90-4d2c-a4eb-95e1cc558538/00b6abb3-cfed-48e1-9005-4ac9e67e7c7e/TD27RATSQ54JR9YB5Y4RGJWR2N/8ae07c9c-cb67-4716-b77e-e9b3b17c1c0d">
+					<span class="titleGeneral">Registration Webcast "Inside Microsoft"</span>
+				</div>
+				<button id="loadForm" onclick="loadRegistrationForm()">Register now</button>
+			</div>
+			<div id="pbfContainer">
+				<span>Powered by Microsoft Forms | <a href="https://go.microsoft.com/fwlink/p/?linkid=857875" target="_blank">Privacy und cookies</a> | <a href="https://go.microsoft.com/fwlink/?linkid=866263" target="_blank">Terms of use</a></span>
+			</div>
+		</section>
+
+		<section id="mccBanner" class="sectionPreparation simpleSection">
+			<div class="longText flexbox">
+				<img id="mccLogo" src="https://www.campus-community.org/logoIcon.png">
+				<div class="nextToImg">
+					<h2 class="titleGeneral titleMCC">Microsoft Campus Community</h2>
+					<p class="descriptionText"><span class="textBold">Who We Are:</span> Microsoft Campus Community is a German-wide In-person community with the goal to build a deep technical understanding for students of all specializations. Together we <span class="textBold">inspire, learn and develop</span> our technical and our soft skills and share our learnings with our peers.</p>
+					<p class="titleGeneral textBold">Inspire. Learn. Develop.</p>
+				</div>	
+			</div>
+		</section>
+		
+		<section id="footBanner">
+			<p id="copyInfo">&copy; {year} - Microsoft Campus Community</p>
+		</section>
+	</body>
+
+</html>
