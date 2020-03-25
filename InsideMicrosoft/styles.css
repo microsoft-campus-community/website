@@ -105,6 +105,9 @@ button {
 .motivationSections {
 	background-color: var(--color-blue-light);/*#e95329;*/
 	padding: 40px 0;
+	box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+	position: relative;
+	z-index: 1;
 }
 
 	.motivationSections h2 {
@@ -114,6 +117,10 @@ button {
 		display: block;
 		color: var(--color-text-secondary);
 		margin: 0 auto;
+	}
+
+	.motivationSections a {
+		color: var(--color-text-secondary);
 	}
 
 .titleGeneral {
@@ -248,16 +255,23 @@ button {
 	
 #footBanner {
 	background-color: #000000;
-	padding: 6px;
+	padding: 15px 0;
 	font-family: var(--font-main);
-	text-indent: 35px;
+	font-size: 16px;
+	color: var(--color-text-secondary);
 }
 
 	#footBanner p {
 		font-size: 16px;
 		color: var(--color-text-secondary);
+		margin: 0;
+		text-indent: 35px;
 	}
 
+	#footBanner a {
+		color: var(--color-text-secondary);
+		font-weight: 200;
+	}
 
 
 /* Viewport sizes */
@@ -330,6 +344,7 @@ button {
 	#formContentContainer button {
 		margin: 60px;
 	}
+
 	#pbfContainer {
 		text-indent: 15px;
 	}
@@ -345,6 +360,6 @@ button {
 	}
 
 	#footBanner {
-		text-indent: 15px;
+		display: block;
 	}
 }
