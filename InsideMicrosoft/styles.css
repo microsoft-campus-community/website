@@ -90,6 +90,7 @@ button {
 	width: 100%;
 	background: var(--color-primary);
 	align-items: start;
+	overflow: hidden;
 }
 
 .flexbox {
@@ -330,11 +331,15 @@ button {
 
 	.longText {
 		display: block;
-		text-align: center;
+		/*text-align: center;*/
 	}
 
 	.motivationSections h2 {
 		font-size: 21px;
+	}
+
+	#mccBanner {
+		text-align: center;
 	}
 
 	#agendaTable {
@@ -351,6 +356,10 @@ button {
 }
 
 @media (max-width: 380px) {
+	.titleGeneral {
+		font-weight: 400;
+	}
+
 	#titleBanner h1 {
 		margin: 0 auto;
 	}
