@@ -180,8 +180,7 @@ button {
 	}
 
 #img1 {
-	width: 40%;
-	margin-left: -22%;
+	width: 18%;
 }
 
 #img2 {
@@ -245,6 +244,10 @@ button {
 		box-sizing: border-box;
 		margin-right: 30px;
 	}
+
+#introText {
+	width: 82%;
+}
 
 #regFrame {
 	display: block;
