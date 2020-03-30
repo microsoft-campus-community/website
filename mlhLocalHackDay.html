@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="viewport" content="width=device-width">
+		<link rel="shortcut icon" href="https://www.campus-community.org/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="https://www.campus-community.org/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="stylesheet" type="text/css" href="index.css"/>
+		<title>Local Hack Day - share</title>
+		<script>
+			/**
+			 * Sets current date value in the copyright claim on the footer.
+			 */
+			function loadPage() {
+			  	var str = document.getElementById("copyInfo").innerText; 
+			  	var res = str.replace("{year}", new Date().getFullYear());
+			  	document.getElementById("copyInfo").innerHTML = res;
+			}
+
+			
+		</script>
+	</head>
+
+	<body onload="loadPage()">
+		<section id="titleBanner">
+			<img src="https://www.campus-community.org/MCCLogoFullCrop.png">
+			<h1 id="titleLabel"><span class="textItalic">Inside Microsoft</span> - Webcast</h1>
+		</section>
+
+		<section id="introSection" class="sectionPreparation simpleSection flexbox">
+			<img style="margin-top: 80px; padding: 32px;" id="img1" src="Images/mlh-logo-color-dark@3x.png">
+			<div id="introText" class="bigText">
+				<h2 class="titleGeneral">Local Hack Day.<br />Share is a global online demo day. Sign up to share your projects with our community.</h2>
+				<h3>Join our online hack day</h3>
+				<p class="descriptionText">
+                    The Microsoft Campus Community invites you to join us for MLH's Local Hack Day: Share Day. Share Day is a global demo day focused on highlighting the achievements of your community. Over the course of 12 hours, attendees will put the finishing touches on their current projects and participate in a global project showcase.
+                    <br>
+                    <br>
+                    This is an event for all skill levels, from beginners to the most veteran developers. Workshop attendees will learn skills that they can apply in their projects, schoolwork, job, and beyond.
+                </p>	
+				<br />
+				<h2 class="titleGeneral">11.04.2020 | 08:30 am - 09:00 pm CEST</h2>
+			</div>
+		</section>
+
+		<section id="motivationSection1" class="motivationSections sectionPreparation">
+			<h2 class="longText">Become part of our independent German-wide community of techies and tech-enthusiasts and engage in this interactive online event.<br />We are looking forward to (virtually) meeting you!</h2>
+		</section>
+
+		<section id="agendaSection" class="sectionPreparation simpleSection flexbox">
+			<div class="bigText">
+				<h2 class="titleGeneral">Preliminary Agenda</h2>
+				<p class="descriptionText">08:30 am - Sign in and registration</p>	
+				<p class="descriptionText">09:00 am - Opening ceremony</p>
+				<p class="descriptionText">09:15 am - Workshops</p>
+                <p class="descriptionText">10:00 am - MLH localhost workshop</p>	
+                <p class="descriptionText">01:00 pm - Lunch break</p>	
+				<p class="descriptionText">01:30 am - Fun mini-event</p>	
+				<p class="descriptionText">02:30 am - Prepare demos</p>	
+				<p class="descriptionText">03:30 am - Demos start</p>	
+				<p class="descriptionText">09:00 pm - Awards / event ends</p>	
+
+            </div>
+
+			<img style="object-fit: scale-down;" id="img2" src="Images/laptop-hack-day.png">
+		</section>
+
+		<section style="display: flex; flex-direction: column;" id="motivationSection2" class="motivationSections sectionPreparation">
+            <h2 class="longText">Sign up now! Together we will learn, hack and share with each other and from each other.</h2>
+            <a class="apply-btn" style="margin: 64px; align-self: center; justify-self: center; text-align: center; background-color: rgb(255, 212, 0);" href="http://organize.mlh.io/participants/events/3395-local-hack-day-share-2020-in-germany/register">Register</a>
+
+		</section>
+
+
+		<section id="mccBanner" class="sectionPreparation simpleSection">
+			<div class="longText flexbox">
+				<img id="mccLogo" src="https://www.campus-community.org/logoIcon.png">
+				<div class="nextToImg">
+					<h2 class="titleGeneral titleMCC">Microsoft Campus Community</h2>
+					<p class="descriptionText"><span class="textBold">Who We Are:</span> Microsoft Campus Community is a German-wide In-person community with the goal to build a deep technical understanding for students of all specializations. Together we <span class="textBold">inspire, learn and develop</span> our technical and our soft skills and share our learnings with our peers.</p>
+					<p class="titleGeneral textBold">Inspire. Learn. Develop.</p>
+				</div>	
+			</div>
+		</section>
+		
+		<section id="footBanner" class="flexbox">
+			<p id="copyInfo">&copy; {year} - Microsoft Campus Community</p>&emsp;-&emsp;<a href="legal.html">Impressum</a>&ensp;|&ensp;<a href="privacy.html">Datenschutz</a>
+		</section>
+	</body>
+
+</html>
