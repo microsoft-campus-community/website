@@ -1,8 +1,22 @@
------------------------------------
-Event-Seite für "Inside Microsoft"
------------------------------------
-
-Aktuelle Fassung aus Hamburg: 25.03.2020.  
+-----------------------------------  
+MCC Website  
+-----------------------------------  
   
-Texte und Agenda angepasst. Inhaltlich bereit für Veröffentlichung.  
-Impressum und Datenschutz hinzugefügt. Soweit fertig.
+Current status: Creation of event pages  
+  
+Last Update: 31.03.2020  
+  
+Latest issue:  
+Character encoding (fixed)  
+  
+
+-----------------------------------  
+Event Pages  
+-----------------------------------  
+  
+Current pages:  
+ - InsideMicrosoft
+ - MLH Local Hack Day
+ 
+Current working items:
+ - Digital Learning
