@@ -28,6 +28,7 @@
     --color-text-primary: #000000;
     /*color-text-secondary is used on the text elements that are not as important as other text and thus should not be the focus.*/
     --color-text-secondary: #3B3A39;
+    --color-yellow: rgb(255, 212, 0);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -44,6 +45,7 @@
         --color-secondary-transparent: rgba(37, 36, 35, 0.8);
         --color-text-primary: #f3f2f1;
         --color-text-secondary: #C8C6C4;
+        --color-yellow: #F3E0BE;
     }
 }
 
