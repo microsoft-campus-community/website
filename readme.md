@@ -2,12 +2,12 @@
 MCC Website  
 -----------------------------------  
   
-Current status: Creation of event pages  
+Current status: Creation of event pages / Refactoring to Node server
   
 Last Update: 03.04.2020  
   
 Latest issue:  
-Banner positioning (fixed)  
+Refactor website to Node server
   
 
 -----------------------------------  
