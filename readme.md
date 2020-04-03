@@ -4,10 +4,10 @@ MCC Website
   
 Current status: Creation of event pages  
   
-Last Update: 31.03.2020  
+Last Update: 03.04.2020  
   
 Latest issue:  
-Character encoding (fixed)  
+Banner positioning (fixed)  
   
 
 -----------------------------------  
@@ -17,6 +17,7 @@ Event Pages
 Current pages:  
  - InsideMicrosoft
  - MLH Local Hack Day
+ - Digital Learning
  
 Current working items:
- - Digital Learning
+ - *none*
