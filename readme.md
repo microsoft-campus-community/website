@@ -2,12 +2,13 @@
 MCC Website  
 -----------------------------------  
   
-Current status: Creation of event pages / Refactoring to Node server
+![Deploy](https://github.com/microsoft-campus-community/website/workflows/Deploy/badge.svg?branch=master)
+Current status: Stable
   
 Last Update: 03.04.2020  
   
 Latest issue:  
-Refactor website to Node server
+Refactor website to Node server (completed by Urmade)
   
 
 -----------------------------------  
