@@ -20,7 +20,7 @@ END:VTIMEZONE
 BEGIN:VEVENT
 CLASS:PUBLIC
 CREATED:20200321T100000Z
-DESCRIPTION: Inside Microsoft Webcast.\n\nYour exclusive look behind the curtains of Microsoft Germany.\nJoin at https://www.campus-community.org/InsideMicrosoft/eventcal.html .\n\n( https://teams.microsoft.com/l/meetup-join/19%3ameeting_NTMxNGViZTMtMGZjOC00NDE3LWEwMTMtNmIxZjU0ODAzMzA0%40thread.v2/0?context=%7b%22Tid%22%3a%226fa69a93-be90-4d2c-a4eb-95e1cc558538%22%2c%22Oid%22%3a%22800af79d-ba74-4557-ba04-07612b5455e8%22%7d )
+DESCRIPTION: Inside Microsoft Webcast.\n\nYour exclusive look behind the curtains of Microsoft Germany.\nJoin at https://mccwebfiles.blob.core.windows.net/$web/InsideMicrosoft/eventcal.html .\n\n( https://teams.microsoft.com/l/meetup-join/19%3ameeting_NTMxNGViZTMtMGZjOC00NDE3LWEwMTMtNmIxZjU0ODAzMzA0%40thread.v2/0?context=%7b%22Tid%22%3a%226fa69a93-be90-4d2c-a4eb-95e1cc558538%22%2c%22Oid%22%3a%22800af79d-ba74-4557-ba04-07612b5455e8%22%7d )
 DTEND;TZID="W. Europe Standard Time":20200403T160000
 DTSTAMP:20191030T131401Z
 DTSTART;TZID="W. Europe Standard Time":20200403T104500

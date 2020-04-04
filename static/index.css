@@ -1,6 +1,6 @@
 @font-face {
     font-family: "MWF";
-    src: url("https://www.campus-community.org/MWFMDL2.ttf");
+    src: url("https://mccwebfiles.blob.core.windows.net/$web/MWFMDL2.ttf");
 }
 
 /*
@@ -74,7 +74,7 @@ body {
 }
 
 .hero {
-    background-image: url("https://www.campus-community.org/heroBg.jpg");
+    background-image: url("https://mccwebfiles.blob.core.windows.net/$web/heroBg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
@@ -91,7 +91,7 @@ body {
     width: 100vw;
 }
 .picturebox.missionPic {
-    background-image: url("https://www.campus-community.org/mission.jpg");
+    background-image: url("https://mccwebfiles.blob.core.windows.net/$web/mission.jpg");
 }
 .values {
     width: 100%;
@@ -106,13 +106,13 @@ body {
 }
 .picturebox.inspire {
     height: 40vh;
-    background-image: url("https://www.campus-community.org/inspire.jpg");
+    background-image: url("https://mccwebfiles.blob.core.windows.net/$web/inspire.jpg");
 }
 .picturebox.learn {
-    background-image: url("https://www.campus-community.org/learn.jpg");
+    background-image: url("https://mccwebfiles.blob.core.windows.net/$web/learn.jpg");
 }
 .picturebox.develop {
-    background-image: url("https://www.campus-community.org/develop.png");
+    background-image: url("https://mccwebfiles.blob.core.windows.net/$web/develop.png");
 }
 
 .value {
