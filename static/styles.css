@@ -77,6 +77,19 @@ button {
 }
 
 /* Classes */
+.button {
+	width: 180px;
+	background-color: var(--color-blue-light);
+	border: 1px solid transparent;
+	border-radius: 0%;
+	cursor: pointer;
+	color: var(--color-text-secondary);
+	text-align: center;
+	font-size: 15px;
+	font-family: var(--font-button);
+	display: inline-block;
+}
+
 .sectionPreparation {
 	padding: 60px 0;
 }
