@@ -79,7 +79,9 @@ button {
 /* Classes */
 .button {
 	width: 180px;
+	margin: 10px;
 	background-color: var(--color-blue-light);
+	padding: 10px;
 	border: 1px solid transparent;
 	border-radius: 0%;
 	cursor: pointer;
@@ -88,6 +90,7 @@ button {
 	font-size: 15px;
 	font-family: var(--font-button);
 	display: inline-block;
+	text-decoration: none;
 }
 
 .sectionPreparation {
