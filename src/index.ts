@@ -21,6 +21,9 @@ server.get("/mlhlocalhackday",(req,res) => {
 server.get("/eventcal",(req,res) => {
 	res.sendFile(getStaticFile("eventcal.html"));
 });
+server.get("/feedback",(req,res) => {
+	res.sendFile(getStaticFile("feedback.html"));
+});
 
 
 server.get("/legal",(req,res) => {
