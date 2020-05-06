@@ -12,6 +12,9 @@ server.get("/",(req,res) => {
 server.get("/digitalLearning",(req,res) => {
 	res.sendFile(getStaticFile("DigitalLearning.html"));
 });
+server.get("/lecturesathome",(req,res) => {
+	res.sendFile(getStaticFile("lecturesathome.html"));
+});
 server.get("/insideMicrosoft",(req,res) => {
 	res.sendFile(getStaticFile("insideMicrosoft.html"));
 });
