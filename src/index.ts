@@ -27,6 +27,9 @@ server.get("/eventcal",(req,res) => {
 server.get("/feedback",(req,res) => {
 	res.sendFile(getStaticFile("feedback.html"));
 });
+server.get("/youtube",(req,res) => {
+	res.sendFile(getStaticFile("youtube.html"));
+});
 
 
 server.get("/legal",(req,res) => {
