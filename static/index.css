@@ -169,6 +169,8 @@ body {
     display: none;
 }
 
+
+
 @media only screen and (max-width: 900px) and (orientation: portrait) {
     .apply h2 {
         margin: 0 10%;
