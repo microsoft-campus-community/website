@@ -393,3 +393,183 @@ button {
 		display: block;
 	}
 }
+
+
+.personaContainer{
+	-webkit-tap-highlight-color: transparent;
+	-webkit-box-direction: normal;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 400;
+	box-shadow: none;
+	
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	box-sizing: border-box;
+	color: rgb(50, 49, 48);
+	position: relative;
+	height: 48px;
+	min-width: 48px;
+	display: flex;
+	align-items: center;
+	text-overflow: ellipsis;
+	flex-shrink: 1;
+	margin-left: 20px;
+    margin-right: 20px;
+}
+
+.personaCircle{
+	-webkit-tap-highlight-color: transparent;
+	-webkit-box-direction: normal;
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 400;								
+}
+
+.personaImageArea{
+	-webkit-tap-highlight-color: transparent;
+	-webkit-box-direction: normal;
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+	position: relative;
+	text-align: center;
+	height: 48px;
+	width: 48px;
+	flex: 0 0 auto;
+}
+
+.personaImage{
+	-webkit-tap-highlight-color: transparent;
+	-webkit-box-direction: normal;
+	text-align: center;
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 400;
+	position: absolute;
+	margin-right: 10px;
+	top: 0px;
+	left: 0px;
+	perspective: 1px;
+	overflow: hidden;
+	border-width: 0px;
+	border-style: initial;
+	border-color: initial;
+	border-image: initial;
+	border-radius: 50%;
+	width: 48px;
+	height: 48px;
+}
+
+.personaPortrait{
+	-webkit-tap-highlight-color: transparent;
+	-webkit-box-direction: normal;
+	text-align: center;
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	text-decoration: none;
+	border: 0;
+	display: block;
+	opacity: 1;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.personaDetails{
+	-webkit-tap-highlight-color: transparent;
+	-webkit-box-direction: normal;
+	box-sizing: inherit;
+	margin: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+	padding-top: 0px;
+	padding-right: 12px;
+	padding-bottom: 0px;
+	padding-left: 12px;
+	min-width: 0px;
+	width: 100%;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.personaPrimaryText{
+	-webkit-tap-highlight-color: transparent;
+	-webkit-box-direction: normal;
+	-webkit-font-smoothing: antialiased;
+	text-align: left;
+	unicode-bidi: -webkit-isolate;
+	box-sizing: inherit;
+	margin: 0!important;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-weight: 400;
+	font-size: 14px;
+	overflow: hidden;
+}
+
+.personaSecondaryText{
+	-webkit-tap-highlight-color: transparent;
+	-webkit-box-direction: normal;
+	-webkit-font-smoothing: antialiased;
+	text-align: left;
+	unicode-bidi: -webkit-isolate;
+	box-sizing: inherit;
+	margin: 0!important;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: var(--color-text-secondary);
+	font-weight: 400;
+	font-size: 12px;
+	overflow: hidden;
+}
+
+.companyImage{
+	transform: rotate(270deg);
+	object-fit: contain;
+	width:100%; 
+	height:100%;
+}

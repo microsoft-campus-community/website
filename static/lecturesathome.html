@@ -1,91 +1,153 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-		<meta name="viewport" content="width=device-width">
-		<link rel="shortcut icon" href="https://mccwebfiles.blob.core.windows.net/$web/favicon.ico" type="image/x-icon">
-		<link rel="icon" href="https://mccwebfiles.blob.core.windows.net/$web/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" type="text/css" href="styles.css" />
-        <link rel="stylesheet" type="text/css" href="index.css"/>
-		<title>Lectures@Home</title>
-		<script>
-			/**
-			 * Sets current date value in the copyright claim on the footer.
-			 */
-			function loadPage() {
-			  	var str = document.getElementById("copyInfo").innerText; 
-			  	var res = str.replace("{year}", new Date().getFullYear());
-			  	document.getElementById("copyInfo").innerHTML = res;
-			}
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width">
+	<link rel="shortcut icon" href="https://mccwebfiles.blob.core.windows.net/$web/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="https://mccwebfiles.blob.core.windows.net/$web/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<link rel="stylesheet" type="text/css" href="index.css" />
+	<title>Lectures@Home</title>
+	<script>
+		/**
+		 * Sets current date value in the copyright claim on the footer.
+		 */
+		function loadPage() {
+			var str = document.getElementById("copyInfo").innerText;
+			var res = str.replace("{year}", new Date().getFullYear());
+			document.getElementById("copyInfo").innerHTML = res;
+		}
 
-			
-		</script>
-	</head>
 
-	<body onload="loadPage()">
-		<section id="titleBanner">
-			<img src="https://mccwebfiles.blob.core.windows.net/$web/MCCLogoFullCrop.png">
-			<h1 id="titleLabel"><span class="textItalic">Lectures@Home</span></h1>
-		</section>
+	</script>
+</head>
 
-		<section id="introSection" class="sectionPreparation simpleSection flexbox">
-			<img id="img1" src="Images/teams_cut.png">
-			<div id="introText" class="bigText">
-				<h2 class="titleGeneral">Lectures@Home.<br/>A lecture series where industry and research experts give talks about topics in the modern development area.</h3>
+<body onload="loadPage()">
+	<section id="titleBanner">
+		<img src="https://mccwebfiles.blob.core.windows.net/$web/MCCLogoFullCrop.png">
+		<h1 id="titleLabel"><span class="textItalic">Lectures@Home</span></h1>
+	</section>
+
+	<section id="introSection" class="sectionPreparation simpleSection flexbox">
+		<img id="img1" src="Images/teams_cut.png">
+		<div id="introText" class="bigText">
+			<h2 class="titleGeneral">Lectures@Home.<br />A lecture series where industry and research experts give talks
+				about topics in the modern development area.</h3>
 				<p class="descriptionText">
-                    Join our Lectures@Home series to learn about various interesting topics of different parts of the modern development area, e.g. Cloud Computing related content.
-                    <br>
-                    <br>
-                    The lecture series will be hosted every Thursday via Microsoft Teams. Each slot lasts about 2 hours and consists of the lecture and a discussion round.
-                    <br>
-                    <br>
-                    This event is for everyone who wants to learn about current state-of-the-art topics in industry and research. Usually no prior knowledge is required!
-                    <br>
-                    <br>
-                    The sessions are held in German or English, depending on the lecturer’s preference.
-                </p>	
-				<br/>
+					Join our Lectures@Home series to learn about various interesting topics of different parts of the
+					modern development area, e.g. Cloud Computing related content.
+					<br>
+					<br>
+					The lecture series will be hosted every Thursday via Microsoft Teams. Each slot lasts about 2 hours
+					and consists of the lecture and a discussion round.
+					<br>
+					<br>
+					This event is for everyone who wants to learn about current state-of-the-art topics in industry and
+					research. Usually no prior knowledge is required!
+					<br>
+					<br>
+					The sessions are held in German or English, depending on the lecturer’s preference.
+				</p>
+				<br />
 				<h2 class="titleGeneral">Next lecture: 28.05.2020 | 06:00 pm - 08:00 pm CEST</h2>
-			</div>
-		</section>
+		</div>
+	</section>
 
-		<section id="motivationSection1" class="motivationSections sectionPreparation">
-			<h2 class="longText">Next lecture</h2>
-		</section>
-		
+	<section id="motivationSection1" class="motivationSections sectionPreparation">
+		<h2 class="longText">Next lecture</h2>
+	</section>
 
-		<section style="display: grid; grid-template-columns: auto 128px;" id="agendaSection" class="sectionPreparation simpleSection">
-			<div>
-				<h2 class="titleGeneral">Introduction to Kubernetes</h2>
+
+	<section style="display: grid; grid-template-columns: auto 128px;" id="agendaSection"
+		class="sectionPreparation simpleSection">
+		<div>
+			<h2 class="titleGeneral">Introduction to Kubernetes</h2>
+			<!--<div style="display: flex; align-items: center;">
+				<img width="64px" height="64px"
+					style="padding: 16px; box-sizing: border-box; object-fit: cover; border-radius: 50%;"
+					src="Images/Lucas-Possani_1833.jpg">
 				<h3>by Lucas Possani from <a href="https://www.motius.de/en/">Motius</a></h3>
-				<h3>at 6:00 - 8:00 pm on May 28, 2020</h3>
-				<h3>Language: English</h3>
-				<p class="descriptionText">The goal of the hands-on course is to take a small local deployment and run it on Kubernetes, giving insight into different deployment tools and options. To start off the workshop we will be using Kompose to create a simple deployment, followed by Kustomize and finally the creation of a small Helm chart. You will need a basic understanding of Kubernetes to follow this talk.</p>
-
-            </div>
-			<img style="max-width: 128px; justify-self: center; align-self: center; padding: 16px; box-sizing: border-box;" src="Images/Kubernetes_logo_without_workmark.svg">
-		</section>
-
-		<section id="motivationSection1" class="motivationSections sectionPreparation">
-			<h2 class="longText">Coming Up</h2>
-		</section>
-
-		<section id="agendaSection" class="sectionPreparation simpleSection flexbox">
-			<div class="bigText">
-				<h2 class="titleGeneral">Future lectures</h2>
-				<p class="descriptionText">June, 4th - Kubernetes Deployments using Kompose and Helm<br/>&emsp;(Dominic Giebert, Motius)</p>	
-				<p class="descriptionText">June, 18th - Introduction to Serverless<br/>&emsp;(Maxime Rouiller, MSFT Cloud Advocates)</p>
-				<p class="descriptionText">June, 25th - Durable Functions<br/>&emsp;(Maxime Rouiller, MSFT Cloud Advocates)</p>	
-				<p class="descriptionText">July, 4th - Applying AI to save lives: How a Team at Microsoft made Drones Self Aware<br/>&emsp;(Anthony Bartolo, MSFT Cloud Advocates)</p>	
-
 			</div>
-		</section>
+		-->
+			<div class="personaContainer">
+				<div role="presentation" class="personaCircle">
+					<div role="presentation" class="personaImageArea">
+						<div class="personaImage">
+							<img class="personaPortrait" src="Images/Lucas-Possani_1833.jpg" alt="Lucas Possani">
+						</div>
+					</div>
+				</div>
+				<div class="personaDetails">
+					<h2 dir="auto" class="personaPrimaryText">
+						Lucas Possani
+					</h2>
+					<h3 dir="auto" class="personaSecondaryText">
+						DevOps Engineer at Motius
+					</h3>
 
-		<section id="motivationSection1" class="motivationSections sectionPreparation">
-			<h2 class="longText">Become part of our independent German-wide community of techies and tech-enthusiasts and engage in this interactive online event.<br />We are looking forward to (virtually) meeting you!</h2>
-		</section>
-		<!--Registration/link to call:
+				</div>
+			</div>
+			<h3>at 6:00 - 8:00 pm on May 28, 2020</h3>
+			<h3>Language: English</h3>
+			<p class="descriptionText">
+				Kubernetes (K8s) is an open-source system for automating deployment, scaling, and management of
+				containerized applications.
+				<br><br>
+				In this tutorial, you will learn the basics of Kubernetes, how it works, and its components. Starting
+				from understanding its concepts and architecture, you will walk through different scenarios, deploying a
+				single Pod, scaling it, persisting data, and much more.
+			</p>
+
+		</div>
+		<img style="max-width: 128px; justify-self: center; align-self: flex-end; padding: 16px; box-sizing: border-box;"
+			src="Images/Kubernetes_logo_without_workmark.svg"
+			alt="A blue heptagon with rounded corners and a white ship steering while inside. This is the Kubernetes logo.">
+	</section>
+
+	<section id="motivationSection1" class="motivationSections sectionPreparation">
+		<h2 class="longText">Coming Up</h2>
+	</section>
+
+	<section id="agendaSection" class="sectionPreparation simpleSection flexbox">
+		<div class="bigText">
+			<h2 class="titleGeneral">Future lectures</h2>
+			<p class="descriptionText">June, 4th - Kubernetes Deployments using Kompose and Helm<br />&emsp;(Dominic
+				Giebert, Motius)</p>
+			<p class="descriptionText">June, 18th - Introduction to Serverless<br />&emsp;(Maxime Rouiller, MSFT Cloud
+				Advocates)</p>
+			<p class="descriptionText">June, 25th - Durable Functions<br />&emsp;(Maxime Rouiller, MSFT Cloud Advocates)
+			</p>
+			<p class="descriptionText">July, 4th - Applying AI to save lives: How a Team at Microsoft made Drones Self
+				Aware<br />&emsp;(Anthony Bartolo, MSFT Cloud Advocates)</p>
+
+		</div>
+	</section>
+	<section id="motivationSection1" class="motivationSections sectionPreparation">
+		<h2 class="longText">Partner</h2>
+	</section>
+
+	<section style="display: grid; grid-template-columns: 128px auto;" class="sectionPreparation simpleSection">
+		<figure style="align-self:stretch; margin: 0;">
+			<img alt="Motius. We R&D. logo" class="companyImage" src="Images/Motius_WE_horizontal.jpg">
+
+		</figure>	
+
+
+		<p>
+			<span class="textBold">Our Partner <a href="https://www.motius.de/en/">Motius</a></span> is an R&D company that is specialized in the technologies of the future. With its mix of a unique
+			tech community of more than 800 talented techies and engineers in the fields of computer science, electrical
+			engineering, and mechanical engineering with an experienced management team, Motius always stays expert in
+			the newest technologies. With this expertise, Motius develops innovative products and solves technical
+			problems with world-class companies.
+		</p>
+	</section>
+
+	<section id="motivationSection1" class="motivationSections sectionPreparation">
+		<h2 class="longText">Become part of our independent German-wide community of techies and tech-enthusiasts and
+			engage in this interactive online event.<br />We are looking forward to (virtually) meeting you!</h2>
+	</section>
+	<!--Registration/link to call:
 			 <section style="display: flex; flex-direction: column;" id="motivationSection2" class="motivationSections sectionPreparation">
             <h2 class="longText">Sign up now! Together we will learn, hack and share with each other and from each other.</h2>
             <a class="apply-btn" style="margin: 64px; align-self: center; justify-self: center; text-align: center; background-color: var(--color-yellow); color: black; text-decoration: none;" href="http://organize.mlh.io/participants/events/3395-local-hack-day-share-2020-in-germany/register">Register</a>
@@ -93,20 +155,24 @@
 		</section>-->
 
 
-		<section id="mccBanner" class="sectionPreparation simpleSection">
-			<div class="longText flexbox">
-				<img id="mccLogo" src="https://mccwebfiles.blob.core.windows.net/$web/logoIcon.png">
-				<div class="nextToImg">
-					<h2 class="titleGeneral titleMCC">Microsoft Campus Community</h2>
-					<p class="descriptionText"><span class="textBold">Who We Are:</span> Microsoft Campus Community is a German-wide In-person community with the goal to build a deep technical understanding for students of all specializations. Together we <span class="textBold">inspire, learn and develop</span> our technical and our soft skills and share our learnings with our peers.</p>
-					<p class="titleGeneral textBold">Inspire. Learn. Develop.</p>
-				</div>	
+	<section id="mccBanner" class="sectionPreparation simpleSection">
+		<div class="longText flexbox">
+			<img id="mccLogo" src="https://mccwebfiles.blob.core.windows.net/$web/logoIcon.png">
+			<div class="nextToImg">
+				<h2 class="titleGeneral titleMCC">Microsoft Campus Community</h2>
+				<p class="descriptionText"><span class="textBold">Who We Are:</span> Microsoft Campus Community is a
+					German-wide In-person community with the goal to build a deep technical understanding for students
+					of all specializations. Together we <span class="textBold">inspire, learn and develop</span> our
+					technical and our soft skills and share our learnings with our peers.</p>
+				<p class="titleGeneral textBold">Inspire. Learn. Develop.</p>
 			</div>
-		</section>
-		
-		<section id="footBanner" class="flexbox">
-			<p id="copyInfo">&copy; {year} - Microsoft Campus Community</p>&emsp;-&emsp;<a href="legal.html">Impressum</a>&ensp;|&ensp;<a href="privacy.html">Datenschutz</a>
-		</section>
-	</body>
+		</div>
+	</section>
+
+	<section id="footBanner" class="flexbox">
+		<p id="copyInfo">&copy; {year} - Microsoft Campus Community</p>&emsp;-&emsp;<a
+			href="legal.html">Impressum</a>&ensp;|&ensp;<a href="privacy.html">Datenschutz</a>
+	</section>
+</body>
 
 </html>
