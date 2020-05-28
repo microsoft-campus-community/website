@@ -18,9 +18,6 @@ server.get("/lecturesathome",(req,res) => {
 server.get("/insideMicrosoft",(req,res) => {
 	res.sendFile(getStaticFile("insideMicrosoft.html"));
 });
-server.get("/mlhlocalhackday",(req,res) => {
-	res.sendFile(getStaticFile("mlhLocalHackDay.html"));
-});
 server.get("/eventcal",(req,res) => {
 	res.sendFile(getStaticFile("eventcal.html"));
 });
