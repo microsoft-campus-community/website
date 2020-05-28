@@ -22,3 +22,16 @@ Current pages:
  
 Current working items:
  - *none*
+  
+
+-----------------------------------  
+Static Redirections  
+-----------------------------------  
+  
+Page Redirection:  
+ - youtube
+ - eventcal (needs to be updated manually for current event)
+ - feedback (needs to be updated manually for current event)
+ 
+Additional Info:
+ - *none*
