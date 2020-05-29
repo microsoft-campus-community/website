@@ -536,13 +536,13 @@ button {
 	margin: 0!important;
 	padding: 0;
 	border: 0;
-	font: inherit;
 	vertical-align: baseline;
+	font-size: 14px;
+	font-weight: 400;
+
 	text-decoration: none;
 	text-overflow: ellipsis;
 	white-space: nowrap;
-	font-weight: 400;
-	font-size: 14px;
 	overflow: hidden;
 }
 
@@ -556,12 +556,11 @@ button {
 	margin: 0!important;
 	padding: 0;
 	border: 0;
-	font: inherit;
 	vertical-align: baseline;
 	text-decoration: none;
 	text-overflow: ellipsis;
 	white-space: nowrap;
-	color: var(--color-text-secondary);
+	color: var(--color-text-primary);
 	font-weight: 400;
 	font-size: 12px;
 	overflow: hidden;
