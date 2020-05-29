@@ -1,6 +1,4 @@
------------------------------------  
-MCC Website  
------------------------------------  
+# MCC Website
   
 ![Deploy](https://github.com/microsoft-campus-community/website/workflows/Deploy/badge.svg?branch=master)
 Current status: Stable
@@ -10,10 +8,8 @@ Last Update: 03.04.2020
 Latest issue:  
 Refactor website to Node server (completed by Urmade)
   
-
------------------------------------  
-Event Pages  
------------------------------------  
+  
+## Event Pages
   
 Current pages:  
  - InsideMicrosoft
@@ -21,4 +17,15 @@ Current pages:
  - Digital Learning
  
 Current working items:
+ - *none*
+  
+
+## Static Redirections
+  
+Page Redirection:  
+ - youtube
+ - eventcal (needs to be updated manually for current event)
+ - feedback (needs to be updated manually for current event)
+ 
+Additional Info:
  - *none*
