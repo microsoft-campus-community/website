@@ -15,6 +15,7 @@ Current pages:
  - InsideMicrosoft
  - MLH Local Hack Day
  - Digital Learning
+ - Lectures@Home
  
 Current working items:
  - *none*
