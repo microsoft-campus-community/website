@@ -62,6 +62,12 @@ p {
 	color: var(--color-text-primary);
 }
 
+li {
+    color: var(--color-text-primary);
+    font-family: var(--font-main);
+    font-weight: 200;
+}
+
 button {
 	margin: 80px;
 	width: 180px;
