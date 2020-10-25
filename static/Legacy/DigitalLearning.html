@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="https://mccwebfiles.blob.core.windows.net/$web/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="https://mccwebfiles.blob.core.windows.net/$web/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<title>Digital Learning - interactive stream</title>
+		<script>
+			/**
+			 * Sets current date value in the copyright claim on the footer.
+			 */
+			function loadPage() {
+			  	var str = document.getElementById("copyInfo").innerText; 
+			  	var res = str.replace("{year}", new Date().getFullYear());
+			  	document.getElementById("copyInfo").innerHTML = res;
+			}
+
+			/**
+			 * Replaces HTML in "registerSection" with iframe linked to MS Forms.
+			 */
+			function loadRegistrationForm() {
+				var sec = document.getElementById("registerSection");
+				sec.style.padding = 0;
+				var frame = '<iframe id="regFrame" width="100%" height="800px" src= "https://forms.office.com/Pages/ResponsePage.aspx?id=k5qmb5C-LE2k65XhzFWFOLOrtgDtz-FIkAVKyeZ-fH5URDI3UkFUU1E1NEpSOVlCNVk0UkdKV1IyTi4u" frameborder= "0" scrolling="no" marginwidth= "0" marginheight= "0" style= "border: none; max-width:100%;" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>';
+				sec.innerHTML = frame;
+			}
+
+		</script>
+	</head>
+
+	<body onload="loadPage()">
+		<section id="titleBanner">
+			<img src="https://mccwebfiles.blob.core.windows.net/$web/MCCLogoFullCrop.png">
+			<h1 id="titleLabel"><span class="textItalic">Digital Learning</span> - interactive stream</h1>
+		</section>
+
+		<section id="introSection" class="sectionPreparation simpleSection flexbox">
+			<img id="img1" src="Images/teams_cut.png">
+			<div id="introText" class="bigText">
+				<h2 class="titleGeneral">Digital Learning.<br />A special look at the needs of schools.</h2>
+				<h3>Join our interactive digital-only event series!</h3>
+				<p class="descriptionText">Discover the possibilities of digital learning in this online only event by the Microsoft Campus Community. Discover how teachers like Sabine Thierfelder and Matthias Thiede integrate tools into their teaching and expand the possibilities of learning for their students.
+					<br />Dive in with us  into the world of teaching and learning solutions and test out different methods and approaches to create your virtual classroom.
+					<br />This event is for everyone who's interested, from teachers and professors to students or to none of the above. No prior knowledge is required. 
+					<br />Most of the sessions will be held in German. We will, however, provide english subtitles.</p>	
+				<br />
+				<h2 class="titleGeneral">14.05.2020 | 05:30 pm - 08:00 pm CEST</h2>
+			</div>
+		</section>
+
+		<section id="motivationSection1" class="motivationSections sectionPreparation">
+			<h2 class="longText">Interact with us and engage in this online event.<br />We are looking forward to (virtually) meeting you!</h2>
+		</section>
+
+		<section id="agendaSection" class="sectionPreparation simpleSection flexbox">
+			<div class="bigText">
+				<h2 class="titleGeneral">Agenda</h2>
+				<p class="descriptionText">05:30 pm - Introduction<br />&emsp;(Sophia Fabiunke, MCC)</p>	
+				<p class="descriptionText">06:00 pm - Digital Schooling - Experiences and Tips<br />&emsp;(Sabine Thierfelder, Matthias Thiede)</p>
+				<p class="descriptionText">07:00 pm - Methods and Approaches - Practices for Learning and Teaching<br />&emsp;(Sophia Fabiunke, MCC)</p>	
+			</div>
+			<img id="img2" src="Images/outlook.png">
+		</section>
+
+		<section id="motivationSection2" class="motivationSections sectionPreparation">
+			<h2 class="longText">Be part of the digital movement!</h2>
+		</section>
+
+		<section id="registerSection" style="background: url(Images/learn.jpg); background-size: cover; background-position: center;">
+			<div id="formContentContainer">
+				<div id="introHead" class="flexbox">
+					<span class="titleGeneral">Use Teams to talk to us!</span>
+				</div>
+					<!--<button id="loadForm" onclick="loadRegistrationForm()">Register now</button>-->
+				<p class="descriptionText" style="color: #000;">You can interact and discuss with us by using MS Teams or the chatting feature of the other platforms.</p>
+				<br />
+					<a href="https://www.campus-community.org/eventcal" class="button">MS Teams (Web/App)</a>
+					<br />
+					<a href="https://mixer.com/MCCcommunity" class="button">Mixer</a>
+					<br />
+					<a href="https://youtu.be/2tbwMoScExM" class="button">YouTube</a>
+					<br />
+					<a href="https://youtu.be/ANStK-IZvcc" class="button">Watch our previous Streams</a>
+				<br />
+				<p class="descriptionText" style="color: #000;">This event is a series of three streams.</p>
+				<p class="descriptionText" style="color: #000;">On April 14th, we want to take a closer look at teaching methods and tools specifically for schools.</p>
+				<br />
+			</div>
+			<div id="pbfContainer">
+				<span>Powered by Microsoft Forms | <a href="https://go.microsoft.com/fwlink/p/?linkid=857875" target="_blank">Privacy und cookies</a> | <a href="https://go.microsoft.com/fwlink/?linkid=866263" target="_blank">Terms of use</a></span>
+			</div>
+
+
+			<!--<div class="bigText">
+				<h2 class="titleGeneral">The streams are available here soon!</h2>
+				<br /><br />
+				<p class="descriptionText">You can interact and discuss with us by using MS Teams or the chatting feature of the other platforms.</p>
+				<br /><br />
+				<p class="descriptionText">This event is a series of three streams.</p>
+				<p class="descriptionText">On April 8th, we want to raise awareness for the topic of digital learning. This is the introduction to the series.</p>
+			</div>-->
+		</section>
+
+		<section id="mccBanner" class="sectionPreparation simpleSection">
+			<div class="longText flexbox">
+				<img id="mccLogo" src="https://mccwebfiles.blob.core.windows.net/$web/logoIcon.png">
+				<div class="nextToImg">
+					<h2 class="titleGeneral titleMCC">Microsoft Campus Community</h2>
+					<p class="descriptionText"><span class="textBold">Who We Are:</span> Microsoft Campus Community is a German-wide In-person community with the goal to build a deep technical understanding for students of all specializations. Together we <span class="textBold">inspire, learn and develop</span> our technical and our soft skills and share our learnings with our peers.</p>
+					<p class="titleGeneral textBold">Inspire. Learn. Develop.</p>
+				</div>	
+			</div>
+		</section>
+		
+		<section id="footBanner" class="flexbox">
+			<p id="copyInfo">&copy; {year} - Microsoft Campus Community</p>&emsp;-&emsp;<a href="legal.html">Impressum</a>&ensp;|&ensp;<a href="privacy.html">Datenschutz</a>
+		</section>
+	</body>
+
+</html>

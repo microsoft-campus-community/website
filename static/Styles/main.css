@@ -1,0 +1,286 @@
+@viewport {
+    zoom: 1.0;
+    width: device-width;
+}
+
+@-ms-viewport {
+    width: device-width;
+}
+
+@font-face {
+    font-family: SegoeUI-Black;
+    src: url(../Assets/Fonts/seguibl.ttf);
+}
+
+@font-face {
+    font-family: SegoeUI-Bold;
+    src: url(../Assets/Fonts/segoeuib.ttf);
+}
+
+@font-face {
+    font-family: SegoeUI-SemiBold;
+    src: url(../Assets/Fonts/seguisb.ttf);
+}
+
+@font-face {
+    font-family: SegoeUI-Light;
+    src: url(../Assets/Fonts/segoeuil.ttf);
+}
+
+@font-face {
+    font-family: SegoeUI;
+    src: url(../Assets/Fonts/segoeui.ttf);
+}
+
+@keyframes moveUp {
+    from {bottom: -50px; opacity: 0;}
+    to {bottom: 0; opacity: 1;}
+  }
+
+:root {
+    /* Fonts */
+    --font-main: SegoeUI-SemiBold-final,SegoeUI-SemiBold,SegoeUI,"Segoe UI Web (West European)",Segoe,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    --font-base: SegoeUI,"Segoe UI Web (West European)",Segoe,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    --font-bold: SegoeUI-Bold,"Segoe UI Web (West European)",Segoe,"Helvetica Neue",Helvetica,"Arial Black",sans-serif;
+    /* Colors */
+    --color-primary: #ffffff;
+    --color-secondary: #000000;
+    --color-mcc-black: #000000;
+    --color-mcc-white: #ffffff;
+    --color-mcc-dark-blue: #263A5E;
+    --color-mcc-gray: #FAFAFA;
+    --color-mcc-red: #E95329;
+    --color-mcc-blue: #00A4EF;
+    --color-mcc-green: #7FBA00;
+    --color-mcc-yellow:#FEF000;
+    --color-mcc-neon-green: #30E5D0;
+    --color-mcc-neon-blue: #50E6FF;
+    --color-mcc-neon-purple: #D59DFF;
+    --color-mcc-shadow: rgba(0,0,0,0.7);
+    /* Sizes */
+    --width-mcc-max: 1206px;
+    /* Paths */
+    --logo-mcc: url(../Assets/logo.png);
+    --hexa-mcc: url(../Assets/SVG/hexa_lc.svg);
+    --who-mcc: url(../Assets/SVG/who.svg);
+    --why-mcc: url(../Assets/SVG/why.svg);
+    --fun-mcc: url(../Assets/SVG/fun.svg);
+}
+
+@media (prefers-color-scheme: dark) {
+
+    :root {
+        /* Colors */
+        --color-primary: #000000;
+        --color-secondary: #ffffff;
+        --color-mcc-dark-blue: #ffffff;
+        --color-mcc-gray: #141414;
+        --color-mcc-shadow: rgba(255,255,255,0.12);
+        /* Paths */
+        --logo-mcc: url(../Assets/logo_light.png);
+        --hexa-mcc: url(../Assets/SVG/hexa_dc.svg);
+        --who-mcc: url(../Assets/SVG/who_d.svg);
+        --why-mcc: url(../Assets/SVG/why_d.svg);
+        --fun-mcc: url(../Assets/SVG/fun_d.svg);
+    }
+}
+
+h1, h2 {
+    font-family: var(--font-main);
+    color: var(--color-secondary);
+}
+
+h1 {
+    font-size: calc(25px + (70 - 25) * ((100vw - 400px) / (1920 - 400)));
+    font-size: clamp(25px, 4vw, 70px);
+}
+
+h2 {
+    font-size: calc(20px + (40 - 20) * ((100vw - 400px) / (1920 - 400)));
+    font-size: clamp(20px, 4vw, 40px);
+}
+
+h3 {
+    font-family: var(--font-bold);
+    color: var(--color-secondary);
+    font-size: calc(15px + (25 - 15) * ((100vw - 400px) / (1920 - 400)));
+    font-size: clamp(15px, 4vw, 25px);
+}
+
+h4 {
+    font-family: var(--font-bold);
+    color: var(--color-secondary);
+    font-size: 20px;
+    margin: 4px 0;
+}
+
+p {
+    line-height: 25px;
+    font-size: calc(15px + (20 - 15) * ((100vw - 400px) / (1920 - 400)));
+    font-size: clamp(15px, 1vw ,20px);
+    font-weight: 600;
+    font-family: var(--font-base);
+    font-weight: 800;
+    color: var(--color-secondary);
+}
+
+body {
+    background: var(--color-primary);
+    margin: 0;
+}
+
+section {
+    margin: 0 auto;
+}
+
+div, ol, ul, li {
+    color: var(--color-secondary);
+    font-family: var(--font-base);
+}
+
+header {
+    width: 100%;
+    background: var(--color-primary);
+    position: fixed;
+    z-index: 10;
+}
+
+nav {
+    color: var(--color-mcc-dark-blue);
+}
+
+    nav a {
+        text-decoration: none;
+        color: var(--color-mcc-dark-blue);
+    }
+
+    nav span {
+        margin: 0 20px;
+    }
+
+footer h3, footer p {
+    font-family: var(--font-base);
+    font-size: 18px;
+    line-height: 20px;
+}
+
+footer h3 {
+    font-family: var(--font-main);
+    color: var(--color-mcc-dark-blue);
+    margin: 0;
+}
+
+footer p {
+    font-weight: 400;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--color-mcc-black);
+}
+
+#navBar {
+    font-family: var(--font-main);
+    display: flex;
+}
+
+#navBarLogoContainer {
+    justify-content: flex-start;
+    width: 180px;
+}
+
+#navBarCenterSpacing {
+    justify-content: center;
+    flex-grow: 1;
+}
+
+#pageTitle {
+    font-family: var(--font-main);
+    font-size: 15px;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+#imageSection {
+    height: 0;/*175px;*/
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+    #imageSection img{
+        object-fit: cover;
+        width: 175px;
+        height: 175px;
+    }
+
+#copySection {
+    background: var(--color-mcc-gray);
+}
+
+.isVisible {
+    animation: moveUp .8s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+.link{
+    color: var(--color-mcc-dark-blue);
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none; 
+    background: none;
+    font-family: var(--font-base);
+}
+
+.centerContent{
+    display: flex;
+    justify-content: center;
+}
+
+.flexReverse {
+    flex-direction: row-reverse;
+}
+
+.textCentered {
+    text-align: center;
+}
+
+.boxShadow {
+    box-shadow: 0 0 20px var(--color-mcc-shadow);
+    background-color: var(--color-mcc-gray);
+}
+
+.mccBlue {
+    color: var(--color-mcc-blue);
+}
+
+.mccRed {
+    color: var(--color-mcc-red);
+}
+
+.mccGreen {
+    color: var(--color-mcc-green);
+}
+
+.blueImage {
+    filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(160deg);
+}
+
+.yellowImage {
+    filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(15deg);
+}
+
+.redImage{
+    filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(330deg);
+}
+
+.greenImage{
+    filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(50deg);
+}
+
+.sectionDiv {
+    max-width: var(--width-mcc-max);
+    margin: 0 auto;
+}

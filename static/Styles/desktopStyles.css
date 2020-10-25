@@ -1,0 +1,61 @@
+@media screen and (min-width: 1144px) {
+
+    main {
+        padding: 168px 0px 139px;
+    }
+
+    h1 {
+        font-size: 70px;
+        line-height: 75px;
+        margin: 63px 0;
+        text-align: center;
+    }
+    h2 {
+        font-size: 40px;
+        margin: revert;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    section {
+        padding: 3px 117px;
+    }
+
+    #navBar {
+        padding: 0 127px;
+        max-width: 1140px;
+        font-size: 14px;
+    }
+
+    #introSection {
+        padding: 0;
+    }
+
+    #pageTitle {
+        font-size: 15px;
+    }
+
+    #endSection {
+        display:flex;
+        justify-content: space-evenly;
+    }
+
+    #endLogo {
+        width: 200px;
+    }
+
+    footer h3, footer p {
+        font-size: 18px;
+    }
+
+    #copySection {
+        min-height: 310px;
+        padding: 40px 0 0;
+    }
+}

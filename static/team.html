@@ -1,0 +1,147 @@
+<html>
+    <head>
+        <meta  charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Microsoft Campus Community</title>
+        <link rel="stylesheet" href="Styles/main.css">
+        <link rel="stylesheet" href="Styles/mobileStyles.css">
+        <link rel="stylesheet" href="Styles/team.css">
+        <link rel="stylesheet" href="Styles/desktopStyles.css">
+        <link rel="stylesheet" href="Styles/advertisement.css">
+
+        <script type="text/javascript">	
+
+			function loadPage() {
+				var str = document.getElementById("copyInfo").innerText; 
+				var res = str.replace("{year}", new Date().getFullYear());
+                document.getElementById("copyInfo").innerHTML = res;
+            }      
+
+            var imported = document.createElement('script');
+            imported.src = "Assets/Scripts/scrollAnimation.js";
+            document.head.appendChild(imported);      
+
+        </script>
+
+    </head>
+    <body onload="loadPage()">
+        
+        <header>
+            <div id="navBar">
+                <div id="navBarLogoContainer">
+                    <a href="index.html" title="MCC Homepage"></a>
+                </div>
+                <div id="navBarCenterSpacing"></div>
+                <nav id="navMenu">
+                    <span><a href="mission.html">Our Mission</a></span>
+                    <span><a href="team.html">The Team</a></span>
+                    <span><a href="events.html">Events</a></span>
+                    <span><a href="join.html" class="mccRed">Join Now</a></span>
+                </nav>
+                <div class="menuIconContainer">
+                    <a href="#navMenu">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </a>
+                </div>    
+            </div>
+        </header>
+
+        <main id="contentContainer">
+
+            <section id="introSection">
+                <div class="sectionDiv">
+                    <div id="introText">
+                        <p id="pageTitle" class="mccBlue">THE TEAM</p>
+                        <div class="showOnScroll">
+                            <h1>Meet our Community</h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="campusSection" class="showOnScroll">
+                <div class="sectionDiv pictureSection boxShadow">
+                    <div class="squareImg">
+                        <img class="cover" src="Assets/Images/Community/DSC04795.JPG" alt="See our campus activites">
+                    </div>
+                    <div class="narrowTextDiv">
+                        <h3 class="boxImageSlogan">Organization</h3>
+                        <h1 class="boxImageHeader">This is a Campus</h2>
+                        <p class="boxImageParagraph">Connect to local members at your campus! Organize events at your university, get together and do awesome stuff!</p>    
+                    </div>
+                </div>
+            </section>
+
+            <section id="mapSection" class="showOnScroll">
+                <div class="sectionDiv pictureSection boxShadow">
+                    <div class="narrowTextDiv">
+                        <h3 class="boxImageSlogan">Organization</h3>
+                        <h1 class="boxImageHeader">Our Hubs</h2>
+                        <p class="boxImageParagraph">Hubs are made of multiple campuses. Plan and organize with members from other campuses, universities or even cities!</p>    
+                    </div>
+                    <div class="squareImg">
+                        <img class="cover" src="Assets/Images/Community/collage.png" alt="Get an impression of our Community">
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="sectionDiv applicationDiv boxShadow">
+                    <h3 class="applicationSlogan">NICE TO MEET YOU!</h3>
+                    <div class="centerContent">
+                        <div class="hexagon"><span></span></div>
+                    </div>
+                    <h2 class="advertisementHeader textCentered">Meet the Community</h2>
+                    <div class="centerContent">
+                        <p class="boxImageParagraph textCentered">Build your network and get ready to start your career in the world of IT. Grow steadily to reach your fullest potential by a better version of yours every day.</p>
+                    </div>
+                    <div class="centerContent">
+                        <a class="link textCentered" href="events.html">LOOK AT THE EVENTS</a>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+
+        <footer>
+            <div id="imageSection">
+            </div>
+
+            <div id="copySection">
+                <div class="sectionDiv">
+                    
+                    <div>
+                        <h3>Microsoft Campus Community</h3>
+                        <p>Heßstraße 50<br/>
+                            80798 Munich<br/>
+                            Germany</p>
+                        <p id="copyInfo">&copy; {year}</p>
+                    </div>
+                    
+                    <div>
+                        <h3>Channels</h3>
+                        <a href="https://www.linkedin.com/company/microsoft-campus-community" title="MCC on LinkedIn"><p>LinkedIn</p></a>
+                        <a href="https://www.meetup.com/Hamburger-Technology-Meetup/" title="MCC on meetup.com"><p>MeetUp</p></a>
+                        <a href="https://www.twitter.com/MCC_community" title="MCC on Twitter"><p>Twitter</p></a>
+                    </div>
+
+                    <div>
+                        <h3>Get in Touch</h3>
+                        <a href="mailto:tobias.urban@campus-community.org" title="MCC on Twitter"><p>E-Mail</p></a>
+                        <a href="https://www.twitter.com/MCC_community" title="MCC on Twitter"><p>Twitter</p></a>
+                    </div>
+
+                    <div>
+                        <h3>Legal</h3>
+                        <a href="legal.html" title="See our Site Notice"><p>Site Notice</p></a>
+                        <a href="privacy.html" title="See our Privacy Policy"><p>Privacy & Cookies</p></a>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

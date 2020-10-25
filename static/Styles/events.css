@@ -1,0 +1,188 @@
+#pageTitle {
+    color: #00A4EF
+}
+
+h5 {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 75px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.eventListBox {
+    max-width: 1142px;
+    height: 149px;
+    display: flex;
+    background-color: var(--color-mcc-gray);
+    justify-content: space-around;
+    margin: 20px auto;
+}
+
+.eventListBox p {
+    color: inherit;
+}
+
+.eventDate {
+    width: 15%;
+    margin: 6px 2%;
+}
+
+.eventDate p {
+    max-width: 170px;
+
+    font-family: var(--font-bold);
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+
+.eventTitle {
+    width: 35%;
+    margin: 16px 0;
+}
+
+.eventTitle p {
+    max-width: 347px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin: 0;
+}
+
+.eventIntroText {
+    width: 42%;
+    margin: 0 2%;
+}
+
+.eventIntroText p {
+    max-width: 448px;
+    line-height: 26px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    color: var(--color-secondary);
+}
+
+#applicationBox {
+    margin-top: 300px;
+}
+
+.teamSlogan {
+    font-size: 8px;
+    color: var(--color-mcc-blue);
+}
+
+.centerContent {
+    display: flex;
+    justify-content: center;
+}
+
+.teamSlogan {
+    font-size: 8px;
+    color: var(--color-mcc-blue);
+}
+
+.hexagon {
+    position: relative;
+    width: 150px; 
+    height: 86.60px;
+    background-color: #ffffff;
+    margin: 43.30px 0;
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+  }
+  
+  .hexagon:before,
+  .hexagon:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 106.07px;
+    height: 106.07px;
+    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+    -ms-transform: scaleY(0.5774) rotate(-45deg);
+    transform: scaleY(0.5774) rotate(-45deg);
+    background-color: inherit;
+    left: 21.9670px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+  }
+  
+  .hexagon:before {
+    top: -53.0330px;
+  }
+  
+  .hexagon:after {
+    bottom: -53.0330px;
+  }
+  
+  /*cover up extra shadows*/
+  .hexagon span {
+    display: block;
+    position: absolute;
+    top:0px;
+    left: 0;
+    width:150px;
+    height:86.6025px;
+    z-index: 2;
+    background: inherit;
+  }
+
+  @media screen and (max-width: 818px) {
+    .eventListBox {
+        min-height: 400px;
+        max-height: 450px;
+        max-width: 400px;
+        min-width: 200px;
+        height: auto;
+        margin: 40px auto;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+        .eventListBox div {
+            margin: 0 40px;
+        }
+
+        .eventDate {
+            height: 85px;
+        }
+
+        .eventDate p {
+            font-family: var(--font-base);
+            font-weight: 500;
+            margin: 0;
+            line-height: 15px;
+        }
+
+        .eventDate p:first-of-type {
+            font-family: var(--font-bold);
+            margin-top: 40px;
+        }
+
+        .eventTitle {
+            height: 156px;
+            width: auto;
+        }
+
+        .eventTitle p {
+            margin: revert;
+        }
+
+        .eventIntroText {
+            width: auto;
+            margin: 0 2%;
+        }
+  }
