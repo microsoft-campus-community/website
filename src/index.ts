@@ -4,12 +4,14 @@ import express from "express";
 const server = express();
 const assets = path.join(__dirname, "..", "static");
 
+
 server.use(express.static(assets));
 
 server.get("/",(req,res) => {
+	console.dir(getStaticFile("index.html"))
 	res.sendFile(getStaticFile("index.html"));
 });
-server.get("/events",(req,res) => {
+server.get("/calendar",(req,res) => {
 	res.sendFile(getStaticFile("events.html"));
 });
 server.get("/mission",(req,res) => {
