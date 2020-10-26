@@ -52,7 +52,7 @@ nav {
         position: fixed;
         top: 80px;
         width: 100%;
-        background: #fff;
+        background: var(--color-primary);
     }
 
 nav span {
