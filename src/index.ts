@@ -55,4 +55,6 @@ function getStaticFile(fileName:string):string {
 	return path.join(assets,fileName);
 }
 
-server.listen(process.env.PORT || 8080);
+server.listen(process.env.PORT || 8080, ()=> {
+	console.info(`Server is running! Open http://localhost:${process.env.PORT || 8080}/`);
+});
