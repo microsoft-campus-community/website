@@ -13,13 +13,13 @@ server.get("/events",(req,res) => {
 	res.sendFile(getStaticFile("events.html"));
 });
 server.get("/mission",(req,res) => {
-	res.sendFile(getStaticFile("privacy.html"));
+	res.sendFile(getStaticFile("mission.html"));
 });
 server.get("/team",(req,res) => {
-	res.sendFile(getStaticFile("legal.html"));
+	res.sendFile(getStaticFile("team.html"));
 });
 server.get("/join",(req,res) => {
-	res.sendFile(getStaticFile("privacy.html"));
+	res.sendFile(getStaticFile("join.html"));
 });
 
 
