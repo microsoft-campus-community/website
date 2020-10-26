@@ -133,7 +133,7 @@ section {
     margin: 0 auto;
 }
 
-div, ol, ul, li {
+#privacy, ol, ul, li {
     color: var(--color-secondary);
     font-family: var(--font-base);
 }
