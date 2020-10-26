@@ -1,0 +1,230 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Microsoft Campus Community</title>
+        <link type="text/css" rel="icon" href="https://mccwebfiles.blob.core.windows.net/$web/favicon.ico" type="image/x-icon">
+        <link type="text/css" rel="stylesheet" href="Styles/main.css">
+        <link type="text/css" rel="stylesheet" href="Styles/mobileStyles.css">
+        <link type="text/css" rel="stylesheet" href="Styles/desktopStyles.css">
+        <link type="text/css" rel="stylesheet" href="Styles/events.css">
+        <link type="text/css" rel="stylesheet" href="Styles/advertisement.css">
+
+        <script type="text/javascript">	
+
+			function loadPage() {
+				var str = document.getElementById("copyInfo").innerText; 
+				var res = str.replace("{year}", new Date().getFullYear());
+                document.getElementById("copyInfo").innerHTML = res;
+            }      
+
+            var imported = document.createElement('script');
+            imported.src = "Assets/Scripts/scrollAnimation.js";
+            document.head.appendChild(imported);      
+
+        </script>
+
+
+    </head>
+    <body onload="loadPage()">
+        
+        <header>
+            <div id="navBar">
+                <div id="navBarLogoContainer">
+                    <a href="/" title="MCC Homepage"></a>
+                </div>
+                <div id="navBarCenterSpacing"></div>
+                <nav id="navMenu">
+                    <span><a href="/mission">Our Mission</a></span>
+                    <span><a href="/team">The Team</a></span>
+                    <span><a href="/calendar">Events</a></span>
+                    <span><a href="/join" class="mccRed">Join Now</a></span>
+                </nav>
+                <div class="menuIconContainer">
+                    <a href="#navMenu">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </a>
+                </div>    
+            </div>
+        </header>
+
+<!-- Content Start -->
+
+        <main id="contentContainer">
+            
+            <section id="introSection">
+                <div class="sectionDiv">
+                    <div id="introText">
+                        <p id="pageTitle">EVENTS</p>
+                        <h1>Join a Microsoft Campus Community Event near you</h1>
+                    </div>
+            </section>
+
+            <!--section id="sortBy">
+                <div class="sectionDiv">
+                    <h5>All Events</h5>
+                </div>
+            </section-->
+
+            <section id="eventList">
+                <div class="sectionDiv showOnScroll">
+                    <h2>There are currently no scheduled events.</h2>
+
+                    <br />
+
+                    <h2>Past Events:</h2>
+                    <a href="/LecturesAtHome">
+                        <div class="eventListBox boxShadow">
+                            <div class="eventDate mccBlue">
+                                <p>22.10.2020</p>
+                                <p>EVENT SERIES</p>
+                                <p>ONLINE</p>
+                            </div>
+
+                            <div class="eventTitle mccBlue">
+                                <p>L@H - Cloud App Security</p>
+                            </div>
+
+                            <div class="eventIntroText">
+                                <p>Cloud App Security bietet Echtzeit-Überwachungs-, Kontroll- und Analysefunktionen für Ihre IT-Systeme. Home-Offices ist ein aktuelles Thema. Aber nicht nur im Home-Office nutzen Mitarbeiter private Geräte um auf Lösungen des Unternehmens zuzugreifen oder bedienen sich Drittanbieter-Apps um mit Unternehmensdaten zu arbeiten. Auch kann ihre IT-Abteilung</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="/DigitalLearning">
+                        <div class="eventListBox boxShadow">
+                            <div class="eventDate mccGreen">
+                                <p>14.05.2020</p>
+                                <p>EVENT SERIES</p>
+                                <p>ONLINE</p>
+                            </div>
+
+                            <div class="eventTitle mccGreen">
+                                <p>Digital Learning</p>
+                            </div>
+
+                            <div class="eventIntroText">
+                                <p>Discover the possibilities of digital learning in this online only event by the Microsoft Campus Community. Discover how teachers like Sabine Thierfelder and Matthias Thiede integrate tools into their teaching and expand the possibilities of learning for their students. Dive in with us into the world of teaching and learning solutions and test out different methods and approaches to create your virtual classroom.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="Legacy/mlhLocalHackDay.html">
+                        <div class="eventListBox boxShadow">
+                            <div class="eventDate mccRed">
+                                <p>11.04.2020</p>
+                                <p>HACKATHON</p>
+                                <p>ONLINE</p>
+                            </div>
+
+                            <div class="eventTitle mccRed">
+                                <p>Local Hack Day</p>
+                            </div>
+
+                            <div class="eventIntroText">
+                                <p>The Microsoft Campus Community invites you to join us for MLH's Local Hack Day: Share Day. Share Day is a global demo day focused on highlighting the achievements of your community. Over the course of 12 hours, attendees will put the finishing touches on their current projects and participate in a global project showcase.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="/insideMicrosoft">
+                        <div class="eventListBox boxShadow">
+                            <div class="eventDate mccBlue">
+                                <p>03.04.2020</p>
+                                <p>ONLINE EVENT</p>
+                                <p>ONLINE</p>
+                            </div>
+
+                            <div class="eventTitle mccBlue">
+                                <p>Inside Microsoft</p>
+                            </div>
+
+                            <div class="eventIntroText">
+                                <p>The Microsoft Campus Community invites you to join an online conference of a different kind. Our community aims at connecting tech-enthusiastic students with experts and faciliate learning and networking. We will invite experts to give you insights into their daily business, their roles and the workings of Microsoft.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://www.tc-hamburg.com">
+                        <div class="eventListBox boxShadow">
+                            <div class="eventDate mccGreen">
+                                <p>11.12.2020</p>
+                                <p>CONFERENCE</p>
+                                <p>CAMPUS HAMBURG</p>
+                            </div>
+
+                            <div class="eventTitle mccGreen">
+                                <p>Technology Conference Hamburg Fall 2019</p>
+                            </div>
+
+                            <div class="eventIntroText">
+                                <p>Die TCH bietet schon seit über drei Jahren Technik-Wissen mit kostenlosen Vorträgen, Live-Demos und Workshops zu aktuellen Themen aus der Softwareentwicklung und dem IT-Professional Bereich. Außerdem erhaltet ihr Information zu Berufseinstieg und −weiterentwicklung.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- End Events -->
+
+            <section>
+                <div class="sectionDiv applicationDiv boxShadow">
+                    <h3 class="applicationSlogan">THE PEOPLE BEHIND THE PROCESS</h3>
+                    <div class="centerContent">
+                        <div class="hexagon"><span></span></div>
+                    </div>
+                    <h2 class="advertisementHeader textCentered">Meet the Community</h2>
+                    <div class="centerContent">
+                        <p class="boxImageParagraph textCentered">Join our network and get ready to start your career in the world of IT. Grow steadily to reach your fullest potential by being a better version of you every day.</p>
+                    </div>
+                    <div class="centerContent">
+                        <a class="link textCentered" href="/team">TAKE A LOOK AT THE TEAM</a>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+
+<!-- Content End -->
+
+<footer>
+    <div id="imageSection">
+    </div>
+
+    <div id="copySection">
+        <div class="sectionDiv">
+            
+            <div>
+                <h3>Microsoft Campus Community</h3>
+                <p>Heßstraße 50<br/>
+                    80798 Munich<br/>
+                    Germany</p>
+                <p id="copyInfo">&copy; {year}</p>
+            </div>
+            
+            <div>
+                <h3>Channels</h3>
+                <a href="https://www.linkedin.com/company/microsoft-campus-community" title="MCC on LinkedIn"><p>LinkedIn</p></a>
+                <a href="https://www.meetup.com/Hamburger-Technology-Meetup/" title="MCC on meetup.com"><p>MeetUp</p></a>
+                <a href="https://www.twitter.com/MCC_community" title="MCC on Twitter"><p>Twitter</p></a>
+            </div>
+
+            <div>
+                <h3>Get in Touch</h3>
+                <a href="mailto:tobias.urban@campus-community.org" title="MCC on Twitter"><p>E-Mail</p></a>
+                <a href="https://www.twitter.com/MCC_community" title="MCC on Twitter"><p>Twitter</p></a>
+            </div>
+
+            <div>
+                <h3>Legal</h3>
+                <a href="legal.html" title="See our Site Notice"><p>Site Notice</p></a>
+                <a href="privacy.html" title="See our Privacy Policy"><p>Privacy & Cookies</p></a>
+            </div>
+
+        </div>
+    </div>
+</footer>
+</body>
+</html>

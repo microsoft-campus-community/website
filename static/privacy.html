@@ -1,88 +1,258 @@
 <html>
     <head>
+        <meta  charset="utf-8">
         <meta name="viewport" content="width=device-width">
-		<link rel="shortcut icon" href="https://mccwebfiles.blob.core.windows.net/$web/favicon.ico" type="image/x-icon">
-		<link rel="icon" href="https://mccwebfiles.blob.core.windows.net/$web/favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" type="text/css" href="styles.css" />
-        <title>Inside Microsoft - Privacy</title>
-		<script type="text/javascript">
-			function loadPage() {
-				var str = document.getElementById("copyInfo").innerText; 
-				var res = str.replace("{year}", new Date().getFullYear());
-				document.getElementById("copyInfo").innerHTML = res;
-			}
-		</script>
+        <title>Microsoft Campus Community</title>
+        <link rel="icon" href="https://mccwebfiles.blob.core.windows.net/$web/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="Styles/main.css">
+        <link rel="stylesheet" href="Styles/mobileStyles.css">
+        <link rel="stylesheet" href="Styles/desktopStyles.css">
     </head>
-    <body onload="loadPage()">
-        <section id="titleBanner">
-			<img src="https://mccwebfiles.blob.core.windows.net/$web/MCCLogoFullCrop.png">
-			<h1 id="titleLabel"><span class="textItalic">Inside Microsoft</span> - Webcast</h1>
-		</section>
-
-		<section id="introSection" class="sectionPreparation simpleSection flexbox">
-			<div class="bigText">
-				<h2 class="titleGeneral">Our Privacy Policy.</h2>
-				<h3>Please read carefully.</h3>
-				<p class="descriptionText">You need to agree to this policy in order to register for the event.</p>	
-			</div>
-        </section>
+    <body>
         
-        <section id="motivationSection1" class="motivationSections sectionPreparation">
-			<h2 class="longText">See the Privacy Policy for <a href="https://go.microsoft.com/fwlink/p/?linkid=857875">Microsoft Forms</a></h2>
-        </section>
-		
-		<section id="agendaSection" class="sectionPreparation simpleSection">
-			<div class="longText">
-				<h2>Datenschutzerkl&auml;rung</h2>
-				<br />
-				<h2 class="titleGeneral">Allgemeiner Hinweis und Pflichtinformationen</h2>
-				<h2 class="titleGeneral">Benennung der verantwortlichen Stelle</h2>
-				<p>Die verantwortliche Stelle f&uuml;r die Datenverarbeitung auf dieser Website ist:</p>	
-				<p>Microsoft Campus Community</p>
-				<p>Tobias Urban</p>
-				<p>Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen &uuml;ber die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.B. Namen, Kontaktdaten o. &auml;.).</p>
-				<br />
-				<h2 class="titleGeneral">Widerruf Ihrer Einwilligung zur Datenverarbeitung</h2>
-				<p>Nur mit Ihrer ausdr&uuml;cklichen Einwilligung sind einige Vorg&auml;nge der Datenverarbeitung m&ouml;glich. Ein Widerruf Ihrer bereits erteilten Einwilligung ist jederzeit m&ouml;glich. F&uuml;r den Widerruf gen&uuml;gt eine formlose Mitteilung per E-Mail. Die Rechtm&auml;ßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unber&uuml;hrt.</p>
-				<br />
-				<h2 class="titleGeneral">Recht auf Beschwerde bei der zust&auml;ndigen Aufsichtsbeh&ouml;rde</h2>
-				<p>Als Betroffener steht Ihnen im Falle eines datenschutzrechtlichen Verstoßes ein Beschwerderecht bei der zust&auml;ndigen Aufsichtsbeh&ouml;rde zu. Zust&auml;ndige Aufsichtsbeh&ouml;rde bez&uuml;glich datenschutzrechtlicher Fragen ist der Landesdatenschutzbeauftragte des Bundeslandes, in dem sich der Sitz unseres Unternehmens befindet. Der folgende Link stellt eine Liste der Datenschutzbeauftragten sowie deren Kontaktdaten bereit: https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html.</p>
-				<br />
-				<h2 class="titleGeneral">Recht auf Daten&uuml;bertragbarkeit</h2>
-				<p>Ihnen steht das Recht zu, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erf&uuml;llung eines Vertrags automatisiert verarbeiten, an sich oder an Dritte aush&auml;ndigen zu lassen. Die Bereitstellung erfolgt in einem maschinenlesbaren Format. Sofern Sie die direkte &uuml;bertragung der Daten an einen anderen Verantwortlichen verlangen, erfolgt dies nur, soweit es technisch machbar ist.</p>
-				<br />
-				<h2 class="titleGeneral">Recht auf Auskunft, Berichtigung, Sperrung, L&ouml;schung</h2>
-				<p>Sie haben jederzeit im Rahmen der geltenden gesetzlichen Bestimmungen das Recht auf unentgeltliche Auskunft &uuml;ber Ihre gespeicherten personenbezogenen Daten, Herkunft der Daten, deren Empf&auml;nger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung, Sperrung oder L&ouml;schung dieser Daten. Diesbez&uuml;glich und auch zu weiteren Fragen zum Thema personenbezogene Daten k&ouml;nnen Sie sich jederzeit &uuml;ber die im Impressum aufgef&uuml;hrten Kontaktm&ouml;glichkeiten an uns wenden.</p>
-				<br />
-				<h2 class="titleGeneral">SSL- bzw. TLS-Verschl&uuml;sselung</h2>
-				<p>Aus Sicherheitsgr&uuml;nden und zum Schutz der &uuml;bertragung vertraulicher Inhalte, die Sie an uns als Seitenbetreiber senden, nutzt unsere Website eine SSL-bzw. TLS-Verschl&uuml;sselung. Damit sind Daten, die Sie &uuml;ber diese Website &uuml;bermitteln, f&uuml;r Dritte nicht mitlesbar. Sie erkennen eine verschl&uuml;sselte Verbindung an der „https://“ Adresszeile Ihres Browsers und am Schloss-Symbol in der Browserzeile.</p>
-				<br />
-				<h2 class="titleGeneral">Registrierung auf dieser Website</h2>
-				<p>Zur Anmeldung zum Inside Microsoft Webcast k&ouml;nnen Sie sich auf unserer Website registrieren. Die &uuml;bermittelten Daten dienen ausschließlich zum Zwecke der Nutzung des jeweiligen Angebotes oder Dienstes. Bei der Registrierung abgefragte Pflichtangaben sind vollst&auml;ndig anzugeben. Andernfalls werden wir die Registrierung ablehnen.
-					Im Falle wichtiger &auml;nderungen, etwa aus technischen Gr&uuml;nden, informieren wir Sie per E-Mail. Die E-Mail wird an die Adresse versendet, die bei der Registrierung angegeben wurde.			
-					Die Verarbeitung der bei der Registrierung eingegebenen Daten erfolgt auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Ein Widerruf Ihrer bereits erteilten Einwilligung ist jederzeit m&ouml;glich. F&uuml;r den Widerruf gen&uuml;gt eine formlose Mitteilung per E-Mail. Die Rechtm&auml;ßigkeit der bereits erfolgten Datenverarbeitung bleibt vom Widerruf unber&uuml;hrt.
-					Wir speichern die bei der Registrierung erfassten Daten w&auml;hrend des Zeitraums, den Sie auf unserer Website registriert sind. Ihren Daten werden gel&ouml;scht, sollten Sie Ihre Registrierung aufheben. Gesetzliche Aufbewahrungsfristen bleiben unber&uuml;hrt.
-					Informationen zur Datenerhebung durch Microsoft Forms, finden Sie auf dessen Website.</p>
-			</div>
-		</section>
+        <header>
+            <div id="navBar">
+                <div id="navBarLogoContainer">
+                    <a href="/" title="MCC Homepage"></a>
+                </div>
+                <div id="navBarCenterSpacing"></div>
+                <nav id="navMenu">
+                    <span><a href="/mission">Our Mission</a></span>
+                    <span><a href="/team">The Team</a></span>
+                    <span><a href="/calendar">Events</a></span>
+                    <span><a href="/join" class="mccRed">Join Now</a></span>
+                </nav>
+                <div class="menuIconContainer">
+                    <a href="#navMenu">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </a>
+                </div>    
+            </div>
+        </header>
+        
+<!-- Content Start -->
 
-		<section id="motivationSection2" class="motivationSections sectionPreparation">
-			<h2 class="longText">Become part of our independent German-wide community of techies and tech-enthusiasts and apply now!</h2>
-		</section>
+        <main id="contentContainer">
+            
+            <section id="introSection">
+                <div class="sectionDiv">
+                    <div id="introText">
+                        <p id="pageTitle">PRIVACY</p>
+                        <h1>Our Privacy Policy</h1>
+                    </div>
+                </div>
+            </section>
 
-        <section id="mccBanner" class="sectionPreparation simpleSection">
-			<div class="longText flexbox">
-				<img id="mccLogo" src="https://mccwebfiles.blob.core.windows.net/$web/logoIcon.png">
-				<div class="nextToImg">
-					<h2 class="titleGeneral titleMCC">Microsoft Campus Community</h2>
-					<p class="descriptionText"><span class="textBold">Who We Are:</span> Microsoft Campus Community is a German-wide In-person community with the goal to build a deep technical understanding for students of all specializations. Together we <span class="textBold">inspire, learn and develop</span> our technical and our soft skills and share our learnings with our peers.</p>
-					<p class="titleGeneral textBold">Inspire. Learn. Develop.</p>
-				</div>	
-			</div>
-		</section>
-		
-		<section id="footBanner" class="flexbox">
-			<p id="copyInfo">&copy; {year} - Microsoft Campus Community</p>&emsp;-&emsp;<a href="legal.html">Impressum</a>&ensp;|&ensp;<a href="privacy.html">Datenschutz</a>
-		</section>
+            <section>
+                <div class="sectionDiv">
+                    <h2>We value privacy</h2>
+                    <p>Wir freuen uns sehr über Ihr Interesse an unserem Community. Datenschutz hat einen besonders hohen Stellenwert für die Geschäftsleitung der Campus Community. Eine Nutzung der Internetseiten der Campus Community ist grundsätzlich ohne jede Angabe personenbezogener Daten möglich. Sofern eine betroffene Person besondere Services unseres Communitys über unsere Internetseite in Anspruch nehmen möchte, könnte jedoch eine Verarbeitung personenbezogener Daten erforderlich werden. Ist die Verarbeitung personenbezogener Daten erforderlich und besteht für eine solche Verarbeitung keine gesetzliche Grundlage, holen wir generell eine Einwilligung der betroffenen Person ein.</p>
+                    <p>Die Verarbeitung personenbezogener Daten, beispielsweise des Namens, der Anschrift, E-Mail-Adresse oder Telefonnummer einer betroffenen Person, erfolgt stets im Einklang mit der Datenschutz-Grundverordnung und in Übereinstimmung mit den für die Campus Community geltenden landesspezifischen Datenschutzbestimmungen. Mittels dieser Datenschutzerklärung möchte unser Community die Öffentlichkeit über Art, Umfang und Zweck der von uns erhobenen, genutzten und verarbeiteten personenbezogenen Daten informieren. Ferner werden betroffene Personen mittels dieser Datenschutzerklärung über die ihnen zustehenden Rechte aufgeklärt.<br />
+                        Die Campus Community hat als für die Verarbeitung Verantwortlicher zahlreiche technische und organisatorische Maßnahmen umgesetzt, um einen möglichst lückenlosen Schutz der über diese Internetseite verarbeiteten personenbezogenen Daten sicherzustellen. Dennoch können Internetbasierte Datenübertragungen grundsätzlich Sicherheitslücken aufweisen, sodass ein absoluter Schutz nicht gewährleistet werden kann. Aus diesem Grund steht es jeder betroffenen Person frei, personenbezogene Daten auch auf alternativen Wegen, beispielsweise telefonisch, an uns zu übermitteln</p>
+                    <h3>– Aktuelle Version vom 25. Oktober 2020</h3>
+                </div>
+            </section>
+
+            <section id="privacy">
+                <div class="sectionDiv">
+                    <br />
+
+                    <p>Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder E-Mail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben.
+                        Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.
+                        Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendungvon Werbeinformationen, etwa durch Spam-Mails, vor. </p>
+                                        <p>Wir informieren Sie nachfolgend gemäß den gesetzlichen Vorgaben des Datenschutzrechts (insb. gemäß der europäischen Datenschutz-Grundverordnung ‚EU-DSGVO‘) über die Art, den Umfang und Zweck der Verarbeitung personenbezogener Daten durch uns im Rahmen der Technology Conference Hamburg. Diese Datenschutzerklärung gilt auch für unsere Websites und Social-Media-Profile. Bezüglich der Definition von Begriffen wie etwa „personenbezogene Daten“ oder „Verarbeitung“ verweisen wir auf Art. 4 EU-DSGVO.</p>
+                                        <h3>Name und Kontaktdaten des / der Verantwortlichen</h3>Unser/e Verantwortliche/r (nachfolgend „Verantwortlicher“) i.S.d. Art. 4 Zif. 7 EU-DSGVO ist:<br />Tobias UrbanHeßstraße 5080798 MünchenE-Mail-Adresse: tobias.urban&commat;campus-community.org    
+                                        <h3>Datenarten, Zwecke der Verarbeitung und Kategorien betroffener Personen</h3>
+                                        <p>Nachfolgend informieren wir Sie über Art, Umfang und Zweck der Erhebung, Verarbeitung und Nutzung personenbezogener Daten.</p>
+                                        <h3>1. Arten der Daten, die wir verarbeiten</h3>
+                     
+                     Bestandsdaten (Name, E-Mail-Adresse etc.), Vertragsdaten (Gegenstand des Vertrages, Laufzeit etc.)
+                     
+                     Diese Daten werden von Ihnen selbst bereitgestellt. Sie werden uns durch Ihre Registrierung bereitgestellt. Die Registrierung ist freiwillig.
+                     
+                                        <h3>2. Zwecke der Verarbeitung nach Art. 13 Abs. 1 c) EU-DSGVO</h3>
+                     
+                     Abwicklung von Verträgen, Erfüllung vertraglicher Verpflichtungen, Optimierung und statistische Auswertung unserer Dienste, Erstellung von Statistiken, Websites mit Funktionen und Inhalten bereitstellen
+                     
+                     Alle Daten, die wir verarbeiten, dienen dem Zweck, den Registrierungsvorgang durchzuführen, abzuschließen und Ihnen unsere Dienste, die Sie durch Ihre Registrierung von uns erhalten können, zur Verfügung zu stellen.
+                     Darüber hinaus werden die Daten nach Erbringung der Leistungen anonymisiert, sodass ein Personenbezug nicht, bzw. nicht ohne unerheblichen Aufwand, wiederhergstellt werden kann, und statistisch ausgewertet.
+                     
+                     
+                     <h3>3. Kategorien der betroffenen Personen nach Art. 13 Abs. 1 e) EU-DSGVO</h3>
+                         Besucher/Nutzer der Website, Kunden
+                         
+                         Sie stellen uns Ihre Daten selbst zur Verfügung. Sie stellen uns die Daten durch Ihre Registrierung zur Verügung. Die Registrierung ist optional und nicht verpflichtend.
+                         
+                         <p>Die betroffenen Personen werden zusammenfassend als „Nutzer“ bezeichnet.</p>
+                         
+                    
+                         <h3>Rechtsgrundlagen der Verarbeitung personenbezogener Daten</h3>
+                         <p>Nachfolgend Informieren wir Sie über die Rechtsgrundlagen der Verarbeitung personenbezogener Daten:</p>
+                         <ol style="margin:10px 0px; padding:15px;">
+                             <li>Wenn wir Ihre Einwilligung für die Verarbeitung personenbezogenen Daten eingeholt haben, ist Art. 6 Abs. 1 S. 1 lit. a) EU-DSGVO Rechtsgrundlage.</li>
+                             <li>Ist die Verarbeitung zur Erfüllung eines Vertrags oder zur Durchführung vorvertraglicher Maßnahmen erforderlich, die auf Ihre Anfrage hin erfolgen, so ist Art. 6 Abs. 1 S. 1 lit. b) EU-DSGVO Rechtsgrundlage.</li>
+                             <li>Ist die Verarbeitung zur Erfüllung einer rechtlichen Verpflichtung erforderlich, der wir unterliegen (z.B. gesetzliche Aufbewahrungspflichten), so ist Art. 6 Abs. 1 S. 1 lit. c) EU-DSGVO Rechtsgrundlage.</li>
+                             <li>Ist die Verarbeitung erforderlich, um lebenswichtige Interessen der betroffenen Person oder einer anderen natürlichen Person zu schützen, so ist Art. 6 Abs. 1 S. 1 lit. d) EU-DSGVO Rechtsgrundlage.</li>
+                             <li>Ist die Verarbeitung zur Wahrung unserer oder der berechtigten Interessen eines Dritten erforderlich und überwiegen diesbezüglich Ihre Interessen oder Grundrechte und Grundfreiheiten nicht, so ist Art. 6 Abs. 1 S. 1 lit. f) EU-DSGVO Rechtsgrundlage.</li>
+                         </ol>
+                         
+                         <h3>Weitergabe personenbezogener Daten an Dritte und Auftragsverarbeiter</h3>
+                         <p>Ohne Ihre Einwilligung geben wir grundsätzlich keine Daten an Dritte weiter. Sollte dies doch der Fall sein, dann erfolgt die Weitergabe auf der Grundlage der zuvor genannten Rechtsgrundlagen z.B. bei der Weitergabe von Daten an Online-Paymentanbieter zur Vertragserfüllung oder aufgrund gerichtlicher Anordnung oder wegen einer gesetzlichen Verpflichtung zur Herausgabe der Daten zum Zwecke der Strafverfolgung, zur Gefahrenabwehr oder zur Durchsetzung der Rechte am geistigen Eigentum.
+                             Wir setzen zudem Auftragsverarbeiter (externe Dienstleister z.B. zum Webhosting unserer Websites und Datenbanken) zur Verarbeitung Ihrer Daten ein. Wenn im Rahmen einer Vereinbarung zur Auftragsverarbeitung an die Auftragsverarbeiter Daten weitergegeben werden, erfolgt dies immer nach Art. 28 EU-DSGVO. Wir wählen dabei unsere Auftragsverarbeiter sorgfältig aus, kontrollieren diese regelmäßig und haben uns ein Weisungsrecht hinsichtlich der Daten einräumen lassen. Zudem müssen die Auftragsverarbeiter geeignete technische und organisatorische Maßnahmen getroffen haben und die Datenschutzvorschriften gem. BDSG n.F. und EU-DSGVO einhalten</p>
+                    
+                         
+                         <h3>Datenübermittlung in Drittstaaten</h3>
+                         <p>Durch die Verabschiedung der europäischen Datenschutz-Grundverordnung (EU-DSGVO) wurde eine einheitliche Grundlage für den Datenschutz in Europa geschaffen. Ihre Daten werden daher vorwiegend durch Unternehmen verarbeitet, für die EU-DSGVO Anwendung findet. Sollte doch die Verarbeitung durch Dienste Dritter außerhalb der Europäischen Union oder des Europäischen Wirtschaftsraums stattfinden, so müssen diese die besonderen Voraussetzungen der Art. 44 ff. EU-DSGVO erfüllen. Das bedeutet, die Verarbeitung erfolgt aufgrund besonderer Garantien, wie etwa die von der EU-Kommission offiziell anerkannte Feststellung eines der EU entsprechenden Datenschutzniveaus oder der Beachtung offiziell anerkannter spezieller vertraglicher Verpflichtungen, der so genannten „Standardvertragsklauseln“. Bei US-Unternehmen erfüllt die Unterwerfung unter das sog. „Privacy-Shield“, dem Datenschutzabkommen zwischen der EU und den USA, diese Voraussetzungen.</p>
+                    
+                         
+                         <h3>Löschung von Daten und Speicherdauer</h3>
+                         <p>Sofern nicht in dieser Datenschutzerklärung ausdrücklich angegeben, werden Ihre personenbezogen Daten gelöscht oder gesperrt, sobald der Zweck für die Speicherung entfällt, es sei denn deren weitere Aufbewahrung ist zu Beweiszwecken erforderlich oder dem stehen gesetzliche Aufbewahrungspflichten entgegenstehen. Darunter fallen etwa handelsrechtliche Aufbewahrungspflichten von Geschäftsbriefen nach § 257 Abs. 1 HGB (6 Jahre) sowie steuerrechtliche Aufbewahrungspflichten nach § 147 Abs. 1 AO von Belegen (10 Jahre). Wenn die vorgeschriebene Aufbewahrungsfrist abläuft, erfolgt eine Sperrung oder Löschung Ihrer Daten, es sei denn die Speicherung ist weiterhin für einen Vertragsabschluss oder zur Vertragserfüllung erforderlich.</p>
+                    
+                         
+                         <h3>Bestehen einer automatisierten Entscheidungsfindung</h3>
+                         <p>Wir setzen keine automatische Entscheidungsfindung oder ein Profiling ein.</p>
+                    
+                         
+                         <h3>Bereitstellung unserer Website und Erstellung von Logfiles</h3>
+                         <ol style="margin:10px 0px; padding:15px;">
+                              <li>Wenn Sie unsere Webseite lediglich informatorisch nutzen (also keine Registrierung und auch keine anderweitige Übermittlung von Informationen), erheben wir nur die personenbezogenen Daten, die Ihr Browser an unseren Server übermittelt. Wenn Sie unsere Website betrachten möchten, erheben wir die folgenden Daten:
+                             • IP-Adresse;
+                             • Internet-Service-Provider des Nutzers;
+                             • Datum und Uhrzeit des Abrufs;
+                             • Browsertyp;
+                             • Sprache und Browser-Version;
+                             • Inhalt des Abrufs;
+                             • Zeitzone;
+                             • Zugriffsstatus/HTTP-Statuscode;
+                             • Datenmenge;
+                             • Websites, von denen die Anforderung kommt;
+                             • Betriebssystem.
+                             Eine Speicherung dieser Daten zusammen mit anderen personenbezogenen Daten von Ihnen findet nicht statt.
+                              </li>
+                             <li>Diese Daten dienen dem Zweck der nutzerfreundlichen, funktionsfähigen und sicheren Auslieferung unserer Website an Sie mit Funktionen und Inhalten sowie deren Optimierung und statistischen Auswertung.</li>
+                             <li>Rechtsgrundlage hierfür ist unser in den obigen Zwecken auch liegendes berechtigtes Interesse an der Datenverarbeitung nach Art. 6 Abs. 1 S.1 lit. f)  EU-DSGVO.</li>
+                             <li>Wir speichern aus Sicherheitsgründen diese Daten in Server-Logfiles für die Speicherdauer von 90 Tagen. Nach Ablauf dieser Frist werden diese automatisch gelöscht, es sei denn wir benötigen deren Aufbewahrung zu Beweiszwecken bei Angriffen auf die Serverinfrastruktur oder anderen Rechtsverletzungen.</li>
+                         </ol>
+                         
+  <h3>Abwicklung von Verträgen</h3>
+  <ol style="margin:10px 0px; padding:15px;">
+      <li>Wir verarbeiten Bestandsdaten (z.B. Unternehmen, Titel/akademischer Grad, Namen und Adressen sowie Kontaktdaten von Nutzern, E-Mail) und Vertragsdaten (z.B. in Anspruch genommene Leistungen, Namen von Kontaktpersonen) zwecks Erfüllung unserer vertraglichen Verpflichtungen (Kenntnis, wer Vertragspartner ist; Begründung, inhaltliche Ausgestaltung und Abwicklung des Vertrags; Überprüfung auf Plausibilität der Daten) und Serviceleistungen (z.B. Kontaktaufnahme des Kundenservice) gem. Art. 6 Abs. 1 S. 1 lit b) EU-DSGVO. Die in Onlineformularen als verpflichtend gekennzeichneten Eingaben, sind für den Vertragsschluss erforderlich.</li>
+      <li>Eine Weitergabe dieser Daten an Dritte erfolgt grundsätzlich nicht, außer sie ist zur Verfolgung unserer Ansprüche (z.B. Übergabe an Rechtsanwalt zum Inkasso) oder zur Erfüllung des Vertrags (z.B. Übergabe der Daten an Zahlungsanbieter) erforderlich oder es besteht hierzu besteht eine gesetzliche Verpflichtung gem. Art. 6 Abs. 1 S. 1 lit. c) EU-DSGVO.</li>
+                             <li>Sofern Sie uns die Erlaubnis erteilen, nutzen wir Ihre Daten gegebenenfalls, um Sie über weitere Leistungen und Veranstaltungen zu informieren.</li>
+      <li>Die Daten werden gelöscht, sobald sie für die Erreichung des Zweckes ihrer Erhebung nicht mehr erforderlich sind. Dies ist für die Bestands- und Vertragsdaten dann der Fall, wenn die Daten für die Durchführung des Vertrages nicht mehr erforderlich sind und keine Ansprüche mehr aus dem Vertrag geltend gemacht werden können, weil diese verjährt sind (Gewährleistung: zwei Jahre / Regelverjährung: drei Jahre).</li>
+  </ol>
+  <h3>Kontaktaufnahme per Kontaktformular / E-Mail / Fax / Post</h3>
+  <ol style="margin:10px 0px; padding:15px;">
+      <li>Bei der Kontaktaufnahme mit uns per Kontaktformular, Fax, Post oder E-Mail werden Ihre Angaben zum Zwecke der Abwicklung der Kontaktanfrage verarbeitet.</li>
+      <li>Rechtsgrundlage für die Verarbeitung der Daten ist bei Vorliegen einer Einwilligung von Ihnen Art. 6 Abs. 1 S. 1 lit. a) EU-DSGVO. Rechtsgrundlage für die Verarbeitung der Daten, die im Zuge einer Kontaktanfrage oder E-Mail, eines Briefes oder Faxes übermittelt werden, ist Art. 6 Abs. 1 S. 1 lit. f) EU-DSGVO. Der Verantwortliche hat ein berechtigtes Interesse an der Verarbeitung und Speicherung der Daten, um Anfragen der Nutzer beantworten zu können, zur Beweissicherung aus Haftungsgründen und um ggf. seiner gesetzlichen Aufbewahrungspflichten bei Geschäftsbriefen nachkommen zu können. Zielt der Kontakt auf den Abschluss eines Vertrages ab, so ist zusätzliche Rechtsgrundlage für die Verarbeitung Art. 6 Abs. 1 S. 1 lit. b) EU-DSGVO.</li>
+      <li>Wir können Ihre Angaben und Kontaktanfrage in unserem Customer-Relationship-Management System ("CRM System") oder einem vergleichbaren System speichern.</li>
+      <li>Die Daten werden gelöscht, sobald sie für die Erreichung des Zweckes ihrer Erhebung nicht mehr erforderlich sind. Für die personenbezogenen Daten aus der Eingabemaske des Kontaktformulars und diejenigen, die per E-Mail übersandt wurden, ist dies dann der Fall, wenn die jeweilige Konversation mit Ihnen beendet ist. Beendet ist die Konversation dann, wenn sich aus den Umständen entnehmen lässt, dass der betroffene Sachverhalt abschließend geklärt ist. Anfragen von Nutzern, die über einen Account bzw. Vertrag mit uns verfügen, speichern wir bis zum Ablauf von zwei Jahren nach Vertragsbeendigung. Im Fall von gesetzlichen Archivierungspflichten erfolgt die Löschung nach deren Ablauf: Ende handelsrechtlicher (6 Jahre) und steuerrechtlicher (10 Jahre) Aufbewahrungspflicht.</li>
+      <li>Sie haben jederzeit die Möglichkeit, die Einwilligung nach Art. 6 Abs. 1 S. 1 lit. a) EU-DSGVO zur Verarbeitung der personenbezogenen Daten zu widerrufen. Nehmen Sie per E-Mail Kontakt mit uns auf, so können Sie der Speicherung der personenbezogenen Daten jederzeit widersprechen.</li>
+  </ol>
+                         <h3>Google Maps</h3>
+                    
+                             <ol style="margin:10px 0px; padding:15px;">
+                                 <li>Wir haben auf unserer Website Karten von „Google Maps“ (Google Ireland Limited, Registernr.: 368047, Gordon House, Barrow Street, Dublin 4, Irland) integriert. Damit können wirden Standort von Adressen und eine Anfahrtsbeschreibung direkt auf unserer Website in interaktiven Karten anzeigen und Ihnen die Nutzung dieses Tools ermöglichen.</li>
+                                 <li>Bei dem Abruf unserer Website, wo Google Maps integriert ist, wird eine Verbindung zu den Servern von Google in den USA aufgebaut. Hierbei können Ihre IP und Standort an Google übertragen werden. Zudem erhält Google die Information, dass Sie die entsprechende Seite aufgerufen haben. Dies erfolgt auch ohne Nutzerkonto bei Google. Sollten Sie in Ihren Google-Account eingeloggt sein, kann Google die obigen Daten Ihrem Account zuordnen. Wenn Sie dies nicht wünschen, müssen Sie sich bei Ihrem Google-Account ausloggen. Google erstellt aus solchen Daten Nutzerprofile und nutzt diese Daten zum Zwecke der Werbung, Marktforschung oder Optimierung seiner Websites.</li>
+                                 <li>Rechtsgrundlage hierfür ist unser in den obigen Zwecken auch liegendes berechtigtes Interesse an der Datenverarbeitung nach Art. 6 Abs. 1 S.1 lit. f)  EU-DSGVO.</li>
+                                 <li>Sie haben gegenüber Google ein Widerspruchsrecht gegen die Bildung von Nutzerprofilen. Bitte richten Sie sich deswegen direkt an Google über die unten genannte Datenschutzerklärung. Ein Opt-Out-Widerspruch hinsichtlich der Werbe-Cookies können Sie hier in Ihrem Google-Account vornehmen:<a href="https://adssettings.google.com/authenticated" rel="nofollow" target="_blank">https://adssettings.google.com/authenticated</a>.</li>
+                                 <li>In den Nutzungsbedingungen von Google Maps unter
+                                     <a href="https://www.google.com/intl/de_de/help/terms_maps.html" rel="nofollow" target="_blank">https://www.google.com/intl/de_de/help/terms_maps.html</a> und in der Datenschutzerklärung für Werbung von Google unter <a href="https://policies.google.com/technologies/ads" rel="nofollow" target="_blank">https://policies.google.com/technologies/ads</a> finden Sie weitere Informationen zur Verwendung von Google Cookies und deren Werbetechnologien, Speicherdauer, Anonymisierung, Standortdaten, Funktionsweise und Ihre Rechte. Allgemeine Datenschutzerklärung von Google: <a href="https://policies.google.com/privacy" rel="nofollow" target="_blank">https://policies.google.com/privacy</a>.</li>
+                                 <li>Google ist nach dem EU-US Privacy Shield zertifiziert (<a href="https://www.privacyshield.gov/EU-US-Framework" rel="nofollow" target="_blank">https://www.privacyshield.gov/EU-US-Framework</a>) und daher verpflichtet europäisches Datenschutzrecht einzuhalten.</li>
+                             </ol>
+                             <h3>Präsenz in sozialen Medien</h3>
+                    
+                             <ol style="margin:10px 0px; padding:15px;">
+                                 <li>Wir unterhalten in sozialen Medien Profile bzw. Fanpages, um mit den dort angeschlossenen und registrierten Nutzern zu kommunizieren und um über unsere Produkte, Angebote und Dienstleistungen zu informieren. Die US-Anbieter sind nach dem sog. Privacy-Shield zertifiziert und damit verpflichtet europäischen Datenschutz einzuhalten. Bei der Nutzung und dem Aufruf unseres Profils im jeweiligen Netzwerk durch Sie gelten die jeweiligen Datenschutzhinweise und Nutzungsbedingungen des jeweiligen Netzwerks.</li>
+                                 <li>Wir verarbeiten Ihre Daten, die Sie uns über diese Netzwerke senden, um mit Ihnen zu kommunizieren und um Ihre dortigen Nachrichten zu beantworten.</li>
+                                 <li>Die Rechtsgrundlage für die Verarbeitung der personenbezogenen Daten ist unser berechtigtes Interesse an der Kommunikation mit den Nutzern und unsere Außendarstellung zwecks Werbung gemäß Art. 6 Abs. 1 S. 1 lit. f) EU-DSGVO. Soweit Sie dem Verantwortlichen des sozialen Netzwerks eine Einwilligung in die Verarbeitung Ihrer personenbezogenen Daten erteilt haben, ist Rechtsgrundlage Art. 6 Abs. 1 S. 1 lit. a) und Art. 7 EU-DSGVO.</li>
+                                 <li>Die Datenschutzhinweise, Auskunftsmöglichkeiten und Widerspruchmöglichkeiten (Opt-Out) der jeweiligen Netzwerke finden Sie hier:
+                                     • <h3>Facebook</h3> (Facebook Ireland Ltd., 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Irland)  Datenschutzerklärung: <a href="https://www.facebook.com/about/privacy/" rel="nofollow" target="_blank">https://www.facebook.com/about/privacy/</a>, Opt-Out: <a href="https://www.facebook.com/settings?tab=ads" rel="nofollow" target="_blank">https://www.facebook.com/settings?tab=ads</a> und <a href="http://www.youronlinechoices.com" rel="nofollow" target="_blank">http://www.youronlinechoices.com</a>, Privacy Shield: <a href="https://www.privacyshield.gov/participant?id=a2zt0000000GnywAAC&amp;status=Active" rel="nofollow" target="_blank">https://www.privacyshield.gov/participant?id=a2zt0000000GnywAAC&amp;status=Active</a>.
+                                     • <h3>Twitter</h3> (Twitter Inc., 1355 Market Street, Suite 900, San Francisco, CA 94103, USA) - Datenschutzerklärung: <a href="https://twitter.com/de/privacy" rel="nofollow" target="_blank">https://twitter.com/de/privacy</a>, Opt-Out: <a href="https://twitter.com/personalization" rel="nofollow" target="_blank">https://twitter.com/personalization</a>, Privacy Shield: <a href="https://www.privacyshield.gov/participant?id=a2zt0000000TORzAAO&amp;status=Active" rel="nofollow" target="_blank">https://www.privacyshield.gov/participant?id=a2zt0000000TORzAAO&amp;status=Active</a>. Wir nutzen das Twitter Timeline-Widget. Für die Nutzung dieses Plugins haben wir die Opt-Out Optionen zum Schutz Ihrer Privatsphäre aktiviert. Weitere Informationen zu Twitter-Widgets finden Sie hier: <a href="https://help.twitter.com/de/twitter-for-websites-ads-info-and-privacy" rel="nofollow" target="_blank">https://help.twitter.com/de/twitter-for-websites-ads-info-and-privacy</a>
+                                     • <h3>XING</h3> (XING AG, Dammtorstraße 29-32, 20354 Hamburg, Deutschland) - Datenschutzerklärung/ Opt-Out: <a href="https://privacy.xing.com/de/datenschutzerklaerung" rel="nofollow" target="_blank">https://privacy.xing.com/de/datenschutzerklaerung</a>.</li>
+                             </ol>
+                         <h3>Rechte der betroffenen Person</h3>
+                    
+                         <ol style="margin:10px 0px; padding:15px;">
+                             <li><h3>Widerspruch oder Widerruf gegen die Verarbeitung Ihrer Daten
+                                 Soweit die Verarbeitung auf Ihrer Einwilligung gemäß Art. 6 Abs. 1 S. 1 lit. a), Art. 7 EU-DSGVO beruht, haben Sie das Recht, die Einwilligung jederzeit zu widerrufen. Die Rechtmäßigkeit der aufgrund der Einwilligung bis zum Widerruf erfolgten Verarbeitung wird dadurch nicht berührt.
+                                 Soweit wir die Verarbeitung Ihrer personenbezogenen Daten auf die Interessenabwägung gemäß Art. 6 Abs. 1 S. 1 lit. f) EU-DSGVO stützen, können Sie Widerspruch gegen die Verarbeitung einlegen. Dies ist der Fall, wenn die Verarbeitung insbesondere nicht zur Erfüllung eines Vertrags mit Ihnen erforderlich ist, was von uns jeweils bei der nachfolgenden Beschreibung der Funktionen dargestellt wird. Bei Ausübung eines solchen Widerspruchs bitten wir um Darlegung der Gründe, weshalb wir Ihre personenbezogenen Daten nicht wie von uns durchgeführt verarbeiten sollten. Im Falle Ihres begründeten Widerspruchs prüfen wir die Sachlage und werden entweder die Datenverarbeitung einstellen bzw. anpassen oder Ihnen unsere zwingenden schutzwürdigen Gründe aufzeigen, aufgrund derer wir die Verarbeitung fortführen.
+                                 Sie können der Verarbeitung Ihrer personenbezogenen Daten für Zwecke der Werbung und Datenanalyse jederzeit widersprechen. Das Widerspruchsrecht können Sie kostenfrei ausüben. Über Ihren Werbewiderspruch können Sie uns unter folgenden Kontaktdaten informieren:Sandra StankewitzMax-Brauer-Allee 6522765 HamburgE-Mail-Adresse: info@tc-hamburg.com</h3>
+      </li>
+      <li><h3>Recht auf Auskunft</h3>
+          Sie haben das Recht, von uns eine Bestätigung darüber zu verlangen, ob Sie betreffende personenbezogene Daten verarbeitet werden. Sofern dies der Fall ist, haben Sie ein Recht auf Auskunft über Ihre bei uns gespeicherten persönlichen Daten nach Art. 15 EU-DSGVO. Dies beinhaltet insbesondere die Auskunft über die Verarbeitungszwecke, die Kategorie der personenbezogenen Daten, die Kategorien von Empfängern, gegenüber denen Ihre Daten offengelegt wurden oder werden, die geplante Speicherdauer, die Herkunft ihrer Daten, sofern diese nicht direkt bei Ihnen erhoben wurden.</li>
+      <li><h3>Recht auf Berichtigung</h3>
+          Sie haben ein Recht auf Berichtigung unrichtiger oder auf Vervollständigung richtiger Daten nach Art. 16 EU-DSGVO.
+          
+      </li>
+      <li><h3>Recht auf Löschung</h3>
+          Sie haben ein Recht auf Löschung Ihrer bei uns gespeicherten Daten nach Art. 17 EU-DSGVO, es sei denn gesetzliche oder vertraglichen Aufbewahrungsfristen oder andere gesetzliche Pflichten bzw. Rechte zur weiteren Speicherung stehen dieser entgegen.
+          
+      </li>
+      <li><h3>Recht auf Einschränkung</h3>
+          Sie haben das Recht, eine Einschränkung bei der Verarbeitung Ihrer personenbezogenen Daten zu verlangen, wenn eine der Voraussetzungen in Art. 18 Abs. 1 lit. a) bis d) EU-DSGVO erfüllt ist:
+          • Wenn Sie die Richtigkeit der Sie betreffenden personenbezogenen für eine Dauer bestreiten, die es dem Verantwortlichen ermöglicht, die Richtigkeit der personenbezogenen Daten zu überprüfen;
+          • die Verarbeitung unrechtmäßig ist und Sie die Löschung der personenbezogenen Daten ablehnen und stattdessen die Einschränkung der Nutzung der personenbezogenen Daten verlangen;
+          • der Verantwortliche die personenbezogenen Daten für die Zwecke der Verarbeitung nicht länger benötigt, Sie diese jedoch zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen benötigen, oder
+          • wenn Sie Widerspruch gegen die Verarbeitung gemäß Art. 21 Abs. 1 EU-DSGVO eingelegt haben und noch nicht feststeht, ob die berechtigten Gründe des Verantwortlichen gegenüber Ihren Gründen überwiegen.
+      </li>
+      <li><h3>Recht auf Datenübertragbarkeit</h3>
+          Sie haben ein Recht auf Datenübertragbarkeit nach Art. 20 EU-DSGVO, was bedeutet, dass Sie die bei uns über Sie gespeicherten personenbezogenen Daten in einem strukturierten, gängigen und maschinenlesbaren Format erhalten können oder die Übermittlung an einen anderen Verantwortlichen verlangen können.
+          
+      </li>
+      <li><h3>Recht auf Beschwerde</h3>
+          Sie haben ein Recht auf Beschwerde bei einer Aufsichtsbehörde. In der Regel können Sie sich hierfür an die Aufsichtsbehörde insbesondere in dem Mitgliedstaat ihres Aufenthaltsorts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes wenden.
+          
+      </li>
+  </ol>
+                                            <h3>Datensicherheit</h3>
+                                            <p>Um alle personenbezogen Daten, die an uns übermittelt werden, zu schützen und um sicherzustellen, dass die Datenschutzvorschriften von uns, aber auch unseren externen Dienstleistern eingehalten werden, haben wir geeignete technische und organisatorische Sicherheitsmaßnahmen getroffen. Deshalb werden unter anderem alle Daten zwischen Ihrem Browser und unserem Server über eine sichere SSL-Verbindung verschlüsselt übertragen.</p>
+                                            <h3>Stand: 25.10.2020</h3>
+            </section>
+
+        </main>
+
+<!-- Content End -->
+
+        <footer>
+            <div id="imageSection">
+            </div>
+
+            <div id="copySection">
+                <div class="sectionDiv">
+                    
+                    <div>
+                        <h3>Microsoft Campus Community</h3>
+                        <p>Heßstraße 50<br/>
+                            80798 Munich<br/>
+                            Germany</p>
+                        <p>&copy; 2020</p>
+                    </div>
+                    
+                    <div>
+                        <h3>Channels</h3>
+                        <a href="https://www.linkedin.com/company/microsoft-campus-community" title="MCC on LinkedIn"><p>LinkedIn</p></a>
+                        <a href="https://www.meetup.com/Hamburger-Technology-Meetup/" title="MCC on meetup.com"><p>MeetUp</p></a>
+                        <a href="https://www.twitter.com/MCC_community" title="MCC on Twitter"><p>Twitter</p></a>
+                    </div>
+
+                    <div>
+                        <h3>Get in Touch</h3>
+                        <a href="mailto:tobias.urban@campus-community.org" title="Send us an E-Mail"><p>E-Mail</p></a>
+                        <a href="https://www.twitter.com/MCC_community" title="MCC on Twitter"><p>Twitter</p></a>
+                    </div>
+
+                    <div>
+                        <h3>Legal</h3>
+                        <a href="legal.html" title="See our Site Notice"><p>Site Notice</p></a>
+                        <a href="privacy.html" title="See our Privacy Policy"><p>Privacy & Cookies</p></a>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
     </body>
 </html>

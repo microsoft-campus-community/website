@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <meta  charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Microsoft Campus Community</title>
+        <link rel="icon" href="https://mccwebfiles.blob.core.windows.net/$web/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="Styles/main.css">
+        <link rel="stylesheet" href="Styles/mobileStyles.css">
+        <link rel="stylesheet" href="Styles/desktopStyles.css">
+        <link rel="stylesheet" href="Styles/eventDetails.css">
+
+        <script type="text/javascript">			
+			function loadPage() {
+                // Copyright Date
+				var str = document.getElementById("copyInfo").innerText; 
+				var res = str.replace("{year}", new Date().getFullYear());
+				document.getElementById("copyInfo").innerHTML = res;
+
+                // Sharing URL
+				var str = "https://twitter.com/intent/tweet?text=Check%20out%20this%20%23Communiy%20%23Event:%20{THISURL}%20%0D%0AOrganized%20by%20the%20Microsoft%20Campus%20Community%20-%3e%20%40MCC_community%20%0D%0A%0D%0A%23communityrocks%20%23campus%20%23learn%20%23inspire%20%23develop"; 
+				var res = str.replace("{THISURL}", window.location.href);
+				document.getElementById("shareTwitter").href = res;
+			}
+		</script>
+    </head>
+
+    <body onload="loadPage()">
+        
+        <header>
+            <div id="navBar">
+                <div id="navBarLogoContainer">
+                    <a href="/" title="MCC Homepage"></a>
+                </div>
+                <div id="navBarCenterSpacing"></div>
+                <nav id="navMenu">
+                    <span><a href="/mission">Our Mission</a></span>
+                    <span><a href="/team">The Team</a></span>
+                    <span><a href="/calendar">Events</a></span>
+                    <span><a href="/join" class="mccRed">Join Now</a></span>
+                </nav>
+                <div class="menuIconContainer">
+                    <a href="#navMenu">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </a>
+                </div>    
+            </div>
+        </header>
+
+        <main id="contentContainer">
+
+            <section id="introSection">
+                <div class="sectionDiv">
+                    <div id="introText">
+                        <p id="pageTitle" class="mccBlue">{DATE} - {CAMPUS}</p>
+                        <h1>{EVENTTITLE}</h1>
+                    </div>
+                </div>
+            </section>
+
+            <section id="IntroSection">
+                <div class="sectionDiv">
+                    <img id="eventIntroImg" class="boxShadow" src="Assets/Images/placeholder_square.png" alt="A placeholder image">
+                </div>
+            </section>
+
+            <section id="DescriptionSection">
+                <div id="Description" class="sectionDiv">
+                    <div id="overview">
+                        <h4>Date</h4>
+                        <p>{DATE}</p>
+                        <br/>
+                        <h4>Time</h4>
+                        <p>{TIME}</p>
+                        <br/>
+                        <h4>Place</h4>
+                        <p>{LOCATION}</p>
+                        <p>{REGISTRATION}</p>
+                        <br/>
+                        <h4>Share</h4>
+                        <p>Facebook</p>
+                        <p>LinkedIn</p>
+                        <a id="shareTwitter" class="shareLink" href="">Twitter</a>
+                    </div>
+                    <div id="endText">
+                        <h2>{DESC_ONE-SENTENCE}</h2>
+                        <p>{DESC_SHORT}</p>
+                        <h2>{DESC_MOTIVATION}</h2>
+                        <p>{DESC_LONG}</p>
+                        <div id="action">
+                            <h2 style="color: var(--color-mcc-blue)">Join via MS Teams</h2>
+                            <h2 style="color: var(--color-mcc-blue)">Watch on Twitch</h2>
+                            <h2 style="color: var(--color-mcc-blue)">Watch on YouTube</h2>
+                        </div>
+                    </div>    
+                </div>
+            </section>
+            
+        </main>
+
+        <footer>
+            <div id="imageSection">
+            </div>
+
+            <div id="copySection">
+                <div class="sectionDiv">
+                    
+                    <div>
+                        <h3>Microsoft Campus Community</h3>
+                        <p>Heßstraße 50<br/>
+                            80798 Munich<br/>
+                            Germany</p>
+                        <p>&copy; 2020</p>
+                    </div>
+                    
+                    <div>
+                        <h3>Channels</h3>
+                        <a href="https://www.linkedin.com/company/microsoft-campus-community" title="MCC on LinkedIn"><p>LinkedIn</p></a>
+                        <a href="https://www.meetup.com/Hamburger-Technology-Meetup/" title="MCC on meetup.com"><p>MeetUp</p></a>
+                        <a href="https://www.twitter.com/MCC_community" title="MCC on Twitter"><p>Twitter</p></a>
+                    </div>
+
+                    <div>
+                        <h3>Get in Touch</h3>
+                        <a href="mailto:tobias.urban@campus-community.org" title="Send us an E-Mail"><p>E-Mail</p></a>
+                        <a href="https://www.twitter.com/MCC_community" title="MCC on Twitter"><p>Twitter</p></a>
+                    </div>
+
+                    <div>
+                        <h3>Legal</h3>
+                        <a href="legal.html" title="See our Site Notice"><p>Site Notice</p></a>
+                        <a href="privacy.html" title="See our Privacy Policy"><p>Privacy & Cookies</p></a>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

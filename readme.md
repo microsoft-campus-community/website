@@ -18,7 +18,7 @@ Current pages:
  - Lectures@Home
  
 Current working items:
- - *none*
+ - NEW WEBSITE (Branch newWebsite_v1)
   
 
 ## Static Redirections
