@@ -88,7 +88,6 @@ p {
     height: 240px;
     display: block;
     margin: 0 auto;
-
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -164,6 +163,7 @@ p {
 }
 
 @media screen and (min-width: 654px) {
+
 
     #introLogoContainer {
         width: 250px;
