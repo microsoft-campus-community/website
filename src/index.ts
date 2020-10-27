@@ -55,6 +55,10 @@ server.get("/youtube",(req,res) => {
 	res.sendFile(getStaticFile("Legacy/youtube.html"));
 });
 
+server.get("/test",(req,res) => {
+	res.render("test");
+});
+
 
 function getStaticFile(fileName:string):string {
 	return path.join(assets,fileName);
