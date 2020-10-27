@@ -55,6 +55,9 @@ server.get("/youtube",(req,res) => {
 server.get("/testejs",(req,res) => {
 	res.render("test");
 });
+server.get("/testcontent",(req,res) => {
+	res.sendFile(getStaticFile("privacy.html"));
+});
 
 
 function getStaticFile(fileName:string):string {
