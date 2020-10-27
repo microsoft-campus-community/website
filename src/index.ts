@@ -1,11 +1,13 @@
 import path from "path";
 import express from "express";
+import expressLayouts from "express-ejs-layouts";
 
 const server = express();
 const assets = path.join(__dirname, "..", "static");
 
 
 server.use(express.static(assets));
+server.use(expressLayouts);
 server.set("view engine", "ejs");
 
 server.get("/",(req,res) => {
@@ -55,8 +57,8 @@ server.get("/youtube",(req,res) => {
 server.get("/testejs",(req,res) => {
 	res.render("test");
 });
-server.get("/testcontent",(req,res) => {
-	res.sendFile(getStaticFile("privacy.html"));
+server.get("/testlayout",(req,res) => {
+	res.render("test");
 });
 
 
