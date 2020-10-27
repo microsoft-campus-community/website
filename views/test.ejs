@@ -1,0 +1,214 @@
+<html>
+    <head>
+        <meta  charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Microsoft Campus Community</title>
+        <link rel="icon" href="https://mccwebfiles.blob.core.windows.net/$web/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="Styles/main.css">
+        <link rel="stylesheet" href="Styles/mobileStyles.css">
+        <link rel="stylesheet" href="Styles/desktopStyles.css">
+        <link rel="stylesheet" href="Styles/index.css">
+        <script type="text/javascript">	
+
+			function loadPage() {
+				var str = document.getElementById("copyInfo").innerText; 
+				var res = str.replace("{year}", new Date().getFullYear());
+                document.getElementById("copyInfo").innerHTML = res;
+            }      
+
+            var imported = document.createElement('script');
+            imported.src = "Assets/Scripts/scrollAnimation.js";
+            document.head.appendChild(imported);      
+
+        </script>
+    </head>
+    <body onload="loadPage()">
+        
+        <header>
+            <div id="navBar">
+                <div id="navBarLogoContainer">
+                    <a href="/" title="MCC Homepage"><!--img src="Assets/logo.png" alt="MCC Logo Link to the Homepage"--></a>
+                </div>
+                <div id="navBarCenterSpacing"></div>
+                <nav id="navMenu">
+                    <span><a href="/mission">Our Mission</a></span>
+                    <span><a href="/team">The Team</a></span>
+                    <span><a href="/calendar">Events</a></span>
+                    <span><a href="/join" class="mccRed">Join Now</a></span>
+                </nav>
+                <div class="menuIconContainer">
+                    <a href="#navMenu">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </a>
+                </div>    
+            </div>
+        </header>
+
+        <main id="contentContainer">
+            
+            <section id="introSection">
+                <div class="sectionDiv">
+                    <div id="introLogoContainer">
+                        <img id="introLogo" src="Assets/logo_sq.png" alt="MCC Logo">
+                    </div>
+                    <div id="introText" class="showOnScroll">
+                        <h1>Welcome to the Microsoft Campus Community</h1>
+                        <p>The Community connects tech interested and open-minded students who want to develop their skillset. Our goal is to engage with people who share our passion. Together, we learn and build a strong network empowering each other to achieve more.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="hexagons">
+                <!--img src="Assets/SVG/hexa_l.svg"-->
+            </section>
+
+            <section id="bridgeSection">
+                <div class="sectionDiv">
+                    <p>It is not all about coding. We want you to connect with peers and industry experts. Foster your network, learn new technologies and accelerate your personal growth. To be a future leader in tech, you should be open to share expertise as well as experience and inspire others to live up to their potential.</p>
+                </div>
+            </section>
+
+            <!-- <section id="pictureSection">
+                <div class="sectionDiv">
+                    <span>Participation</span>
+                    <p>Meet awesome people and hear interesting stories at our community events. Engage with others, get involved and organize events to share ideas and knowledge.</p>
+                    <span id="et">&</span>
+                    <span>Exploration</span>
+                    <p>We want to empower you to reach your goals. Develop new projects, learn about cutting edge technologies and gather leadership skills. Start today to become an expert from tomorrow. </p>
+                </div>
+            </section> -->
+
+            <section id="pictureSection">
+                <div class="sectionDiv showOnScroll">
+                    <span>Together</span>
+                    <p>Meet fantastic people and get to know open-minded students in your region. Easily find members who share your passion. Use the opportunity to learn and pass on knowledge, to try out new technologies and develop awesome projects. </p>
+                    <span id="et">&</span>
+                    <span>With Others</span>
+                    <p>We strive to connect with inspiring people outside the community. Learn about cutting edge technologies from industry experts and share your acquired knowledge. Get involved, connect with people and organize spectacular events at your campus to inspire others. </p>
+                </div>
+            </section>
+
+            <section id="motivationSection">
+                <div class="sectionDiv">
+                    <div id="who" class="showOnScroll">
+                        <span id="whoMot" class="motivationHexa"></span><!--img class="motivationHexa" src="Assets/SVG/who.svg" alt="Who are we?"-->
+                        <div class="motivationText">
+                            <h1>A Team of Dreamers</h1>
+                            <p>Our Community brings diverse people together. We are motivated and enthusiastic students who share our passion for technology with others.</p>
+                            <a class="link" href="/team">MEET THE TEAM <big>&#129066;</big></a>
+                        </div>    
+                    </div>
+                    <div id="why" class="showOnScroll">
+                        <span id="whyMot" class="motivationHexa"></span><!--img class="motivationHexa" src="Assets/SVG/why.svg" alt="Why should you join?"-->
+                        <div class="motivationText">
+                            <h1>Personal Growth</h1>
+                            <p>It is about living up to your highest potential. Boost yourself! Learn something new, develop yourself, allow you to be inspired and inspire others.</p>
+                            <a class="link" href="/mission">LEARN MORE <big>&#129066;</big></a>
+                        </div>    
+                    </div>
+                    <div id="fun" class="showOnScroll">
+                        <span id="funMot" class="motivationHexa"></span><!--img class="motivationHexa" src="Assets/SVG/fun.svg" alt="We have fun!"-->
+                        <div class="motivationText">
+                            <h1>Events and Projects</h1>
+                            <p>Meet exciting people, connect with others and build your network. Learn from peers with diverse backgrounds, participate in tech-talks and have fun in joint projects. In-person and online.</p>
+                            <a class="link" href="/calendar">EXPLORE OUR EVENTS <big>&#129066;</big></a>
+                        </div>    
+                    </div>
+                </div>
+            </section>
+
+            <section id="joinSection">
+                <div class="sectionDiv">
+                    <h1>How to Join</h1>
+                    <div id="joinElements">
+                        <div id="contact">
+
+                            <!-- Zahlen in die Hexagone -->
+                            <img class="joinHexa" src="Assets/SVG/hexagon_blank.svg" alt="Contact">
+                            <div class="motivationText showOnScroll">
+                                <h1>Contact</h1>
+                                <p>Do you want to become a member? Just contact us, we'd like to hear from you!</p>
+                            </div>    
+                        </div>
+                        <!-- Dünnere Pfeile -->
+                        <div class="arrow">
+                            <span><big>&#129066;</big></span>
+                        </div>
+                        <div id="interview">
+                            <img class="joinHexa" src="Assets/SVG/hexagon_blank.svg" alt="Interview">
+                            <div class="motivationText showOnScroll">
+                                <h1>Interview</h1>
+                                <p>Tell us about yourself! What's your passion? What motivates you, and how can we help you to achieve your goals?</p>
+                            </div>    
+                        </div>
+                        <div class="arrow">
+                            <span><big>&#129066;</big></span>
+                        </div>
+                        <div id="engage">
+                            <img class="joinHexa" src="Assets/SVG/hexagon_blank.svg" alt="Engage">
+                            <div class="motivationText showOnScroll">
+                                <h1>Engage</h1>
+                                <p>Enjoy being a member, engage and hop on to our events and projects.</p>
+                            </div>    
+                        </div>
+                    </div>
+                    <a class="link textCentered" href="/join">LEARN MORE <big>&#129066;</big></a>
+                </div>
+            </section>
+
+            <section id="endSection">
+                <div class="sectionDiv">
+                    <img id="endLogo" src="Assets/logo_sq.png" alt="MCC Logo">
+                    <h1>Meet the Community</h1>
+                    <div id="endText">
+                        <p>Join our network and get ready to start your career in the world of IT. Grow steadily to reach your fullest potential by being a better version of you every day.</p>
+                        <a class="link" href="https://www.linkedin.com/company/microsoft-campus-community/">FOLLOW US ON LINKEDIN <big>&#129066;</big></a>
+                    </div>    
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <!-- Maltes vor V 0.5 Release entfernen -->
+            <div id="imageSection">
+            </div>
+
+            <div id="copySection">
+                <div class="sectionDiv">
+                    
+                    <div>
+                        <h3>Microsoft Campus Community</h3>
+                        <p>Heßstraße 50<br/>
+                            80798 Munich<br/>
+                            Germany</p>
+                        <p id="copyInfo">&copy; {year}</p>
+                    </div>
+                    
+                    <div>
+                        <h3>Channels</h3>
+                        <a href="https://www.linkedin.com/company/microsoft-campus-community" title="MCC on LinkedIn"><p>LinkedIn</p></a>
+                        <a href="https://www.meetup.com/Hamburger-Technology-Meetup/" title="MCC on meetup.com"><p>MeetUp</p></a>
+                        <a href="https://www.twitter.com/MCC_community" title="MCC on Twitter"><p>Twitter</p></a>
+                    </div>
+
+                    <div>
+                        <h3>Get in Touch</h3>
+                        <a href="mailto:tobias.urban@campus-community.org" title="Send us an E-Mail"><p>E-Mail</p></a>
+                        <a href="https://www.twitter.com/MCC_community" title="MCC on Twitter"><p>Twitter</p></a>
+                    </div>
+
+                    <div>
+                        <h3>Legal</h3>
+                        <a href="legal.html" title="See our Site Notice"><p>Site Notice</p></a>
+                        <a href="privacy.html" title="See our Privacy Policy"><p>Privacy & Cookies</p></a>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html> 

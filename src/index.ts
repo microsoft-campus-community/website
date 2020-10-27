@@ -6,6 +6,7 @@ const assets = path.join(__dirname, "..", "static");
 
 
 server.use(express.static(assets));
+server.set("view engine", "ejs");
 
 server.get("/",(req,res) => {
 	console.dir(getStaticFile("index.html"))
@@ -50,6 +51,9 @@ server.get("/feedback",(req,res) => {
 });
 server.get("/youtube",(req,res) => {
 	res.sendFile(getStaticFile("Legacy/youtube.html"));
+});
+server.get("/testejs",(req,res) => {
+	res.render("test");
 });
 
 
