@@ -7,8 +7,18 @@
         <link rel="stylesheet" href="Styles/main.css">
         <link rel="stylesheet" href="Styles/mobileStyles.css">
         <link rel="stylesheet" href="Styles/desktopStyles.css">
+        <script type="text/javascript" src="Assets/Scripts/menuClose.js"></script>
+        <script type="text/javascript">	
+
+			function loadPage() {
+				var str = document.getElementById("copyInfo").innerText; 
+				var res = str.replace("{year}", new Date().getFullYear());
+                document.getElementById("copyInfo").innerHTML = res;
+            }      
+
+        </script>
     </head>
-    <body>
+    <body onload="loadPage()">
         
         <header>
             <div id="navBar">
@@ -23,7 +33,7 @@
                     <span><a href="/join" class="mccRed">Join Now</a></span>
                 </nav>
                 <div class="menuIconContainer">
-                    <a href="#navMenu">
+                    <a href="#navMenu" onclick="closeMenu()">
                         <div class="bar1"></div>
                         <div class="bar2"></div>
                         <div class="bar3"></div>

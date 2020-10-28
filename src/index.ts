@@ -1,13 +1,13 @@
 import path from "path";
 import express from "express";
-//import expressLayouts from "express-ejs-layouts";
+import expressLayouts from "express-ejs-layouts";
 
 const server = express();
 const assets = path.join(__dirname, "..", "static");
 
 
 server.use(express.static(assets));
-//server.use(expressLayouts);
+server.use(expressLayouts);
 server.set("view engine", "ejs");
 
 server.get("/",(req,res) => {
