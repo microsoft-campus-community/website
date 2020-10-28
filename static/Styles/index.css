@@ -56,8 +56,14 @@ p {
     margin: 30px 0;
 }
 
+
+
 #motivationSection :nth-child(1) div {
     margin: 65px auto;
+}
+
+#motivationSection span {
+    background-position: center;
 }
 
 #whoMot {
@@ -89,8 +95,8 @@ p {
     display: block;
     margin: 0 auto;
 
+    padding: 0 30px 0px;
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .motivationText {
@@ -195,13 +201,11 @@ p {
     #who, #why, #fun {
         display: flex;
         max-width: 650px;
-        margin-right: 17% !important;
     }
 
     #why {
         flex-direction: row-reverse;
         margin-right: 0 !important;
-        margin-left: 17% !important;
     }
 
     #who span, #fun span {
@@ -275,6 +279,14 @@ p {
     #pictureSection p {
         max-width: 630px;
         margin: 30px auto;
+    }
+
+    #who, #why, #fun {
+        margin-right: 17% !important;
+    }
+
+    #why {
+        margin-left: 17% !important;
     }
 
     #motivationSection p {
