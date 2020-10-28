@@ -10,6 +10,9 @@ server.use(express.static(assets));
 server.use(expressLayouts);
 server.set("view engine", "ejs");
 
+
+// Website Routing
+
 server.get("/",(req,res) => {
 	console.dir(getStaticFile("index.html"))
 	res.sendFile(getStaticFile("index.html"));
@@ -36,6 +39,8 @@ server.get("/privacy",(req,res) => {
 });
 
 
+// Legacy Sites
+
 server.get("/digitalLearning",(req,res) => {
 	res.sendFile(getStaticFile("Legacy/DigitalLearning.html"));
 });
@@ -56,14 +61,25 @@ server.get("/youtube",(req,res) => {
 });
 
 
-server.get("/testlayout",(req,res) => {
-	res.render("test1");
+// Error Handling
+
+server.use((req,res,next) => {
+	res.status(404).sendFile(getStaticFile("Errors/404.html"));
 });
 
+server.use((err,req,res,next) => {
+	res.status(500).sendFile(getStaticFile("Errors/500.html"));
+});
+
+
+// Functions
 
 function getStaticFile(fileName:string):string {
 	return path.join(assets,fileName);
 }
+
+
+// Server Setup
 
 server.listen(process.env.PORT || 8080, ()=> {
 	console.info(`Server is running! Open http://localhost:${process.env.PORT || 8080}/`);

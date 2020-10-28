@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Microsoft Campus Community</title>
+        <link type="text/css" rel="icon" href="https://mccwebfiles.blob.core.windows.net/$web/favicon.ico" type="image/x-icon">
+        <link type="text/css" rel="stylesheet" href="../Styles/main.css">
+        <link type="text/css" rel="stylesheet" href="../Styles/mobileStyles.css">
+        <link type="text/css" rel="stylesheet" href="../Styles/desktopStyles.css">
+        <link type="text/css" rel="stylesheet" href="../Styles/events.css">
+        <link type="text/css" rel="stylesheet" href="../Styles/advertisement.css">
+        <script type="text/javascript" src="../Assets/Scripts/menuClose.js"></script>
+        <script type="text/javascript">	
+
+			function loadPage() {
+				var str = document.getElementById("copyInfo").innerText; 
+				var res = str.replace("{year}", new Date().getFullYear());
+                document.getElementById("copyInfo").innerHTML = res;
+            }      
+
+            var imported = document.createElement('script');
+            imported.src = "Assets/Scripts/scrollAnimation.js";
+            document.head.appendChild(imported);      
+
+        </script>
+
+
+    </head>
+    <body onload="loadPage()">
+        
+        <header>
+            <div id="navBar">
+                <div id="navBarLogoContainer">
+                    <a href="/" title="MCC Homepage"></a>
+                </div>
+                <div id="navBarCenterSpacing"></div>
+                <nav id="navMenu">
+                    <span><a href="/mission">Our Mission</a></span>
+                    <span><a href="/team">The Team</a></span>
+                    <span><a href="/calendar">Events</a></span>
+                    <span><a href="/join" class="mccRed">Join Now</a></span>
+                </nav>
+                <div class="menuIconContainer">
+                    <a href="#navMenu" onclick="closeMenu()">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </a>
+                </div>    
+            </div>
+        </header>
+
+<!-- Content Start -->
+
+        <main id="contentContainer">
+            
+            <section id="introSection">
+                <div class="sectionDiv">
+                    <div id="introText">
+                        <p id="pageTitle">SOMETHING IS MISSING</p>
+                        <h1>Oooops...</h1>
+                    </div>
+            </section>
+
+            <!--section id="sortBy">
+                <div class="sectionDiv">
+                    <h5>All Events</h5>
+                </div>
+            </section-->
+
+            <section id="eventList">
+                <div class="sectionDiv showOnScroll">
+                    <h2>404 - Resource not found</h2>
+                    <p>The page you were looking for is not available. Don't hestitate and contact us if you think it should be here.</p>
+                </div>
+            </section>
+
+            <!-- End Events -->
+
+            <section>
+                <div class="sectionDiv applicationDiv boxShadow">
+                    <h3 class="applicationSlogan">THE PEOPLE BEHIND THE PROCESS</h3>
+                    <div class="centerContent">
+                        <div class="hexagon"><span></span></div>
+                    </div>
+                    <h2 class="advertisementHeader textCentered">Meet the Community</h2>
+                    <div class="centerContent">
+                        <p class="boxImageParagraph textCentered">Join our network and get ready to start your career in the world of IT. Grow steadily to reach your fullest potential by being a better version of you every day.</p>
+                    </div>
+                    <div class="centerContent">
+                        <a class="link textCentered" href="/team">TAKE A LOOK AT THE TEAM</a>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+
+<!-- Content End -->
+
+<footer>
+    <div id="imageSection">
+    </div>
+
+    <div id="copySection">
+        <div class="sectionDiv">
+            
+            <div>
+                <h3>Microsoft Campus Community</h3>
+                <p>Walter-Gropius Straße 5<br/>
+                    80807 Munich<br/>
+                    Germany</p>
+                <p id="copyInfo">&copy; {year}</p>
+            </div>
+            
+            <div>
+                <h3>Channels</h3>
+                <a href="https://www.linkedin.com/company/microsoft-campus-community" title="MCC on LinkedIn"><p>LinkedIn</p></a>
+                <a href="https://www.meetup.com/Hamburger-Technology-Meetup/" title="MCC on meetup.com"><p>MeetUp</p></a>
+                <a href="https://www.campus-community.org/youtube" title="MCC on YouTube"><p>YouTube</p></a>
+            </div>
+
+            <div>
+                <h3>Get in Touch</h3>
+                <a href="mailto:tobias.urban@campus-community.org" title="MCC on Twitter"><p>E-Mail</p></a>
+                <a href="https://www.twitter.com/MCC_community" title="MCC on Twitter"><p>Twitter</p></a>
+            </div>
+
+            <div>
+                <h3>Legal</h3>
+                <a href="legal.html" title="See our Site Notice"><p>Site Notice</p></a>
+                <a href="privacy.html" title="See our Privacy Policy"><p>Privacy & Cookies</p></a>
+            </div>
+
+        </div>
+    </div>
+</footer>
+</body>
+</html>
