@@ -259,9 +259,11 @@ p {
             max-width: 500px;
         }
 
-    #hexagons {
-        height: 650px;
-    }
+        #hexagons {
+            height: 650px;
+            max-width: 1700px;
+            margin: 0 auto;
+        }
 
         #hexagons img {
             max-height: 650px;
