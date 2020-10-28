@@ -67,9 +67,9 @@ server.use((req,res,next) => {
 	res.status(404).sendFile(getStaticFile("Errors/404.html"));
 });
 
-server.use((err,req,res,next) => {
+/*server.use((err,req,res,next) => {
 	res.status(500).sendFile(getStaticFile("Errors/500.html"));
-});
+});*/
 
 
 // Functions
