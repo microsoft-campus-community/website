@@ -56,6 +56,11 @@ server.get("/youtube",(req,res) => {
 });
 
 
+server.get("/testlayout",(req,res) => {
+	res.render("test1");
+});
+
+
 function getStaticFile(fileName:string):string {
 	return path.join(assets,fileName);
 }
