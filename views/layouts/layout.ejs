@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta  charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Microsoft Campus Community</title>
+        <link rel="icon" href="https://mccwebfiles.blob.core.windows.net/$web/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="Styles/main.css">
+        <link rel="stylesheet" href="Styles/mobileStyles.css">
+        <link rel="stylesheet" href="Styles/desktopStyles.css">
+        <!-- Include individual CSS Stylesheets -->
+        <%- custom_css %>
+        <script type="text/javascript" src="Assets/Scripts/menuClose.js"></script>
+        <script type="text/javascript">	
+
+			function loadPage() {
+				var str = document.getElementById("copyInfo").innerText; 
+				var res = str.replace("{year}", new Date().getFullYear());
+                document.getElementById("copyInfo").innerHTML = res;
+            }      
+
+            var imported = document.createElement('script');
+            imported.src = "Assets/Scripts/scrollAnimation.js";
+            document.head.appendChild(imported);      
+
+        </script>
+    </head>
+    <body onload="loadPage()">
+        
+        <%- include('../partials/header'); -%>
+
+        <main id="contentContainer">
+
+            <%- body %>
+
+        </main>
+
+        <%- include('../partials/footer'); -%>
+
+    </body>
+</html> 
