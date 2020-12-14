@@ -11,6 +11,12 @@ p {
     animation-delay: 5s;
 }
 
+#promoVideoSection video {
+    max-width: var(--width-mcc-max);
+    width: 100%;
+    margin-bottom: 100px;
+}
+
 #bridgeSection {
     margin: 40px auto 130px;
 }
@@ -170,6 +176,10 @@ p {
 }
 
 @media screen and (min-width: 654px) {
+
+    #promoVideoSection video {
+        margin-bottom: 150px;
+    }
 
     #introLogoContainer {
         width: 250px;

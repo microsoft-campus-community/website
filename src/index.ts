@@ -9,6 +9,7 @@ const assets = path.join(__dirname, "..", "static");
 server.use(express.static(assets));
 server.use(expressLayouts);
 server.set("view engine", "ejs");
+server.set("layout", "./layouts/layout.ejs");
 
 
 // Website Routing
@@ -58,6 +59,10 @@ server.get("/feedback",(req,res) => {
 });
 server.get("/youtube",(req,res) => {
 	res.sendFile(getStaticFile("Legacy/youtube.html"));
+});
+
+server.get("/test",(req,res) => {
+	res.render("start");
 });
 
 
