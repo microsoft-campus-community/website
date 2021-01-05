@@ -2,19 +2,6 @@
     color: #00A4EF
 }
 
-h5 {
-    font-family: 'Segoe UI';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 70px;
-    line-height: 75px;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
 .eventListBox {
     max-width: 1142px;
     height: 149px;

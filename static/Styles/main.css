@@ -114,6 +114,14 @@ h4 {
     margin: 4px 0;
 }
 
+h5 {
+    font-family: var(--font-base);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 75px;
+}
+
 p {
     line-height: 25px;
     font-size: calc(15px + (20 - 15) * ((100vw - 400px) / (1920 - 400)));
@@ -122,6 +130,11 @@ p {
     font-family: var(--font-base);
     font-weight: 800;
     color: var(--color-secondary);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-mcc-black);
 }
 
 body {
@@ -172,11 +185,6 @@ footer h3 {
 
 footer p {
     font-weight: 400;
-}
-
-footer a {
-    text-decoration: none;
-    color: var(--color-mcc-black);
 }
 
 #navBar {
