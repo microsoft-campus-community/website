@@ -79,51 +79,7 @@
     color: var(--color-mcc-blue);
 }
 
-.hexagon {
-    position: relative;
-    width: 150px; 
-    height: 86.60px;
-    background-color: #ffffff;
-    margin: 43.30px 0;
-    box-shadow: 0 0 20px rgba(0,0,0,0.7);
-  }
-  
-  .hexagon:before,
-  .hexagon:after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    width: 106.07px;
-    height: 106.07px;
-    -webkit-transform: scaleY(0.5774) rotate(-45deg);
-    -ms-transform: scaleY(0.5774) rotate(-45deg);
-    transform: scaleY(0.5774) rotate(-45deg);
-    background-color: inherit;
-    left: 21.9670px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.7);
-  }
-  
-  .hexagon:before {
-    top: -53.0330px;
-  }
-  
-  .hexagon:after {
-    bottom: -53.0330px;
-  }
-  
-  /*cover up extra shadows*/
-  .hexagon span {
-    display: block;
-    position: absolute;
-    top:0px;
-    left: 0;
-    width:150px;
-    height:86.6025px;
-    z-index: 2;
-    background: inherit;
-  }
-
-  @media screen and (max-width: 818px) {
+@media screen and (max-width: 818px) {
     .eventListBox {
         min-height: 400px;
         max-height: 450px;
@@ -135,39 +91,39 @@
         justify-content: start;
     }
 
-        .eventListBox div {
-            margin: 0 40px;
-        }
+    .eventListBox div {
+           margin: 0 40px;
+    }
 
-        .eventDate {
-            height: 85px;
-            width: 100%;
-        }
+    .eventDate {
+        height: 85px;
+        width: 100%;
+    }
 
-        .eventDate p {
-            font-family: var(--font-base);
-            font-weight: 500;
-            margin: 0;
-            line-height: 15px;
-            width: 100%;
-        }
+    .eventDate p {
+        font-family: var(--font-base);
+        font-weight: 500;
+        margin: 0;
+        line-height: 15px;
+        width: 100%;
+    }
 
-        .eventDate p:first-of-type {
-            font-family: var(--font-bold);
-            margin-top: 40px;
-        }
+    .eventDate p:first-of-type {
+        font-family: var(--font-bold);
+        margin-top: 40px;
+    }
 
-        .eventTitle {
-            height: 156px;
-            width: auto;
-        }
+    .eventTitle {
+        height: 156px;
+        width: auto;
+    }
 
-        .eventTitle p {
-            margin: revert;
-        }
+    .eventTitle p {
+        margin: revert;
+    }
 
-        .eventIntroText {
-            width: auto;
-            margin: 0 2%;
-        }
+    .eventIntroText {
+        width: auto;
+        margin: 0 2%;
+    }
   }

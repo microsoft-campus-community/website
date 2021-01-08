@@ -24,33 +24,33 @@
     background-color: var(--color-mcc-white);
     margin: 43.30px 0;
     box-shadow: 0 0 20px rgba(0,0,0,0.7);
-  }
+}
   
-  .hexagon:before,
-  .hexagon:after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    width: 106.07px;
-    height: 106.07px;
-    -webkit-transform: scaleY(0.5774) rotate(-45deg);
-    -ms-transform: scaleY(0.5774) rotate(-45deg);
-    transform: scaleY(0.5774) rotate(-45deg);
-    background-color: inherit;
-    left: 21.9670px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.7);
-  }
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 106.07px;
+  height: 106.07px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 21.9670px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+}
   
-  .hexagon:before {
+.hexagon:before {
     top: -53.0330px;
-  }
+}
   
-  .hexagon:after {
+.hexagon:after {
     bottom: -53.0330px;
-  }
+}
   
-  /*cover up extra shadows*/
-  .hexagon span {
+/*cover up extra shadows*/
+.hexagon span {
     display: block;
     position: absolute;
     top:0px;
@@ -59,9 +59,9 @@
     height:86.6025px;
     z-index: 2;
     background: inherit;
-  }
+}
 
-  @media screen and (min-width: 1144px) {
+@media screen and (min-width: 1144px) {
     .highlightHeader {
         font-size: 70px;
         line-height: 60px;
