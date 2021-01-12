@@ -8,6 +8,11 @@ p, .shareLink {
     line-height: 30px;
 }
 
+.shareLink {
+    text-decoration: none;
+    color: var(--color-mcc-blue);
+}
+
 #eventIntroImg{
     object-fit: cover;
     margin-bottom: 20px;
@@ -37,11 +42,6 @@ p, .shareLink {
     margin: 20px;
     font-family: var(--font-base);
     font-weight: 200;
-}
-
-.shareLink {
-    text-decoration: none;
-    color: var(--color-mcc-blue);
 }
 
 @media screen and (min-width: 654px) { 

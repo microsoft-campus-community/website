@@ -1,3 +1,12 @@
+:root {
+    /* Colors */
+    --shadow-mcc-hexagon: 0 0 20px rgba(0,0,0,0.7);
+    /* Sizes */
+    --width-mcc-hexagon: 106.07px;
+    --height-mcc-hexagon-tri: -53.0330px;
+    --transform-mcc-hexagon: scaleY(0.5774) rotate(-45deg);
+}
+
 .applicationDiv{
     padding: 45px 0;
     margin: 100px auto 100px;
@@ -23,7 +32,7 @@
     height: 86.60px;
     background-color: var(--color-mcc-white);
     margin: 43.30px 0;
-    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+    box-shadow: var(--shadow-mcc-hexagon);
 }
   
 .hexagon:before,
@@ -31,22 +40,22 @@
   content: "";
   position: absolute;
   z-index: 1;
-  width: 106.07px;
-  height: 106.07px;
-  -webkit-transform: scaleY(0.5774) rotate(-45deg);
-  -ms-transform: scaleY(0.5774) rotate(-45deg);
-  transform: scaleY(0.5774) rotate(-45deg);
+  width: var(--width-mcc-hexagon);
+  height: var(--width-mcc-hexagon);
+  -webkit-transform: var(--transform-mcc-hexagon);
+  -ms-transform: var(--transform-mcc-hexagon);
+  transform: var(--transform-mcc-hexagon);
   background-color: inherit;
   left: 21.9670px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+  box-shadow: var(--shadow-mcc-hexagon);
 }
   
 .hexagon:before {
-    top: -53.0330px;
+    top: var(--height-mcc-hexagon-tri);
 }
   
 .hexagon:after {
-    bottom: -53.0330px;
+    bottom: var(--height-mcc-hexagon-tri);
 }
   
 /*cover up extra shadows*/

@@ -27,6 +27,10 @@
         padding: 3px 117px;
     }
 
+    footer h3, footer p {
+        font-size: 18px;
+    }
+
     #navBar {
         padding: 0 127px;
         max-width: 1140px;
@@ -48,10 +52,6 @@
 
     #endLogo {
         width: 200px;
-    }
-
-    footer h3, footer p {
-        font-size: 18px;
     }
 
     #copySection {

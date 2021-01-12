@@ -187,45 +187,6 @@ footer p {
     font-weight: 400;
 }
 
-#navBar {
-    font-family: var(--font-main);
-    display: flex;
-}
-
-#navBarLogoContainer {
-    justify-content: flex-start;
-    width: 180px;
-}
-
-#navBarCenterSpacing {
-    justify-content: center;
-    flex-grow: 1;
-}
-
-#pageTitle {
-    font-family: var(--font-main);
-    font-size: 15px;
-    letter-spacing: 10px;
-    text-align: center;
-}
-
-#imageSection {
-    height: 0;/*175px;*/
-    display: flex;
-    justify-content: flex-start;
-    overflow: hidden;
-}
-
-    #imageSection img{
-        object-fit: cover;
-        width: 175px;
-        height: 175px;
-    }
-
-#copySection {
-    background: var(--color-mcc-gray);
-}
-
 .isVisible {
     animation: moveUp .8s;
     animation-timing-function: ease-out;
@@ -291,4 +252,43 @@ footer p {
 .sectionDiv {
     max-width: var(--width-mcc-max);
     margin: 0 auto;
+}
+
+#navBar {
+    font-family: var(--font-main);
+    display: flex;
+}
+
+#navBarLogoContainer {
+    justify-content: flex-start;
+    width: 180px;
+}
+
+#navBarCenterSpacing {
+    justify-content: center;
+    flex-grow: 1;
+}
+
+#pageTitle {
+    font-family: var(--font-main);
+    font-size: 15px;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+#imageSection {
+    height: 0;/*175px;*/
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+    #imageSection img{
+        object-fit: cover;
+        width: 175px;
+        height: 175px;
+    }
+
+#copySection {
+    background: var(--color-mcc-gray);
 }

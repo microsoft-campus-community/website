@@ -11,6 +11,36 @@ p {
     animation-delay: 5s;
 }
 
+.motivationHexa {
+    width: 240px;
+    height: 240px;
+    display: block;
+    margin: 0 auto;
+
+    padding: 0 30px 0px;
+    background-repeat: no-repeat;
+}
+
+.motivationText {
+    margin: 0 !important;
+}
+
+.motivationText h1 {
+    font-size: 30px;
+    line-height: 30px;
+    margin: 25px 0;
+}
+
+.arrow {
+    display: none;
+}
+
+.joinHexa {
+    width: 180px;
+    display: block;
+    margin: 0 auto;
+}
+
 #promoVideoSection video {
     max-width: var(--width-mcc-max);
     width: 100%;
@@ -62,8 +92,6 @@ p {
     margin: 30px 0;
 }
 
-
-
 #motivationSection :nth-child(1) div {
     margin: 65px auto;
 }
@@ -94,27 +122,6 @@ p {
     max-width:100%;
 }
 
-
-.motivationHexa {
-    width: 240px;
-    height: 240px;
-    display: block;
-    margin: 0 auto;
-
-    padding: 0 30px 0px;
-    background-repeat: no-repeat;
-}
-
-.motivationText {
-    margin: 0 !important;
-}
-
-.motivationText h1 {
-    font-size: 30px;
-    line-height: 30px;
-    margin: 25px 0;
-}
-
 #who a {
     color: var(--color-mcc-red);
 }
@@ -142,10 +149,6 @@ p {
     background-attachment: fixed;
 }
 
-.arrow {
-    display: none;
-}
-
 #joinElements div {
     max-width: 650px;
 }
@@ -157,12 +160,6 @@ p {
 
 #joinSection a, #joinSection p {
     color: var(--color-mcc-white);
-}
-
-.joinHexa {
-    width: 180px;
-    display: block;
-    margin: 0 auto;
 }
 
 #endLogo {
@@ -232,6 +229,11 @@ p {
 }
 
 @media screen and (min-width: 1144px) {
+
+    .arrow {
+        display: inline;
+        font-size: 120px;
+    }
 
     #introSection {
         padding-top: 72px;
@@ -317,11 +319,6 @@ p {
     #joinElements div {
         max-width: 360px;
         flex-grow: 1;
-    }
-
-    .arrow {
-        display: inline;
-        font-size: 120px;
     }
 
     #endSection div:nth-child(1) {

@@ -60,10 +60,6 @@
     color: var(--color-secondary);
 }
 
-#applicationBox {
-    margin-top: 300px;
-}
-
 .teamSlogan {
     font-size: 8px;
     color: var(--color-mcc-blue);
@@ -77,6 +73,10 @@
 .teamSlogan {
     font-size: 8px;
     color: var(--color-mcc-blue);
+}
+
+#applicationBox {
+    margin-top: 300px;
 }
 
 @media screen and (max-width: 818px) {

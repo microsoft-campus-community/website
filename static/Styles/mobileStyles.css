@@ -12,35 +12,6 @@ h3 {
     margin: 26px 0 0;
 }
 
-#navBar {
-    min-width: 0;
-    line-height: 80px;
-}
-
-    #navBar img {
-        height: 80px;
-    }
-
-#navBarLogoContainer {
-    margin: 0;
-}
-
-#navBarLogoContainer a {
-    display: block;
-    background-image: var(--logo-mcc);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 80px;
-    padding-left: 17%;
-}
-
-#endLogo{
-    width: 145px;
-    display: block;
-    margin: 20px auto;
-}
-
 nav {
     display: none;
 }
@@ -70,6 +41,19 @@ section {
     padding: 0 35px;
 }
 
+#navBar {
+    min-width: 0;
+    line-height: 80px;
+}
+
+    #navBar img {
+        height: 80px;
+    }
+
+#navBarLogoContainer {
+    margin: 0;
+}
+
 .menuIconContainer {
     margin: 26px 35px 26px;
 }
@@ -80,6 +64,22 @@ section {
     margin: 6px 0;
     background-color: var(--color-mcc-dark-blue);
     transition: 0.4s;
+}
+
+#navBarLogoContainer a {
+    display: block;
+    background-image: var(--logo-mcc);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80px;
+    padding-left: 17%;
+}
+
+#endLogo{
+    width: 145px;
+    display: block;
+    margin: 20px auto;
 }
 
 #introSection {
@@ -114,17 +114,6 @@ section {
 /*#endregion*/
 
 @media screen and (min-width: 654px) {
-    #navBar {
-        line-height: 92px;
-    }
-
-        #navBar img {
-            height: 92px;
-        }
-
-        #navBarLogoContainer a {
-            height: 92px;
-        }
 
     nav {
         display: inline;
@@ -137,14 +126,27 @@ section {
             text-align: left;
             font-size: unset;
         }
-    
-    .menuIconContainer {
-        display: none;
-    }
 
     footer h3, footer p {
         font-size: 15px;
     }
+
+    .menuIconContainer {
+        display: none;
+    }
+
+    #navBar {
+        line-height: 92px;
+    }
+
+        #navBar img {
+            height: 92px;
+        }
+
+        #navBarLogoContainer a {
+            height: 92px;
+        }
+    
     #copySection {
         min-height: 250px;
         padding: 30px 0 60px;
