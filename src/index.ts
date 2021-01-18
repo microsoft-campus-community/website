@@ -39,6 +39,9 @@ server.get("/privacy",(req,res) => {
 	res.sendFile(getStaticFile("privacy.html"));
 });
 
+server.get("/PowerPlatformWorkshop",(req,res) => {
+	res.sendFile(getStaticFile("Events/PPWorkshop.html"));
+});
 
 // Legacy Sites
 
