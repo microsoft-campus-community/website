@@ -1,0 +1,159 @@
+<html>
+    <head>
+        <meta  charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Microsoft Campus Community</title>
+        <link rel="stylesheet" href="../Styles/main.css">
+        <link rel="stylesheet" href="../Styles/mobileStyles.css">
+        <link rel="stylesheet" href="../Styles/desktopStyles.css">
+        <link rel="stylesheet" href="../Styles/eventDetails.css">
+
+        <script type="text/javascript">			
+			function loadPage() {
+                // Copyright Date
+				var str = document.getElementById("copyInfo").innerText; 
+				var res = str.replace("{year}", new Date().getFullYear());
+				document.getElementById("copyInfo").innerHTML = res;
+			}
+		</script>
+    </head>
+    <body onload="loadPage()">
+        
+        <header>
+            <div id="navBar">
+                <div id="navBarLogoContainer">
+                    <a href="../index.html" title="MCC Homepage"></a>
+                </div>
+                <div id="navBarCenterSpacing"></div>
+                <nav id="navMenu">
+                    <span><a href="../mission.html">Our Mission</a></span>
+                    <span><a href="../team.html">The Team</a></span>
+                    <span><a href="../events.html">Events</a></span>
+                    <span><a href="../join.html" class="mccRed">Join Now</a></span>
+                </nav>
+                <div class="menuIconContainer">
+                    <a href="#navMenu">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </a>
+                </div>    
+            </div>
+        </header>
+
+        <main id="contentContainer">
+
+            <section id="introSection">
+                <div class="sectionDiv">
+                    <div id="introText">
+                        <p id="pageTitle" class="mccBlue">22.01.2021 - ONLINE</p>
+                        <h1>Power Platform Workshop</h1>
+                    </div>
+                </div>
+            </section>
+
+            <section id="IntroSection">
+                <div class="sectionDiv">
+                    <img id="eventIntroImg" class="boxShadow" src="../Assets/Images/power-platform-icons.jpg" alt="A placeholder image">
+                </div>
+            </section>
+
+            <section id="DescriptionSection">
+                <div id="Description" class="sectionDiv">
+                    <div id="overview">
+                        <h4>Date</h4>
+                        <p>22.01.2021</p>
+                        <br/>
+                        <h4>Time</h4>
+                        <p>04:00 pm - 05:00 pm CEST</p>
+                        <br/>
+                        <h4>Place</h4>
+                        <p>Teams Online Meeting</p>
+                        <p><a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_ODIzNDlhZmQtMTY2Mi00NThlLWJhYzctODk1MzU5YTMwMmI0%40thread.v2/0?context=%7b%22Tid%22%3a%2284c31ca0-ac3b-4eae-ad11-519d80233e6f%22%2c%22Oid%22%3a%227c85ffcf-b716-4202-b5e0-22df34d099f4%22%7d" style="color: var(--color-mcc-blue)">Click here to join</a></p>
+                    </div>
+                    <div id="endText">
+                        <h2>Low-code / no-code development for all!</h2>
+                        <p>Lee Zuckett, Program Manager for the Power Platform, will teach us how to build no-code / low-code solutions.</p>
+                        <h2>The next wave in software development has nothing to do with coding.</h2>
+                        <p>
+                            According to Microsoft, 500 million new apps will be built in the next 5 years. This is more than the number of apps built in the last 40 years. 
+                            <br>
+                            This number of apps will not be built by traditional developers.
+                            These apps will be built by Nurses, Architects, Biologists, Visionaries, ..., [insert your profession].
+                            Join us to learn more about no-code / low-code development.
+                            <br><br>
+                            Agenda:
+                            <ul>
+                                <li>
+                                    Introduction Low-Code / No-code
+                                </li>
+                                <li>
+                                    Introduction Power Platform / Power Apps
+                                </li>
+                                <li>
+                                    Walk-through
+                                </li>
+                                <li>
+                                    Q & A
+                                </li>
+                            </ul>
+                        </p>
+                        <br>
+                        <div id="action">
+                            <h2 style="color: var(--color-mcc-blue)"><a style="color: var(--color-mcc-blue)" href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_ODIzNDlhZmQtMTY2Mi00NThlLWJhYzctODk1MzU5YTMwMmI0%40thread.v2/0?context=%7b%22Tid%22%3a%2284c31ca0-ac3b-4eae-ad11-519d80233e6f%22%2c%22Oid%22%3a%227c85ffcf-b716-4202-b5e0-22df34d099f4%22%7d">Join via MS Teams</a></h2>
+                           <!-- <h2 style="color: var(--color-mcc-blue)">Watch on Twitch</h2>
+                            <h2 style="color: var(--color-mcc-blue)">Watch on YouTube</h2>-->
+                        </div>
+                    </div>    
+                </div>
+            </section>
+            
+        </main>
+
+        <footer>
+            <div id="imageSection">
+                <img class="blueImage" src="../Assets/Images/placeholder.png" alt="A placeholder image">
+                <img class="yellowImage" src="../Assets/Images/placeholder.png" alt="A placeholder image">
+                <img class="redImage" src="../Assets/Images/placeholder.png" alt="A placeholder image">
+                <img class="greenImage "src="../Assets/Images/placeholder.png" alt="A placeholder image">
+                <img class="blueImage" src="../Assets/Images/placeholder.png" alt="A placeholder image">
+                <img class="yellowImage" src="../Assets/Images/placeholder.png" alt="A placeholder image">
+                <img class="redImage" src="../Assets/Images/placeholder.png" alt="A placeholder image">
+                <img class="greenImage "src="../Assets/Images/placeholder.png" alt="A placeholder image">
+            </div>
+            
+            <div id="copySection">
+                <div class="sectionDiv">
+                    
+                    <div>
+                        <h3>Microsoft Campus Community</h3>
+                        <p>Heßstraße 50<br/>
+                            80798 Munich<br/>
+                            Germany</p>
+                        <p id="copyInfo">&copy; {year}</p>
+                    </div>
+                    
+                    <div>
+                        <h3>Channels</h3>
+                        <a href="https://www.linkedin.com/company/microsoft-campus-community" title="MCC on LinkedIn"><p>LinkedIn</p></a>
+                        <a href="https://www.meetup.com/Hamburger-Technology-Meetup/" title="MCC on meetup.com"><p>MeetUp</p></a>
+                        <a href="https://www.twitter.com/MCC_community" title="MCC on Twitter"><p>Twitter</p></a>
+                    </div>
+
+                    <div>
+                        <h3>Get in Touch</h3>
+                        <p>E-Mail</p>
+                        <a href="https://www.twitter.com/MCC_community" title="MCC on Twitter"><p>Twitter</p></a>
+                    </div>
+
+                    <div>
+                        <h3>Legal</h3>
+                        <a href="legal.html" title="See our Site Notice"><p>Site Notice</p></a>
+                        <a href="privacy.html" title="See our Privacy Policy"><p>Privacy & Cookies</p></a>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
