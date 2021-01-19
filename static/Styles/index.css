@@ -320,8 +320,7 @@ p {
     }
 
     .arrow {
-        display: inline;
-        font-size: 120px;
+        display: block;
     }
 
     #endSection div:nth-child(1) {
