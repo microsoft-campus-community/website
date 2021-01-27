@@ -49,7 +49,7 @@ server.get("/digitalLearning",(req,res) => {
 	res.sendFile(getStaticFile("Legacy/DigitalLearning.html"));
 });
 server.get("/lecturesathome",(req,res) => {
-	res.sendFile(getStaticFile("Legacy/lecturesathome.html"));
+	res.sendFile(getStaticFile("Events/LatH.html"));
 });
 server.get("/insideMicrosoft",(req,res) => {
 	res.sendFile(getStaticFile("Legacy/insideMicrosoft.html"));
