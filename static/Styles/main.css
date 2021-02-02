@@ -90,9 +90,11 @@ h1, h2 {
     color: var(--color-secondary);
 }
 
+/* calc() is used to ensure backwards compatibility*/
 h1 {
     font-size: calc(25px + (70 - 25) * ((100vw - 400px) / (1920 - 400)));
     font-size: clamp(25px, 4vw, 70px);
+    text-align: center;
 }
 
 h2 {

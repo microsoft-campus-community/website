@@ -1,7 +1,6 @@
 /*#region Default styles (for small screens) */
 h1 {
     margin: 2px 0;
-    text-align: center;
 }
 
 h2 {
@@ -50,10 +49,6 @@ section {
         height: 80px;
     }
 
-#navBarLogoContainer {
-    margin: 0;
-}
-
 .menuIconContainer {
     margin: 26px 35px 26px;
 }
@@ -64,6 +59,10 @@ section {
     margin: 6px 0;
     background-color: var(--color-mcc-dark-blue);
     transition: 0.4s;
+}
+
+#navBarLogoContainer {
+    margin: 0;
 }
 
 #navBarLogoContainer a {

@@ -39,6 +39,28 @@ p {
     width: 180px;
     display: block;
     margin: 0 auto;
+    position: relative; top: 0; left: 0; grid-row: 1/2; grid-column: 1/2;
+}
+
+.joinHexaSymbol {
+    font-size: 70px;
+    position: relative;
+    top: 0;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    margin: 0;
+    padding: 0;
+}
+
+.joinHexaContainer {
+    width: 180px;
+    display: block;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
 }
 
 #promoVideoSection video {
@@ -162,6 +184,33 @@ p {
     color: var(--color-mcc-white);
 }
 
+.joinHexa {
+    width: 180px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.joinHexaNumber{
+    position: relative;
+    top: 0;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    margin: 0;
+    padding: 0;
+}
+
+.joinHexaContainer{
+    width: 180px;
+    display: block;
+    margin: 0 auto;
+    display:grid; grid-template-rows: 1fr; grid-template-columns:1fr; align-items: center; justify-items :center;
+}
+
 #endLogo {
     margin-top: 120px;
     width: 100px;
@@ -173,6 +222,10 @@ p {
 }
 
 @media screen and (min-width: 654px) {
+
+    .motivationText {
+        max-width: 400px;
+    }
 
     #promoVideoSection video {
         margin-bottom: 150px;
@@ -201,10 +254,6 @@ p {
         margin: 60px 0;
     }
 
-    .motivationText {
-        max-width: 400px;
-    }
-
     #who, #why, #fun {
         display: flex;
         max-width: 650px;
@@ -231,8 +280,7 @@ p {
 @media screen and (min-width: 1144px) {
 
     .arrow {
-        display: inline;
-        font-size: 120px;
+        display: block;
     }
 
     #introSection {
