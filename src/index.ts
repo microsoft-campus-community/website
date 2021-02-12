@@ -43,6 +43,10 @@ server.get("/PowerPlatformWorkshop",(req,res) => {
 	res.sendFile(getStaticFile("Events/PPWorkshop.html"));
 });
 
+server.get("/BotWorkshop",(req,res) => {
+	res.sendFile(getStaticFile("Events/BotWorkshop.html"));
+});
+
 // Legacy Sites
 
 server.get("/digitalLearning",(req,res) => {

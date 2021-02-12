@@ -1,0 +1,247 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Microsoft Campus Community</title>
+    <link rel="stylesheet" href="../Styles/main.css">
+    <link rel="stylesheet" href="../Styles/mobileStyles.css">
+    <link rel="stylesheet" href="../Styles/desktopStyles.css">
+    <link rel="stylesheet" href="../Styles/eventDetails.css">
+
+    <script type="text/javascript">
+        function loadPage() {
+            // Copyright Date
+            var str = document.getElementById("copyInfo").innerText;
+            var res = str.replace("{year}", new Date().getFullYear());
+            document.getElementById("copyInfo").innerHTML = res;
+
+            // Sharing URL
+            /*var str = "https://twitter.com/intent/tweet?text=Check%20out%20this%20%23Communiy%20%23Event:%20{THISURL}%20%0D%0AOrganized%20by%20the%20Microsoft%20Campus%20Community%20-%3e%20%40MCC_community%20%0D%0A%0D%0A%23communityrocks%20%23campus%20%23learn%20%23inspire%20%23develop"; 
+            var res = str.replace("{THISURL}", "twitch.tv/MCCcommunity");//window.location.href);
+            document.getElementById("shareTwitter").href = res;*/
+        }
+    </script>
+</head>
+
+<body onload="loadPage()">
+
+    <header>
+        <div id="navBar">
+            <div id="navBarLogoContainer">
+                <a href="../index.html" title="MCC Homepage"></a>
+            </div>
+            <div id="navBarCenterSpacing"></div>
+            <nav id="navMenu">
+                <span><a href="../mission.html">Our Mission</a></span>
+                <span><a href="../team.html">The Team</a></span>
+                <span><a href="../events.html">Events</a></span>
+                <span><a href="../join.html" class="mccRed">Join Now</a></span>
+            </nav>
+            <div class="menuIconContainer">
+                <a href="#navMenu">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main id="contentContainer">
+
+        <section id="introSection">
+            <div class="sectionDiv">
+                <div id="introText">
+                    <p id="pageTitle" class="mccBlue">16.02.2021 - ONLINE</p>
+                    <h1>Building a Shopping List with a Sprinkle of Intelligence</h1>
+                </div>
+            </div>
+        </section>
+
+        <section id="IntroSection">
+            <div class="sectionDiv">
+                <img id="eventIntroImg" class="boxShadow" src="../Assets/Images/WebsiteBotWorkshop.png"
+                    alt="Hero image with 'Workshop Intelligent Shopping List' writing">
+            </div>
+        </section>
+
+        <section id="DescriptionSection">
+            <div id="Description" class="sectionDiv">
+                <div id="overview">
+                    <h4>Date</h4>
+                    <p>16.02.2021</p>
+                    <br />
+                    <h4>Time</h4>
+                    <p>06:00 pm - 08:00 pm CET</p>
+                    <br />
+                    <h4>Place</h4>
+                    <p>Teams Online Meeting</p>
+                    <p><a href="https://teams.microsoft.com/l/meetup-join/19%3afc3ae9f93d1a45f4973318df03441bc4%40thread.tacv2/1613078212318?context=%7b%22Tid%22%3a%2284c31ca0-ac3b-4eae-ad11-519d80233e6f%22%2c%22Oid%22%3a%2203f23756-6cb7-4dc8-a86c-c4630253e808%22%7d"
+                            style="color: var(--color-mcc-blue)">Click here to join</a></p>
+                    <br />
+                    <h4>Speakers</h4>
+                    <div class="personaContainer">
+                        <div role="presentation" class="personaCircle">
+                            <div role="presentation" class="personaImageArea">
+                                <div class="personaImage">
+                                    <img class="personaPortrait" src="../Assets/Images/Personas/Sandro Speth.jfif"
+                                        alt="Sandro Speth">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="personaDetails">
+                            <p dir="auto" class="personaPrimaryText">
+                                Sandro Speth
+                            </p>
+                            <p dir="auto" class="personaSecondaryText">
+                                Microsoft Learn Student Ambassador
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="personaContainer">
+                        <div role="presentation" class="personaCircle">
+                            <div role="presentation" class="personaImageArea">
+                                <div class="personaImage">
+                                    <img class="personaPortrait" src="../Assets/Images/Personas/Malte Reimann.jfif"
+                                        alt="Malte Reimann">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="personaDetails">
+                            <p dir="auto" class="personaPrimaryText">
+                                Malte Reimann
+                            </p>
+                            <p dir="auto" class="personaSecondaryText">
+                                Microsoft Learn Student Ambassador
+                            </p>
+
+                        </div>
+                    </div>
+                    <!-- <h4>Share</h4>
+                        <p style="color: var(--color-mcc-blue)">Facebook</p>
+                        <p style="color: var(--color-mcc-blue)">LinkedIn</p>
+                        <a id="shareTwitter" class="shareLink" href="">Twitter</a>
+                    -->
+                </div>
+                <div id="endText">
+                    <h2>Together we will build a chatbot.</h2>
+                    <p>No prior knowledge about chatbots needed to join this workshop, where we will build a shared
+                        shopping list as a chatbot using the Microsoft Bot Framework. </p>
+                    <p>The chatbot uses the LUIS API for natural language processing to find out the user's intent (add
+                        an item, mark item as done, remove an item, ...) and entities (5 kg bananas, three apples, 2
+                        litres of orange juice, ...). If any information is missing, the bot is starting a dialogue with
+                        the user(s) to retrieve the remaining information needed. Afterwards, the Azure Function for the
+                        respective intent is called which operates (add, update, delete) on a Cosmos DB.</p>
+                    <h2>Bot Framework, LUIS, Cosmos DB and Azure Functions</h2>
+                    <p>The schedule looks as follows:</p>
+                    <ul>
+                        <li>Introduction and Motivation Scenario</li>
+                        <li>
+                            Part 1: Chatbot and LUIS   
+                        </li>
+                        <ul>
+                            <li>
+                                Short theory
+                            </li>
+                            <li>
+                                Code together
+                            </li>
+                        </ul>
+                        <li>
+                            Part 2: Azure Functions and Cosmos DB  
+                        </li>
+                        <ul>
+                            <li>
+                                Short theory
+                            </li>
+                            <li>
+                                Code together
+                            </li>
+                        </ul>
+                        <li>
+                            How we prepared for the workshop 
+                        </li>
+                        <li>
+                            Q&A
+                        </li>
+                    </ul>
+                    <br>
+                    <div id="action">
+                        <h2 style="color: var(--color-mcc-blue)"><a style="color: var(--color-mcc-blue)"
+                                href="https://teams.microsoft.com/l/meetup-join/19%3afc3ae9f93d1a45f4973318df03441bc4%40thread.tacv2/1613078212318?context=%7b%22Tid%22%3a%2284c31ca0-ac3b-4eae-ad11-519d80233e6f%22%2c%22Oid%22%3a%2203f23756-6cb7-4dc8-a86c-c4630253e808%22%7d">Join
+                                via MS Teams</a></h2>
+                        <h2 style="color: var(--color-mcc-blue)"><a style="color: var(--color-mcc-blue)"
+                                href="https://www.twitch.tv/MCCcommunity">Watch on Twitch</a></h2>
+                        <h2 style="color: var(--color-mcc-blue)"><a style="color: var(--color-mcc-blue)"
+                                href="https://www.youtube.com/channel/UCEWbhPDUxIxMxnptNqWtl3w">Watch on YouTube</a></h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div id="imageSection">
+            <img class="blueImage" src="../Assets/Images/placeholder.png" alt="A placeholder image">
+            <img class="yellowImage" src="../Assets/Images/placeholder.png" alt="A placeholder image">
+            <img class="redImage" src="../Assets/Images/placeholder.png" alt="A placeholder image">
+            <img class="greenImage " src="../Assets/Images/placeholder.png" alt="A placeholder image">
+            <img class="blueImage" src="../Assets/Images/placeholder.png" alt="A placeholder image">
+            <img class="yellowImage" src="../Assets/Images/placeholder.png" alt="A placeholder image">
+            <img class="redImage" src="../Assets/Images/placeholder.png" alt="A placeholder image">
+            <img class="greenImage " src="../Assets/Images/placeholder.png" alt="A placeholder image">
+        </div>
+
+        <div id="copySection">
+            <div class="sectionDiv">
+
+                <div>
+                    <h3>Microsoft Campus Community</h3>
+                    <p>Heßstraße 50<br />
+                        80798 Munich<br />
+                        Germany</p>
+                    <p id="copyInfo">&copy; {year}</p>
+                </div>
+
+                <div>
+                    <h3>Channels</h3>
+                    <a href="https://www.linkedin.com/company/microsoft-campus-community" title="MCC on LinkedIn">
+                        <p>LinkedIn</p>
+                    </a>
+                    <a href="https://www.meetup.com/Hamburger-Technology-Meetup/" title="MCC on meetup.com">
+                        <p>MeetUp</p>
+                    </a>
+                    <a href="https://www.twitter.com/MCC_community" title="MCC on Twitter">
+                        <p>Twitter</p>
+                    </a>
+                </div>
+
+                <div>
+                    <h3>Get in Touch</h3>
+                    <p>E-Mail</p>
+                    <a href="https://www.twitter.com/MCC_community" title="MCC on Twitter">
+                        <p>Twitter</p>
+                    </a>
+                </div>
+
+                <div>
+                    <h3>Legal</h3>
+                    <a href="legal.html" title="See our Site Notice">
+                        <p>Site Notice</p>
+                    </a>
+                    <a href="privacy.html" title="See our Privacy Policy">
+                        <p>Privacy & Cookies</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
