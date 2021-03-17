@@ -8,42 +8,10 @@ p, .shareLink {
     line-height: 30px;
 }
 
-#eventIntroImg{
-    object-fit: contain;
-    margin-bottom: 20px;
-    width: 100%;
-    height: 500px;
-}
-
-#IntroSection {
-    padding: 0;
-    margin-bottom: 20px;
-}
-
-#overview {
-    font-size: 15px;
-    margin: 0;
-}
-
-    #overview h4 {
-        font-size: 15px;
-    }
-
-    #overview p, .shareLink {
-        margin: 4px 0;
-    }
-
-#action h2 {
-    margin: 20px;
-    font-family: var(--font-base);
-    font-weight: 200;
-}
-
 .shareLink {
     text-decoration: none;
     color: var(--color-mcc-blue);
 }
-
 
 .personaContainer{
 	-webkit-tap-highlight-color: transparent;
@@ -210,6 +178,36 @@ p, .shareLink {
 	overflow: hidden;
 }
 
+#eventIntroImg{
+    object-fit: contain;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 500px;
+}
+
+#IntroSection {
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#overview {
+    font-size: 15px;
+    margin: 0;
+}
+
+    #overview h4 {
+        font-size: 15px;
+    }
+
+    #overview p, .shareLink {
+        margin: 4px 0;
+    }
+
+#action h2 {
+    margin: 20px;
+    font-family: var(--font-base);
+    font-weight: 200;
+}
 
 @media screen and (min-width: 654px) { 
     #IntroSection {

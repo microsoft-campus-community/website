@@ -90,9 +90,11 @@ h1, h2 {
     color: var(--color-secondary);
 }
 
+/* calc() is used to ensure backwards compatibility*/
 h1 {
     font-size: calc(25px + (70 - 25) * ((100vw - 400px) / (1920 - 400)));
     font-size: clamp(25px, 4vw, 70px);
+    text-align: center;
 }
 
 h2 {
@@ -114,6 +116,14 @@ h4 {
     margin: 4px 0;
 }
 
+h5 {
+    font-family: var(--font-base);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 75px;
+}
+
 p {
     line-height: 25px;
     font-size: calc(15px + (20 - 15) * ((100vw - 400px) / (1920 - 400)));
@@ -122,6 +132,11 @@ p {
     font-family: var(--font-base);
     font-weight: 800;
     color: var(--color-secondary);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-mcc-black);
 }
 
 body {
@@ -172,50 +187,6 @@ footer h3 {
 
 footer p {
     font-weight: 400;
-}
-
-footer a {
-    text-decoration: none;
-    color: var(--color-mcc-black);
-}
-
-#navBar {
-    font-family: var(--font-main);
-    display: flex;
-}
-
-#navBarLogoContainer {
-    justify-content: flex-start;
-    width: 180px;
-}
-
-#navBarCenterSpacing {
-    justify-content: center;
-    flex-grow: 1;
-}
-
-#pageTitle {
-    font-family: var(--font-main);
-    font-size: 15px;
-    letter-spacing: 10px;
-    text-align: center;
-}
-
-#imageSection {
-    height: 0;/*175px;*/
-    display: flex;
-    justify-content: flex-start;
-    overflow: hidden;
-}
-
-    #imageSection img{
-        object-fit: cover;
-        width: 175px;
-        height: 175px;
-    }
-
-#copySection {
-    background: var(--color-mcc-gray);
 }
 
 .isVisible {
@@ -283,4 +254,43 @@ footer a {
 .sectionDiv {
     max-width: var(--width-mcc-max);
     margin: 0 auto;
+}
+
+#navBar {
+    font-family: var(--font-main);
+    display: flex;
+}
+
+#navBarLogoContainer {
+    justify-content: flex-start;
+    width: 180px;
+}
+
+#navBarCenterSpacing {
+    justify-content: center;
+    flex-grow: 1;
+}
+
+#pageTitle {
+    font-family: var(--font-main);
+    font-size: 15px;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+#imageSection {
+    height: 0;/*175px;*/
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+    #imageSection img{
+        object-fit: cover;
+        width: 175px;
+        height: 175px;
+    }
+
+#copySection {
+    background: var(--color-mcc-gray);
 }

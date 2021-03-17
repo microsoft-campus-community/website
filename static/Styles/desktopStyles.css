@@ -4,11 +4,12 @@
         padding: 168px 0px 139px;
     }
 
+
+    /* Font sizes below can be removed as soon as we solely rely on clamp instead of calc in main.css */
     h1 {
         font-size: 70px;
         line-height: 75px;
         margin: 63px 0;
-        text-align: center;
     }
     h2 {
         font-size: 40px;
@@ -48,10 +49,6 @@
 
     #endLogo {
         width: 200px;
-    }
-
-    footer h3, footer p {
-        font-size: 18px;
     }
 
     #copySection {
