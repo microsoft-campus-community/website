@@ -16,9 +16,9 @@
 				document.getElementById("copyInfo").innerHTML = res;
 
                 // Sharing URL
-				var str = "https://twitter.com/intent/tweet?text=Check%20out%20this%20%23Communiy%20%23Event:%20{THISURL}%20%0D%0AOrganized%20by%20the%20Microsoft%20Campus%20Community%20-%3e%20%40MCC_community%20%0D%0A%0D%0A%23communityrocks%20%23campus%20%23learn%20%23inspire%20%23develop"; 
+				/*var str = "https://twitter.com/intent/tweet?text=Check%20out%20this%20%23Communiy%20%23Event:%20{THISURL}%20%0D%0AOrganized%20by%20the%20Microsoft%20Campus%20Community%20-%3e%20%40MCC_community%20%0D%0A%0D%0A%23communityrocks%20%23campus%20%23learn%20%23inspire%20%23develop"; 
 				var res = str.replace("{THISURL}", "twitch.tv/MCCcommunity");//window.location.href);
-				document.getElementById("shareTwitter").href = res;
+				document.getElementById("shareTwitter").href = res;*/
 			}
 		</script>
     </head>
@@ -51,15 +51,15 @@
             <section id="introSection">
                 <div class="sectionDiv">
                     <div id="introText">
-                        <p id="pageTitle" class="mccBlue">15.10.2020 - EVENT SERIES</p>
-                        <h1>Lectures@Home: Cloud App Security</h1>
+                        <p id="pageTitle" class="mccBlue">04.02.2021 - EVENT SERIES</p>
+                        <h1>Lectures@Home: Introspecting app performance in Kubernetes</h1>
                     </div>
                 </div>
             </section>
 
             <section id="IntroSection">
                 <div class="sectionDiv">
-                    <img id="eventIntroImg" class="boxShadow" src="../Assets/Images/placeholder_square.png" alt="A placeholder image">
+                    <img id="eventIntroImg" class="boxShadow" src="../Assets/Images/Motius_WE_horizontal_rgb.png" alt="Motius Logo">
                 </div>
             </section>
 
@@ -67,37 +67,72 @@
                 <div id="Description" class="sectionDiv">
                     <div id="overview">
                         <h4>Date</h4>
-                        <p>15.10.2020</p>
+                        <p>04.02.2021</p>
                         <br/>
                         <h4>Time</h4>
-                        <p>06:00 pm - 08:00 pm CEST</p>
+                        <p>05:00 pm - 07:00 pm CET</p>
                         <br/>
                         <h4>Place</h4>
                         <p>Teams Online Meeting</p>
-                        <p style="color: var(--color-mcc-blue)">Click here to join</p>
+                        <p><a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_MWI2NGNmZTgtMWQ0Ni00NWU5LThlOGYtZGZjMmYzZGRkM2Q3%40thread.v2/0?context=%7b%22Tid%22%3a%2284c31ca0-ac3b-4eae-ad11-519d80233e6f%22%2c%22Oid%22%3a%227c85ffcf-b716-4202-b5e0-22df34d099f4%22%7d" style="color: var(--color-mcc-blue)">Click here to join</a></p>
                         <br/>
-                        <h4>Share</h4>
+                        <h4>Speakers</h4>
+                        <div class="personaContainer">
+                            <div role="presentation" class="personaCircle">
+                                <div role="presentation" class="personaImageArea">
+                                    <div class="personaImage">
+                                        <img class="personaPortrait" src="../Assets/Images/Personas/Sahil Kalra.jfif" alt="Sahil Kalra">
+            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="personaDetails">
+                                <p dir="auto" class="personaPrimaryText">
+                                    Sahil Kalra
+                                </p>
+                                <p dir="auto" class="personaSecondaryText">
+                                    Motius
+                                </p>
+            
+                            </div>
+                        </div>
+                        <div class="personaContainer">
+                            <div role="presentation" class="personaCircle">
+                                <div role="presentation" class="personaImageArea">
+                                    <div class="personaImage">
+                                        <img class="personaPortrait" src="../Assets/Images/Personas/Furqan Shakoor.jfif" alt="Furqan Shakoor">
+            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="personaDetails">
+                                <p dir="auto" class="personaPrimaryText">
+                                    Furqan Shakoor
+                                </p>
+                                <p dir="auto" class="personaSecondaryText">
+                                    Motius
+                                </p>
+            
+                            </div>
+                        </div>
+                       <!-- <h4>Share</h4>
                         <p style="color: var(--color-mcc-blue)">Facebook</p>
                         <p style="color: var(--color-mcc-blue)">LinkedIn</p>
                         <a id="shareTwitter" class="shareLink" href="">Twitter</a>
-                        
+                    -->
                     </div>
                     <div id="endText">
-                        <h2>Sicherheit für Cloud-Anwendungen</h2>
-                        <p>Nicki Borell von Experts Inside gibt uns einen Einblick in die Sicherheit von Cloud-Anwendungen.</p>
-                        <h2>Gerade jetzt kommt es auf Sicherheit an!</h2>
-                        <p>Cloud App Security bietet Echtzeit-Überwachungs-, Kontroll- und Analysefunktionen für Ihre IT-Systeme. Home-Offices ist ein aktuelles Thema. Aber nicht nur im Home-Office nutzen Mitarbeiter private Geräte um auf Lösungen des Unternehmens zuzugreifen oder bedienen sich Drittanbieter-Apps um mit Unternehmensdaten zu arbeiten. Auch kann ihre IT-Abteilung nicht kontrolliert welche Endgeräte und Apps Partnern und Kunden nutzten, um mit ihnen zusammenzuarbeiten. Die Antwort auf diese Herausforderungen heißt Microsoft Cloud App Security. Dieses Feature gibt uns die Möglichkeit, Regeln für Anwendungen zu erstellen und immer auf dem Laufenden zu bleiben, was in Ihrer Umgebung vor sich geht. In dieser Session erhalten sie auch einen klaren Überblick und Empfehlungen darüber, wann und für welchen Zweck die Microsoft SIEM-Lösung Azure Sentinel genutzt wird und wann sie Cloud App Security einsetzten sollten - und wie diese beiden Lösungen zusammenarbeiten können.
-
-                            <br><br>&diams; Monitoring, reporting and investigation capabilities
-                            <br>&diams; Monitor / block activities based on file conditions like Classification Label, File Name, Files Size or File Extension
-                            <br>&diams; Monitor / block activities like Cut/Copy Item, Paste Item, Print Item, Send Item
-                            <br>&diams; Block downloads based on conditions</p>
+                        <h2>Introspecting app performance in Kubernetes</h2>
+                        <p>Furqan Shakoor and Sahil Kalra from Motius will talk about understanding the performance aspects of Kubernetes, how to get visibility into the cluster performance and how to get the most out of your hardware.</p>
+                        <h2>Why do my pods keep dying?</h2>
+                        <p>We will look beyond the cluster abstractions and see how docker containers get scheduled to run on individual machines. We will demonstrate some observability tools that can help us see the current state of the cluster. And we'll talk about some common problems and pitfalls. We will briefly talk about mitigation strategies for everyday issues as well. So, if your apps keep dying with an OOM and you don't know why this session is for you. 
+                        </p>
                         <br>
                         <div id="action">
-                            <h2 style="color: var(--color-mcc-blue)">Join via MS Teams</h2>
-                            <h2 style="color: var(--color-mcc-blue)">Watch on Twitch</h2>
-                            <h2 style="color: var(--color-mcc-blue)">Watch on YouTube</h2>
-                        </div>
+                            <h2 style="color: var(--color-mcc-blue)"><a style="color: var(--color-mcc-blue)" href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_MWI2NGNmZTgtMWQ0Ni00NWU5LThlOGYtZGZjMmYzZGRkM2Q3%40thread.v2/0?context=%7b%22Tid%22%3a%2284c31ca0-ac3b-4eae-ad11-519d80233e6f%22%2c%22Oid%22%3a%227c85ffcf-b716-4202-b5e0-22df34d099f4%22%7d">Join via MS Teams</a></h2>
+                            <h2 style="color: var(--color-mcc-blue)"><a style="color: var(--color-mcc-blue)" href="https://www.twitch.tv/MCCcommunity">Watch on Twitch</a></h2>
+                            <h2 style="color: var(--color-mcc-blue)"><a style="color: var(--color-mcc-blue)" href="https://youtu.be/1PmnvPatryw">Watch on YouTube</a></h2>
+                      </div>
                     </div>    
                 </div>
             </section>

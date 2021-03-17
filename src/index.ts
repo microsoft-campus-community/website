@@ -39,6 +39,13 @@ server.get("/privacy",(req,res) => {
 	res.sendFile(getStaticFile("privacy.html"));
 });
 
+server.get("/PowerPlatformWorkshop",(req,res) => {
+	res.sendFile(getStaticFile("Events/PPWorkshop.html"));
+});
+
+server.get("/BotWorkshop",(req,res) => {
+	res.sendFile(getStaticFile("Events/BotWorkshop.html"));
+});
 
 // Legacy Sites
 
@@ -46,7 +53,7 @@ server.get("/digitalLearning",(req,res) => {
 	res.sendFile(getStaticFile("Legacy/DigitalLearning.html"));
 });
 server.get("/lecturesathome",(req,res) => {
-	res.sendFile(getStaticFile("Legacy/lecturesathome.html"));
+	res.sendFile(getStaticFile("Events/LatH.html"));
 });
 server.get("/insideMicrosoft",(req,res) => {
 	res.sendFile(getStaticFile("Legacy/insideMicrosoft.html"));
