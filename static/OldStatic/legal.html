@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta  charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Microsoft Campus Community</title>
+        <link rel="icon" href="https://mccwebfiles.blob.core.windows.net/$web/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="Styles/main.css">
+        <link rel="stylesheet" href="Styles/mobileStyles.css">
+        <link rel="stylesheet" href="Styles/desktopStyles.css">
+        <script type="text/javascript" src="Assets/Scripts/menuClose.js"></script>
+        <script type="text/javascript">	
+
+			function loadPage() {
+				var str = document.getElementById("copyInfo").innerText; 
+				var res = str.replace("{year}", new Date().getFullYear());
+                document.getElementById("copyInfo").innerHTML = res;
+            }      
+
+            var imported = document.createElement('script');
+            imported.src = "Assets/Scripts/scrollAnimation.js";
+            document.head.appendChild(imported);      
+
+        </script>
+
+    </head>
+    <body onload="loadPage()">
+        
+        <header>
+            <div id="navBar">
+                <div id="navBarLogoContainer">
+                    <a href="/" title="MCC Homepage"></a>
+                </div>
+                <div id="navBarCenterSpacing"></div>
+                <nav id="navMenu">
+                    <span><a href="/mission">Our Mission</a></span>
+                    <span><a href="/team">The Team</a></span>
+                    <span><a href="/calendar">Events</a></span>
+                    <span><a href="/join" class="mccRed">Join Now</a></span>
+                </nav>
+                <div class="menuIconContainer">
+                    <a href="#navMenu" onclick="closeMenu()">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </a>
+                </div>    
+            </div>
+        </header>
+        
+<!-- Content Start -->
+
+        <main id="contentContainer">
+            
+            <section id="introSection">
+                <div class="sectionDiv">
+                    <div id="introText">
+                        <p id="pageTitle">LEGAL</p>
+                        <h1>Impressum</h1>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="sectionDiv">
+                    <h2>Allgemein</h2>
+                    <h3>Angaben gemäß §5 TMG</h3>
+                    <p>Tobias Urban<br />
+                        Walter-Gropius Straße 5<br />
+                        80807 München</p>
+                    <h3>Kontakt</h3>
+                    <p>tobias.urban&commat;campus-community.org</p>
+                    <h3>Verantwortlich für den Inhalt gemäß §55 Abs. 2 RStV</h3>
+                    <p>Tobias Urban</p>
+                </div>
+            </section>
+
+            <section>
+                <div class="sectionDiv">
+                    <h2>Haftung für Inhalte</h2>
+                    <p>Als Diensteanbieter sind wir gemäß §7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.<br />
+                        Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunk der Kenntnis einer konkreten Rechtsverletzung möglich.<br />
+                        Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
+
+                    <h2>Haftung für Links</h2>
+                    <p>Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
+                    
+                    <h2>Urheberrecht</h2>
+                    <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autos bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
+                </div>
+            </section>
+
+        </main>
+
+<!-- Content End -->
+
+        <footer>
+            <div id="imageSection">
+            </div>
+
+            <div id="copySection">
+                <div class="sectionDiv">
+                    
+                    <div>
+                        <h3>Microsoft Campus Community</h3>
+                        <p>Walter-Gropius Straße 5<br/>
+                            80807 Munich<br/>
+                            Germany</p>
+                        <p id="copyInfo">&copy; {year}</p>
+                    </div>
+                    
+                    <div>
+                        <h3>Channels</h3>
+                        <a href="https://www.linkedin.com/company/microsoft-campus-community" title="MCC on LinkedIn"><p>LinkedIn</p></a>
+                        <a href="https://www.meetup.com/Hamburger-Technology-Meetup/" title="MCC on meetup.com"><p>MeetUp</p></a>
+                        <a href="https://www.campus-community.org/youtube" title="MCC on YouTube"><p>YouTube</p></a>
+                    </div>
+
+                    <div>
+                        <h3>Get in Touch</h3>
+                        <a href="mailto:tobias.urban@campus-community.org" title="Send us an E-Mail"><p>E-Mail</p></a>
+                        <a href="https://www.twitter.com/MCC_community" title="MCC on Twitter"><p>Twitter</p></a>
+                    </div>
+
+                    <div>
+                        <h3>Legal</h3>
+                        <a href="legal.html" title="See our Site Notice"><p>Site Notice</p></a>
+                        <a href="privacy.html" title="See our Privacy Policy"><p>Privacy & Cookies</p></a>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

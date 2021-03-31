@@ -70,9 +70,22 @@
     background: inherit;
 }
 
+.boxImageParagraph {
+    font-size: calc(12px + (20 - 12) * ((100vw - 400px) / (1920 - 400)));
+    font-size: clamp(12px, 1vw ,20px);
+    font-weight: normal;
+    font-family: Segoe UI;
+    line-height: calc(15px + (30 - 15) * ((100vw - 400px) / (1920 - 400)));;
+    line-height: clamp(15px, 2vw ,30px);
+}
+
 @media screen and (min-width: 1144px) {
     .highlightHeader {
         font-size: 70px;
         line-height: 60px;
+    }
+
+    .boxImageParagraph{
+        max-width: 420px;
     }
 }
