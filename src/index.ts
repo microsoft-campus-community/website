@@ -15,29 +15,40 @@ server.set("layout", "./layouts/layout.ejs");
 // Website Routing
 
 server.get("/",(req,res) => {
-	console.dir(getStaticFile("index.html"))
-	res.sendFile(getStaticFile("index.html"));
+	// console.dir(getStaticFile("index.html"))
+	//res.sendFile(getStaticFile("index.html"));
+	res.render("index", {custom_css:'<link rel="stylesheet" href="Styles/index.css">'});
 });
 server.get("/calendar",(req,res) => {
-	res.sendFile(getStaticFile("events.html"));
+	res.render("events", {custom_css:'<link type="text/css" rel="stylesheet" href="Styles/events.css"> <link type="text/css" rel="stylesheet" href="Styles/highlightbox.css">'});
+	//res.sendFile(getStaticFile("events.html"));
 });
 server.get("/mission",(req,res) => {
-	res.sendFile(getStaticFile("mission.html"));
+	//res.sendFile(getStaticFile("mission.html"));
+	res.render("mission", {custom_css:'<link rel="stylesheet" href="Styles/team.css"> <link rel="stylesheet" href="Styles/highlightbox.css">'});
 });
 server.get("/team",(req,res) => {
-	res.sendFile(getStaticFile("team.html"));
+	//res.sendFile(getStaticFile("team.html"));
+	res.render("team", {custom_css:'<link rel="stylesheet" href="Styles/team.css"> <link rel="stylesheet" href="Styles/highlightbox.css">'});
 });
 server.get("/join",(req,res) => {
-	res.sendFile(getStaticFile("join.html"));
+	//res.sendFile(getStaticFile("join.html"));
+	//res.writeHead(302, {'Location':'https://forms.office.com/Pages/ResponsePage.aspx?id=k5qmb5C-LE2k65XhzFWFOFChwzBAyUhCrBv0ETTbSalUOFE3WEpPR1IzODVYWEk0MFpaQzBESzlWSS4u'});
+	//res.end();
+	res.redirect("https://forms.office.com/Pages/ResponsePage.aspx?id=k5qmb5C-LE2k65XhzFWFOFChwzBAyUhCrBv0ETTbSalUOFE3WEpPR1IzODVYWEk0MFpaQzBESzlWSS4u");
 });
 
 
 server.get("/legal",(req,res) => {
-	res.sendFile(getStaticFile("legal.html"));
+	//res.sendFile(getStaticFile("legal.html"));
+	res.render("legal", {custom_css:''});
 });
 server.get("/privacy",(req,res) => {
-	res.sendFile(getStaticFile("privacy.html"));
+	//res.sendFile(getStaticFile("privacy.html"));
+	res.render("privacy", {custom_css:''});
 });
+
+// Legacy Sites
 
 server.get("/PowerPlatformWorkshop",(req,res) => {
 	res.sendFile(getStaticFile("Events/PPWorkshop.html"));
@@ -46,8 +57,6 @@ server.get("/PowerPlatformWorkshop",(req,res) => {
 server.get("/BotWorkshop",(req,res) => {
 	res.sendFile(getStaticFile("Events/BotWorkshop.html"));
 });
-
-// Legacy Sites
 
 server.get("/digitalLearning",(req,res) => {
 	res.sendFile(getStaticFile("Legacy/DigitalLearning.html"));
@@ -69,7 +78,7 @@ server.get("/youtube",(req,res) => {
 });
 
 server.get("/test",(req,res) => {
-	res.render("start");
+	res.render("start", {custom_css:'<link rel="stylesheet" href="Styles/index.css">'});
 });
 
 
