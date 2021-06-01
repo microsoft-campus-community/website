@@ -179,10 +179,10 @@ p, .shareLink {
 }
 
 #eventIntroImg{
-    object-fit: contain;
+    object-fit: cover;
     margin-bottom: 20px;
     width: 100%;
-    height: 500px;
+    height: auto;
 }
 
 #IntroSection {
