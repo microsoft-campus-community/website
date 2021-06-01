@@ -50,6 +50,14 @@ server.get("/BotWorkshop",(req,res) => {
 server.get("/AiGamingXWomenInCS",(req,res) => {
 	res.sendFile(getStaticFile("Events/AIGamingWomenInCS.html"));
 });
+
+server.get("/GlobalAzure2021",(req,res) => {
+	res.sendFile(getStaticFile("Events/GlobalAzure.html"));
+});
+
+server.get("/GlobalAiStudentConference2021",(req,res) => {
+	res.sendFile(getStaticFile("Events/GlobalAiStudentConference2021.html"));
+});
 // Legacy Sites
 
 server.get("/digitalLearning",(req,res) => {
