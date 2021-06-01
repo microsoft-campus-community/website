@@ -58,6 +58,10 @@ server.get("/GlobalAzure2021",(req,res) => {
 server.get("/GlobalAiStudentConference2021",(req,res) => {
 	res.sendFile(getStaticFile("Events/GlobalAiStudentConference2021.html"));
 });
+
+server.get("/BriliantPresentation",(req,res) => {
+	res.sendFile(getStaticFile("Events/BriliantPresentation.html"));
+});
 // Legacy Sites
 
 server.get("/digitalLearning",(req,res) => {
