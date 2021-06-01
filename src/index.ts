@@ -47,6 +47,9 @@ server.get("/BotWorkshop",(req,res) => {
 	res.sendFile(getStaticFile("Events/BotWorkshop.html"));
 });
 
+server.get("/AiGamingXWomenInCS",(req,res) => {
+	res.sendFile(getStaticFile("Events/AIGamingWomenInCS.html"));
+});
 // Legacy Sites
 
 server.get("/digitalLearning",(req,res) => {

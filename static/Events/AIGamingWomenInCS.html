@@ -1,0 +1,246 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Microsoft Campus Community</title>
+    <link rel="stylesheet" href="../Styles/main.css">
+    <link rel="stylesheet" href="../Styles/mobileStyles.css">
+    <link rel="stylesheet" href="../Styles/desktopStyles.css">
+    <link rel="stylesheet" href="../Styles/eventDetails.css">
+
+    <script type="text/javascript">
+        function loadPage() {
+            // Copyright Date
+            var str = document.getElementById("copyInfo").innerText;
+            var res = str.replace("{year}", new Date().getFullYear());
+            document.getElementById("copyInfo").innerHTML = res;
+
+            // Sharing URL
+            /*var str = "https://twitter.com/intent/tweet?text=Check%20out%20this%20%23Communiy%20%23Event:%20{THISURL}%20%0D%0AOrganized%20by%20the%20Microsoft%20Campus%20Community%20-%3e%20%40MCC_community%20%0D%0A%0D%0A%23communityrocks%20%23campus%20%23learn%20%23inspire%20%23develop"; 
+            var res = str.replace("{THISURL}", "twitch.tv/MCCcommunity");//window.location.href);
+            document.getElementById("shareTwitter").href = res;*/
+        }
+    </script>
+</head>
+
+<body onload="loadPage()">
+
+    <header>
+        <div id="navBar">
+            <div id="navBarLogoContainer">
+                <a href="../index.html" title="MCC Homepage"></a>
+            </div>
+            <div id="navBarCenterSpacing"></div>
+            <nav id="navMenu">
+                <span><a href="../mission.html">Our Mission</a></span>
+                <span><a href="../team.html">The Team</a></span>
+                <span><a href="../events.html">Events</a></span>
+                <span><a href="../join.html" class="mccRed">Join Now</a></span>
+            </nav>
+            <div class="menuIconContainer">
+                <a href="#navMenu">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main id="contentContainer">
+
+        <section id="introSection">
+            <div class="sectionDiv">
+                <div id="introText">
+                    <p id="pageTitle" class="mccBlue">08.06.2021 - ONLINE</p>
+                    <h1>AI Gaming tournament</h1>
+                </div>
+            </div>
+        </section>
+
+        <section id="IntroSection">
+            <div class="sectionDiv">
+                <img id="eventIntroImg" class="boxShadow" src="../Assets/Images/AIGamingXWomenInCS.jfif"
+                    alt="Hero image with 'AI - Workshop' writing and 'Tuesday, June 08, 2021, 17:00 on Microsoft Teams'.">
+            </div>
+        </section>
+
+        <section id="DescriptionSection">
+            <div id="Description" class="sectionDiv">
+                <div id="overview">
+                    <h4>Date</h4>
+                    <p>08.06.2021</p>
+                    <br />
+                    <h4>Time</h4>
+                    <p>05:00 pm - 07:00 pm CEST</p>
+                    <br />
+                    <h4>Place</h4>
+                    <p>Eventbrite</p>
+                    <p><a href="https://www.eventbrite.com/e/ai-workshop-tickets-156539930145"
+                            style="color: var(--color-mcc-blue)">Click here to get your free ticket</a></p>
+                    <br />
+                    <h4>Speakers</h4>
+                    <div class="personaContainer">
+                        <div role="presentation" class="personaCircle">
+                            <div role="presentation" class="personaImageArea">
+                                <div class="personaImage">
+                                    <img class="personaPortrait" src="../Assets/Images/Personas/Jan Schmalle.jfif"
+                                        alt="Jan Schmalle">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="personaDetails">
+                            <p dir="auto" class="personaPrimaryText">
+                                Jan Schmalle
+                            </p>
+                            <p dir="auto" class="personaSecondaryText">
+                                Microsoft Learn Student Ambassador
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="personaContainer">
+                        <div role="presentation" class="personaCircle">
+                            <div role="presentation" class="personaImageArea">
+                                <div class="personaImage">
+                                    <img class="personaPortrait" src="../Assets/Images/Personas/Roeya Khlifi.jfif"
+                                        alt="Roeya Khlifi">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="personaDetails">
+                            <p dir="auto" class="personaPrimaryText">
+                                Roeya Khlifi
+                            </p>
+                            <p dir="auto" class="personaSecondaryText">
+                                Women in Computer Science TUM
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="personaContainer">
+                        <div role="presentation" class="personaCircle">
+                            <div role="presentation" class="personaImageArea">
+                                <div class="personaImage">
+                                    <img class="personaPortrait" src="../Assets/Images/Personas/Sandro Speth.jfif"
+                                        alt="Sandro Speth">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="personaDetails">
+                            <p dir="auto" class="personaPrimaryText">
+                                Sandro Speth
+                            </p>
+                            <p dir="auto" class="personaSecondaryText">
+                                Microsoft Learn Student Ambassador
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="personaContainer">
+                        <div role="presentation" class="personaCircle">
+                            <div role="presentation" class="personaImageArea">
+                                <div class="personaImage">
+                                    <img class="personaPortrait" src="../Assets/Images/Personas/Malte Reimann.jfif"
+                                        alt="Malte Reimann">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="personaDetails">
+                            <p dir="auto" class="personaPrimaryText">
+                                Malte Reimann
+                            </p>
+                            <p dir="auto" class="personaSecondaryText">
+                                Microsoft Learn Student Ambassador
+                            </p>
+
+                        </div>
+                    </div>
+                    <!-- <h4>Share</h4>
+                        <p style="color: var(--color-mcc-blue)">Facebook</p>
+                        <p style="color: var(--color-mcc-blue)">LinkedIn</p>
+                        <a id="shareTwitter" class="shareLink" href="">Twitter</a>
+                    -->
+                </div>
+                <div id="endText">
+                    <h2>Program your own bot and get the chance to let it compete in a tournament!</h2>
+                    <p>Join us for a fun evening to find out who can build the best bot! No prior machine learning knowledge is needed. Nevertheless, you should have some basic programming skills(in any language), to be able to participate successfully.</p>
+                    <h2>No prior machine learning knowledge is needed.</h2>
+                    <p>In this workshop, you will learn to program your first bot all inside your browser. You can even let it compete in a tournament at the end of the workshop!</p>
+                    <p>Register on Eventbrite for AI Gaming fun on June 8th.</p>
+                    <br>
+                    <div id="action">
+                        <h2 style="color: var(--color-mcc-blue)"><a style="color: var(--color-mcc-blue)"
+                                href="https://www.eventbrite.com/e/ai-workshop-tickets-156539930145">Get your free ticket on Eventbrite</a></h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div id="imageSection">
+            <img class="blueImage" src="../Assets/Images/placeholder.png" alt="A placeholder image">
+            <img class="yellowImage" src="../Assets/Images/placeholder.png" alt="A placeholder image">
+            <img class="redImage" src="../Assets/Images/placeholder.png" alt="A placeholder image">
+            <img class="greenImage " src="../Assets/Images/placeholder.png" alt="A placeholder image">
+            <img class="blueImage" src="../Assets/Images/placeholder.png" alt="A placeholder image">
+            <img class="yellowImage" src="../Assets/Images/placeholder.png" alt="A placeholder image">
+            <img class="redImage" src="../Assets/Images/placeholder.png" alt="A placeholder image">
+            <img class="greenImage " src="../Assets/Images/placeholder.png" alt="A placeholder image">
+        </div>
+
+        <div id="copySection">
+            <div class="sectionDiv">
+
+                <div>
+                    <h3>Microsoft Campus Community</h3>
+                    <p>Heßstraße 50<br />
+                        80798 Munich<br />
+                        Germany</p>
+                    <p id="copyInfo">&copy; {year}</p>
+                </div>
+
+                <div>
+                    <h3>Channels</h3>
+                    <a href="https://www.linkedin.com/company/microsoft-campus-community" title="MCC on LinkedIn">
+                        <p>LinkedIn</p>
+                    </a>
+                    <a href="https://www.meetup.com/Hamburger-Technology-Meetup/" title="MCC on meetup.com">
+                        <p>MeetUp</p>
+                    </a>
+                    <a href="https://www.twitter.com/MCC_community" title="MCC on Twitter">
+                        <p>Twitter</p>
+                    </a>
+                </div>
+
+                <div>
+                    <h3>Get in Touch</h3>
+                    <p>E-Mail</p>
+                    <a href="https://www.twitter.com/MCC_community" title="MCC on Twitter">
+                        <p>Twitter</p>
+                    </a>
+                </div>
+
+                <div>
+                    <h3>Legal</h3>
+                    <a href="legal.html" title="See our Site Notice">
+                        <p>Site Notice</p>
+                    </a>
+                    <a href="privacy.html" title="See our Privacy Policy">
+                        <p>Privacy & Cookies</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
