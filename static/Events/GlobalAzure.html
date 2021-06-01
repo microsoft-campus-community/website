@@ -1,0 +1,228 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Microsoft Campus Community</title>
+    <link rel="stylesheet" href="../Styles/main.css">
+    <link rel="stylesheet" href="../Styles/mobileStyles.css">
+    <link rel="stylesheet" href="../Styles/desktopStyles.css">
+    <link rel="stylesheet" href="../Styles/eventDetails.css">
+
+    <script type="text/javascript">
+        function loadPage() {
+            // Copyright Date
+            var str = document.getElementById("copyInfo").innerText;
+            var res = str.replace("{year}", new Date().getFullYear());
+            document.getElementById("copyInfo").innerHTML = res;
+
+            // Sharing URL
+            /*var str = "https://twitter.com/intent/tweet?text=Check%20out%20this%20%23Communiy%20%23Event:%20{THISURL}%20%0D%0AOrganized%20by%20the%20Microsoft%20Campus%20Community%20-%3e%20%40MCC_community%20%0D%0A%0D%0A%23communityrocks%20%23campus%20%23learn%20%23inspire%20%23develop"; 
+            var res = str.replace("{THISURL}", "twitch.tv/MCCcommunity");//window.location.href);
+            document.getElementById("shareTwitter").href = res;*/
+        }
+    </script>
+</head>
+
+<body onload="loadPage()">
+
+    <header>
+        <div id="navBar">
+            <div id="navBarLogoContainer">
+                <a href="../index.html" title="MCC Homepage"></a>
+            </div>
+            <div id="navBarCenterSpacing"></div>
+            <nav id="navMenu">
+                <span><a href="../mission.html">Our Mission</a></span>
+                <span><a href="../team.html">The Team</a></span>
+                <span><a href="../events.html">Events</a></span>
+                <span><a href="../join.html" class="mccRed">Join Now</a></span>
+            </nav>
+            <div class="menuIconContainer">
+                <a href="#navMenu">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main id="contentContainer">
+
+        <section id="introSection">
+            <div class="sectionDiv">
+                <div id="introText">
+                    <p id="pageTitle" class="mccBlue">15.04.2021 - ONLINE</p>
+                    <h1>Global Azure 2021</h1>
+                </div>
+            </div>
+        </section>
+
+        <section id="IntroSection">
+            <div class="sectionDiv">
+                <img id="eventIntroImg" class="boxShadow" src="../Assets/Images/GlobalAzure2021.jfif"
+                    alt="Hero image with Global Azure 2021 Logo surrounded by white clouds in front of blue sky.">
+            </div>
+        </section>
+
+        <section id="DescriptionSection">
+            <div id="Description" class="sectionDiv">
+                <div id="overview">
+                    <h4>Date</h4>
+                    <p>15.04.2021</p>
+                    <br />
+                    <h4>Time</h4>
+                    <p>04:00 pm - 07:00 pm CEST</p>
+                    <br />
+                    <h4>Place</h4>
+                    <p>YouTube</p>
+                    <p><a href="https://youtu.be/_KCLrrLAkgs"
+                            style="color: var(--color-mcc-blue)">Watch on YouTube</a></p>
+                    <br />
+                    <h4>Speakers</h4>
+                    <div class="personaContainer">
+                        <div role="presentation" class="personaCircle">
+                            <div role="presentation" class="personaImageArea">
+                                <div class="personaImage">
+                                    <img class="personaPortrait" src="../Assets/Images/Personas/Malte Reimann.jfif"
+                                        alt="Malte Reimann">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="personaDetails">
+                            <p dir="auto" class="personaPrimaryText">
+                                Malte Reimann
+                            </p>
+                            <p dir="auto" class="personaSecondaryText">
+                                Microsoft Learn Student Ambassador
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="personaContainer">
+                        <div role="presentation" class="personaCircle">
+                            <div role="presentation" class="personaImageArea">
+                                <div class="personaImage">
+                                    <img class="personaPortrait" src="../Assets/Images/Personas/Andrew Kenworthy.jfif"
+                                        alt="Andrew Kenworthy">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="personaDetails">
+                            <p dir="auto" class="personaPrimaryText">
+                                Andrew Kenworthy
+                            </p>
+                            <p dir="auto" class="personaSecondaryText">
+                                Balluff Inc.
+                            </p>
+
+                        </div>
+                    </div>
+                    <!-- <h4>Share</h4>
+                        <p style="color: var(--color-mcc-blue)">Facebook</p>
+                        <p style="color: var(--color-mcc-blue)">LinkedIn</p>
+                        <a id="shareTwitter" class="shareLink" href="">Twitter</a>
+                    -->
+                </div>
+                <div id="endText">
+                    <h2>Exciting lineup of students and experts.</h2>
+                    <p>We partnered together with Azure DEV Meetup Munich, Medialesson and others in the German Azure Community. The concept is to bring students like us to the stage. Together with experts multiple exciting sessions all about Azure are available for you.</p>
+                    <h2>'Was haben AI und Kochen gemeinsam?'</h2>
+                    <p></p>
+                    <p>Our own Malte Reimann worked with Andrew Kenworthy on a talk. They talk about how to get started with AI using Lobe.ai. Rewatch the entire Global Azure Stream by following the link below.</p>
+                    <p>Here is the full agenda of our Global Azure 2021 event. All talks except two are in German.</p>
+                    <ul>
+                        <li>Begrüßung</li>
+                        <li>
+                            Was haben AI und Kochen gemeinsam?   
+                        </li>
+                        <li>
+                            Azure Static Web Apps mit Blazor   
+                        </li>
+                        <li>
+                            Spaß mit dem Microsoft Graph   
+                        </li>
+                        <li>
+                            Azure IoT im Home Office   
+                        </li>
+                        <li>
+                            DevOps with Logic Apps v2 - From Awful to Awesome (English) 
+                        </li>
+                        <li>
+                            Azure Table Storage ❤️ IoT: how fast table storage can be? (English)   
+                        </li>
+                    </ul>
+                    <br>
+                    <div id="action">
+                        <h2 style="color: var(--color-mcc-blue)"><a style="color: var(--color-mcc-blue)"
+                                href="https://youtu.be/_KCLrrLAkgs">Watch on YouTube</a></h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div id="imageSection">
+            <img class="blueImage" src="../Assets/Images/placeholder.png" alt="A placeholder image">
+            <img class="yellowImage" src="../Assets/Images/placeholder.png" alt="A placeholder image">
+            <img class="redImage" src="../Assets/Images/placeholder.png" alt="A placeholder image">
+            <img class="greenImage " src="../Assets/Images/placeholder.png" alt="A placeholder image">
+            <img class="blueImage" src="../Assets/Images/placeholder.png" alt="A placeholder image">
+            <img class="yellowImage" src="../Assets/Images/placeholder.png" alt="A placeholder image">
+            <img class="redImage" src="../Assets/Images/placeholder.png" alt="A placeholder image">
+            <img class="greenImage " src="../Assets/Images/placeholder.png" alt="A placeholder image">
+        </div>
+
+        <div id="copySection">
+            <div class="sectionDiv">
+
+                <div>
+                    <h3>Microsoft Campus Community</h3>
+                    <p>Heßstraße 50<br />
+                        80798 Munich<br />
+                        Germany</p>
+                    <p id="copyInfo">&copy; {year}</p>
+                </div>
+
+                <div>
+                    <h3>Channels</h3>
+                    <a href="https://www.linkedin.com/company/microsoft-campus-community" title="MCC on LinkedIn">
+                        <p>LinkedIn</p>
+                    </a>
+                    <a href="https://www.meetup.com/Hamburger-Technology-Meetup/" title="MCC on meetup.com">
+                        <p>MeetUp</p>
+                    </a>
+                    <a href="https://www.twitter.com/MCC_community" title="MCC on Twitter">
+                        <p>Twitter</p>
+                    </a>
+                </div>
+
+                <div>
+                    <h3>Get in Touch</h3>
+                    <p>E-Mail</p>
+                    <a href="https://www.twitter.com/MCC_community" title="MCC on Twitter">
+                        <p>Twitter</p>
+                    </a>
+                </div>
+
+                <div>
+                    <h3>Legal</h3>
+                    <a href="legal.html" title="See our Site Notice">
+                        <p>Site Notice</p>
+                    </a>
+                    <a href="privacy.html" title="See our Privacy Policy">
+                        <p>Privacy & Cookies</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
