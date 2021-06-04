@@ -62,10 +62,6 @@ server.get("/GlobalAiStudentConference2021",(req,res) => {
 server.get("/BriliantPresentation",(req,res) => {
 	res.sendFile(getStaticFile("Events/BriliantPresentation.html"));
 });
-
-server.get("/HamburgerTechnologyMeetupMay",(req,res) => {
-	res.sendFile(getStaticFile("Events/HamburgerTechnologyMeetupMay.html"));
-});
 // Legacy Sites
 
 server.get("/digitalLearning",(req,res) => {
